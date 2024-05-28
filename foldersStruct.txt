@@ -1,0 +1,14 @@
+Estrutura de pastas a ser aplicada em breve:
+
+Vendinha-Fullstack-Interfocus/
+├── docs/
+│   ├── proposta.pdf
+│   ├── CasosDeTeste.md
+├── src/
+│   ├── backend/
+│   │   ├── ... (código fonte da API em ASP.NET)
+│   ├── frontend/
+│   │   ├── ... (código fonte do frontend em HTML, CSS, JS, ReactJS)
+├── database/
+│   ├── schema.sql
+├── README.md
