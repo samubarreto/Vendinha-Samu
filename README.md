@@ -50,15 +50,16 @@
 
 ### **FAZER (TO DO)**
 
-* [X] Organizar o ínicio do README.md, com as regras e requisitos analisados
-* [ ] Montar o diagrama geral da aplicação no [MIRO](https://miro.com/pt/mapeamento-processos/)
-* [ ] Modelar o banco de dados no [MIRO](https://miro.com/pt/diagrama/banco-de-dados/)
-* [ ] Fazer a API em ASP.NET e o mapeamento das tabelas com o NHibernate
-* [ ] Prototipar as interfaces do Frontend
-* [ ] Aplicar o protótipo e codar as interfaces com HTML, CSS e JS
-* [ ] Testar a aplicação
-* [ ] Documentar o motivo de uso das Libs
-* [ ] Documentar as instruções de uso da aplicação Vendinha Fullstack Interfocus 😎
+1. [X] Organizar o ínicio do README.md, com as regras e requisitos já primeiramente analisados - DONE
+2. [ ] Montar casos de teste baseados nos requisitos - IN PROGRESS
+3. [ ] Montar o diagrama geral da aplicação no [MIRO](https://miro.com/pt/mapeamento-processos/) - TO DO
+4. [ ] Modelar o banco de dados no [MIRO](https://miro.com/pt/diagrama/banco-de-dados/) - TO DO
+5. [ ] Fazer a API em ASP.NET e o mapeamento das tabelas com o NHibernate - TO DO
+6. [ ] Prototipar as interfaces do Frontend - TO DO
+7. [ ] Aplicar o protótipo e codar as interfaces com HTML, CSS e JS - TO DO
+8. [ ] Testar a aplicação baseado nos casos préviamente estabelecidos - TO DO
+9. [ ] Documentar o motivo de uso das Libs - TO DO
+1. [ ] Documentar as instruções de uso da aplicação Vendinha Fullstack Interfocus 😎 - TO DO
 
 ### Motivo de uso das libs
 
@@ -71,5 +72,7 @@
 
 1. Passo:
 2. Passo:
+
+#### Prazo de Entrega -> 25/06
 
 * [➡️ Veja meu portfólio aqui 😎](https://samubarreto.github.io/Portfolio/)
