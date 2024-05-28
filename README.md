@@ -42,16 +42,16 @@
   * Deve ter um campo IDADE, calculado quando necessário
   * A listagem deve exibir páginas de 10 em 10 registros
   * Deve haver um campo de busca por nome
-  * Deve haver no fim da lista um somatório do total de dívidas dos clientes (Um cliente só ou TUDO?)
+  * Deve haver no fim da lista um somatório do total de dívidas dos clientes (De todos os clientes, provavelmente)
 * Listagem de Dívidas:
   * Deve ser possível marcar uma dívida como paga
   * Deve aparecer a soma das dívidas de um cliente
-  * A somatória de dívidas não devem ultrapassar 200 reais
+  * A somatória de dívidas não deve ultrapassar 200 reais
 
 ### **FAZER (TO DO)**
 
 1. [X] Organizar o ínicio do README.md, com as regras e requisitos já primeiramente analisados - DONE
-2. [ ] Montar casos de teste baseados nos requisitos - IN PROGRESS
+2. [X] Montar casos de teste baseados nos requisitos apresentados - DONE
 3. [ ] Montar o diagrama geral da aplicação no [MIRO](https://miro.com/pt/mapeamento-processos/) - TO DO
 4. [ ] Modelar o banco de dados no [MIRO](https://miro.com/pt/diagrama/banco-de-dados/) - TO DO
 5. [ ] Fazer a API em ASP.NET e o mapeamento das tabelas com o NHibernate - TO DO
