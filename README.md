@@ -1,6 +1,8 @@
 # Vendinha Fullstack Interfocus 😎 Samuel Barreto
 
-## Projeto feito para estágio na Interfocus. É um sistema de gerenciamento de dívidas de clientes que inclui:
+## Projeto feito para estágio na Interfocus.
+
+### É um sistema de gerenciamento de dívidas de clientes que inclui:
 
 1. Interface web com HTML, CSS E JS:
    1. ReactJS está permitido
@@ -18,7 +20,7 @@
    1. Explicando o motivo de escolha das libs (este readme)
    2. Explicando como executar a aplicação (este readme)
 
-## Classes e Regras
+### Classes e Regras
 
 1. Cliente.cs
    1. NomeCompleto
@@ -46,7 +48,7 @@
   * Deve aparecer a soma das dívidas de um cliente
   * A somatória de dívidas não devem ultrapassar 200 reais
 
-## **FAZER (TO DO)**
+### **FAZER (TO DO)**
 
 * [X] Organizar o ínicio do README.md, com as regras e requisitos analisados
 * [ ] Montar o diagrama geral da aplicação no [MIRO](https://miro.com/pt/mapeamento-processos/)
@@ -58,16 +60,16 @@
 * [ ] Documentar o motivo de uso das Libs
 * [ ] Documentar as instruções de uso da aplicação Vendinha Fullstack Interfocus 😎
 
-## Motivo de uso das libs
+### Motivo de uso das libs
 
 1. Lib 1
    1. Motivo 1
 2. Lib 2
    1. Motivo 2
 
-## Instruções de uso e execução da aplicação
+#### Instruções de uso e execução da aplicação
 
 1. Passo:
 2. Passo:
 
-[➡️ Veja meu portfólio aqui 😎](https://samubarreto.github.io/Portfolio/)
+* [➡️ Veja meu portfólio aqui 😎](https://samubarreto.github.io/Portfolio/)
