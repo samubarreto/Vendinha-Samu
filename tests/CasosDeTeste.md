@@ -116,7 +116,7 @@
      * **Entrada:** ID do cliente.
      * **Resultado Esperado:** Status 200 OK, cliente removido do banco de dados.
        * **RESULTADO OBTIDO:**
-5. Qualquer outro caso além dos de sucesso acima devem retornar 400 bad request ou 404 not found.
+5. Qualquer outro caso além das responses de sucesso acima devem retornar 400 bad request ou 404 not found.
 
 #### Endpoints de Dívidas
 
