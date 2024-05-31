@@ -53,12 +53,13 @@
 1. [X] Organizar o ínicio do README.md, com as regras e requisitos já primeiramente analisados - DONE
 2. [X] Montar casos de teste baseados nos requisitos apresentados - DONE
 3. [X] Montar o diagrama geral da aplicação no [MIRO](https://miro.com/pt/mapeamento-processos/) - DONE
-4. [ ] Modelar o DED (Diagrama de Estrutura de Dados) no ERD Tool do pgAdmin, ele permite criar diagramas de entidade-relacionamento e gerar o script SQL para o banco de dados - IN PROGRESS
-5. [ ] Fazer a API em ASP.NET e o mapeamento das tabelas com o NHibernate - TO DO
-6. [ ] Prototipar as interfaces do Frontend - TO DO
-7. [ ] Aplicar o protótipo e codar as interfaces com HTML, CSS e JS - TO DO
-8. [ ] Testar a aplicação baseado nos casos préviamente estabelecidos - TO DO
-9. [ ] Documentar o motivo de uso das Libs - TO DO
+4. [ ] Aprender melhor sobre o pgAdmin - IN PROGRESS
+5. [ ] Modelar o DED (Diagrama de Estrutura de Dados) no ERD Tool do pgAdmin, ele permite criar diagramas de entidade-relacionamento e gerar o Script SQL com os DML para o banco de dados - TO DO
+6. [ ] Fazer a API em ASP.NET e o mapeamento das tabelas com o NHibernate - TO DO
+7. [ ] Prototipar as interfaces do Frontend - TO DO
+8. [ ] Aplicar o protótipo e codar as interfaces com HTML, CSS e JS - TO DO
+9. [ ] Testar a aplicação baseado nos casos préviamente estabelecidos - TO DO
+1. [ ] Documentar o motivo de uso das Libs - TO DO
 1. [ ] Documentar as instruções de uso da aplicação Vendinha Fullstack Interfocus 😎 - TO DO
 
 ### Motivo de uso das libs
