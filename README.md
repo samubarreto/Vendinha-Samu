@@ -54,8 +54,8 @@
 2. [X] Montar casos de teste baseados nos requisitos apresentados - DONE
 3. [X] Montar o diagrama geral da aplicação no [MIRO](https://miro.com/pt/mapeamento-processos/) - DONE
 4. [X] Aprender melhor o pgAdmin ([Tutorial 1](https://www.youtube.com/watch?v=WFT5MaZN6g4&ab_channel=DatabaseStar), [Tutorial 2](https://www.youtube.com/watch?v=o23LBJ-9jsU&ab_channel=AlimonPito)) - DONE
-5. [ ] Modelar o DED (Diagrama de Estrutura de Dados) no ERD Tool do pgAdmin - TO DO
-6. [ ] Gerar scripts das Tabelas Clientes, Dividas e outras (se necessário, se não, não) - TO DO
+5. [X] Gerar scripts.sql das Tabelas Clientes e Dívidas - DONE
+6. [ ] Aplicar o schema no pgAdmin - IN PROGRESS
 7. [ ] Fazer a API em ASP.NET e o mapeamento das tabelas com o NHibernate - TO DO
 8. [ ] Prototipar as interfaces do Frontend - TO DO
 9. [ ] Aplicar o protótipo e codar as interfaces com HTML, CSS e JS - TO DO
