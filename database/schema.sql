@@ -17,6 +17,7 @@ CREATE SEQUENCE dividas_seq;
 CREATE TABLE dividas (
     id_divida INT NOT NULL DEFAULT NEXTVAL('dividas_seq') PRIMARY KEY,
     id_cliente INT NOT NULL,
+    valor_divida DECIMAL(8, 2) NOT NULL,
     data_criacao DATE NOT NULL DEFAULT CURRENT_DATE,
     situacao BOOL NOT NULL,
     data_pagamento DATE,
