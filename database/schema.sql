@@ -1,7 +1,11 @@
--- Criando a sequência para a tabela clientes
-CREATE SEQUENCE clientes_seq;
+------------- VENDINHA ---------------
+/* Crie e se conecte a vendinha,
+depois rode os create tables abaixo */
+CREATE DATABASE vendinha;
 
--- Criando a tabela clientes
+------------- CLIENTES ---------------
+
+CREATE SEQUENCE clientes_seq;
 CREATE TABLE clientes (
     id_cliente INT NOT NULL DEFAULT NEXTVAL('clientes_seq') PRIMARY KEY,
     nome_completo VARCHAR(30) NOT NULL,
@@ -10,10 +14,9 @@ CREATE TABLE clientes (
     email VARCHAR(50) NOT NULL UNIQUE
 );
 
--- Criando a sequência para a tabela dividas
-CREATE SEQUENCE dividas_seq;
+------------- DÍVIDAS ---------------
 
--- Criando a tabela dividas
+CREATE SEQUENCE dividas_seq;
 CREATE TABLE dividas (
     id_divida INT NOT NULL DEFAULT NEXTVAL('dividas_seq') PRIMARY KEY,
     id_cliente INT NOT NULL,
