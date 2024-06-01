@@ -14,5 +14,6 @@
 * **id_cliente** : `INT` (chave estrangeira, não nula, referência à tabela `clientes`).
 * **data_criacao** : `DATE` (não nula, valor padrão `CURRENT_DATE`).
 * **situacao** : `BOOL` (não nula).
+* **valor** : `DECIMAL(8, 2)` (não nulo).
 * **data_pagamento** : `DATE` (pode ser nula).
 * **descricao** : `VARCHAR(255)` (não nulo).

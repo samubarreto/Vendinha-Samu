@@ -1,8 +1,7 @@
-Estrutura de pastas a ser aplicada em breve:
-
 Vendinha-Fullstack-Interfocus/
 ├── docs/
 │   ├── proposta.pdf
+│   ├── foldersstruct.txt
 │   ├── CasosDeTeste.md
 ├── src/
 │   ├── backend/
@@ -10,5 +9,10 @@ Vendinha-Fullstack-Interfocus/
 │   ├── frontend/
 │   │   ├── ... (código fonte do frontend em HTML, CSS, JS, ReactJS)
 ├── database/
+│   ├── anotacoes.md
+│   ├── insert_clientes.sql
+│   ├── insert_dividas.sql
 │   ├── schema.sql
+│   ├── dqls.sql
+│   ├── DED.png
 ├── README.md
