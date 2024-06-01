@@ -1,8 +1,21 @@
 # Vendinha Fullstack Interfocus 😎 Samuel Barreto
 
-## Projeto feito para estágio na Interfocus.
+### **FAZER (TO DO)**
 
-### É um sistema de gerenciamento de dívidas de clientes que inclui:
+1. [X] Organizar o ínicio do README.md, com as regras e requisitos já primeiramente analisados - DONE
+2. [X] Montar casos de teste baseados nos requisitos apresentados - DONE
+3. [X] Montar o diagrama geral da aplicação no [MIRO](https://miro.com/pt/mapeamento-processos/) - DONE
+4. [X] Aprender melhor o pgAdmin ([Tutorial 1](https://www.youtube.com/watch?v=WFT5MaZN6g4&ab_channel=DatabaseStar), [Tutorial 2](https://www.youtube.com/watch?v=o23LBJ-9jsU&ab_channel=AlimonPito)) - DONE
+5. [X] Gerar scripts.sql das Tabelas Clientes e Dívidas - DONE
+6. [X] Aplicar o schema num Postgres em localhost no pgAdmin - DONE
+7. [ ] Fazer a API em ASP.NET e o mapeamento das tabelas com o NHibernate - TO DO
+8. [ ] Prototipar as interfaces do Frontend - TO DO
+9. [ ] Aplicar o protótipo e codar as interfaces com HTML, CSS e JS - TO DO
+1. [ ] Testar a aplicação baseado nos casos préviamente estabelecidos - TO DO
+1. [ ] Documentar o motivo de uso das Libs - TO DO
+1. [ ] Documentar as instruções de uso da aplicação Vendinha Fullstack Interfocus 😎 - TO DO
+
+### Projeto feito para estágio na Interfocus, é um sistema de gerenciamento de dívidas de clientes que inclui:
 
 1. Interface web com HTML, CSS E JS:
    1. ReactJS está permitido
@@ -47,21 +60,6 @@
   * Deve ser possível marcar uma dívida como paga
   * Deve aparecer a soma das dívidas de um cliente
   * A somatória de dívidas não deve ultrapassar 200 reais
-
-### **FAZER (TO DO)**
-
-1. [X] Organizar o ínicio do README.md, com as regras e requisitos já primeiramente analisados - DONE
-2. [X] Montar casos de teste baseados nos requisitos apresentados - DONE
-3. [X] Montar o diagrama geral da aplicação no [MIRO](https://miro.com/pt/mapeamento-processos/) - DONE
-4. [X] Aprender melhor o pgAdmin ([Tutorial 1](https://www.youtube.com/watch?v=WFT5MaZN6g4&ab_channel=DatabaseStar), [Tutorial 2](https://www.youtube.com/watch?v=o23LBJ-9jsU&ab_channel=AlimonPito)) - DONE
-5. [X] Gerar scripts.sql das Tabelas Clientes e Dívidas - DONE
-6. [X] Aplicar o schema num Postgres em localhost no pgAdmin - DONE
-7. [ ] Fazer a API em ASP.NET e o mapeamento das tabelas com o NHibernate - TO DO
-8. [ ] Prototipar as interfaces do Frontend - TO DO
-9. [ ] Aplicar o protótipo e codar as interfaces com HTML, CSS e JS - TO DO
-1. [ ] Testar a aplicação baseado nos casos préviamente estabelecidos - TO DO
-1. [ ] Documentar o motivo de uso das Libs - TO DO
-1. [ ] Documentar as instruções de uso da aplicação Vendinha Fullstack Interfocus 😎 - TO DO
 
 ### Motivo de uso das libs
 
