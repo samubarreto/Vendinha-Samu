@@ -3,11 +3,10 @@ Vendinha-Fullstack-Interfocus/
 │   ├── proposta.pdf
 │   ├── foldersstruct.txt
 │   ├── CasosDeTeste.md
-├── src/
-│   ├── backend/
-│   │   ├── ... (código fonte da API em ASP.NET)
-│   ├── frontend/
-│   │   ├── ... (código fonte do frontend em HTML, CSS, JS, ReactJS)
+├── Vendinha-Samu.Api/
+│   ├── ... (código fonte da API em ASP.NET)
+├── Frontend/
+│   ├── ... (código fonte do frontend em HTML, CSS, JS, ReactJS)
 ├── database/
 │   ├── anotacoes.md
 │   ├── insert_clientes.sql
