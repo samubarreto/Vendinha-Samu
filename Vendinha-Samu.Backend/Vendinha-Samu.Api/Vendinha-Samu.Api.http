@@ -1,0 +1,6 @@
+@Vendinha_Samu.Api_HostAddress = http://localhost:5093
+
+GET {{Vendinha_Samu.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

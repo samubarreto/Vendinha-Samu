@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vendinha-Samu.Console", "Vendinha-Samu.Console\Vendinha-Samu.Console.csproj", "{78F61E3D-9303-4341-B5A9-DC9923E07A15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vendinha-Samu.Api", "Vendinha-Samu.Api\Vendinha-Samu.Api.csproj", "{ED7DC270-9632-49B7-BEEE-ACF88B938D1C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{78F61E3D-9303-4341-B5A9-DC9923E07A15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78F61E3D-9303-4341-B5A9-DC9923E07A15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78F61E3D-9303-4341-B5A9-DC9923E07A15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78F61E3D-9303-4341-B5A9-DC9923E07A15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED7DC270-9632-49B7-BEEE-ACF88B938D1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED7DC270-9632-49B7-BEEE-ACF88B938D1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED7DC270-9632-49B7-BEEE-ACF88B938D1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED7DC270-9632-49B7-BEEE-ACF88B938D1C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5D3C0291-C1D6-4924-A4A2-2C2614E1F5B8}
+	EndGlobalSection
+EndGlobal
