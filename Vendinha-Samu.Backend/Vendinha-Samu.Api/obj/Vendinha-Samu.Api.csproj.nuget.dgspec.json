@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\samub\\OneDrive\\Área de Trabalho\\code\\13.Vendinha-Fullstack-Interfocus\\Vendinha-Samu.Backend\\Vendinha-Samu.Api\\Vendinha-Samu.Api.csproj": {}
+    "C:\\Users\\Interfocus\\Desktop\\clones\\Vendinha-Fullstack-Interfocus\\Vendinha-Samu.Backend\\Vendinha-Samu.Api\\Vendinha-Samu.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\samub\\OneDrive\\Área de Trabalho\\code\\13.Vendinha-Fullstack-Interfocus\\Vendinha-Samu.Backend\\Vendinha-Samu.Api\\Vendinha-Samu.Api.csproj": {
+    "C:\\Users\\Interfocus\\Desktop\\clones\\Vendinha-Fullstack-Interfocus\\Vendinha-Samu.Backend\\Vendinha-Samu.Api\\Vendinha-Samu.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\samub\\OneDrive\\Área de Trabalho\\code\\13.Vendinha-Fullstack-Interfocus\\Vendinha-Samu.Backend\\Vendinha-Samu.Api\\Vendinha-Samu.Api.csproj",
+        "projectUniqueName": "C:\\Users\\Interfocus\\Desktop\\clones\\Vendinha-Fullstack-Interfocus\\Vendinha-Samu.Backend\\Vendinha-Samu.Api\\Vendinha-Samu.Api.csproj",
         "projectName": "Vendinha-Samu.Api",
-        "projectPath": "C:\\Users\\samub\\OneDrive\\Área de Trabalho\\code\\13.Vendinha-Fullstack-Interfocus\\Vendinha-Samu.Backend\\Vendinha-Samu.Api\\Vendinha-Samu.Api.csproj",
-        "packagesPath": "C:\\Users\\samub\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\samub\\OneDrive\\Área de Trabalho\\code\\13.Vendinha-Fullstack-Interfocus\\Vendinha-Samu.Backend\\Vendinha-Samu.Api\\obj\\",
+        "projectPath": "C:\\Users\\Interfocus\\Desktop\\clones\\Vendinha-Fullstack-Interfocus\\Vendinha-Samu.Backend\\Vendinha-Samu.Api\\Vendinha-Samu.Api.csproj",
+        "packagesPath": "C:\\Users\\Interfocus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Interfocus\\Desktop\\clones\\Vendinha-Fullstack-Interfocus\\Vendinha-Samu.Backend\\Vendinha-Samu.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\samub\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Interfocus\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

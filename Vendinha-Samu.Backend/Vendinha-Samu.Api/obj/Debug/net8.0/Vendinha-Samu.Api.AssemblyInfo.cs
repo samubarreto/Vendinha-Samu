@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Vendinha-Samu.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0c73b804410308e872237216f27ff6a8209d1658")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+46e070df6abd277281fa7dc24320b7b5198294ab")]
 [assembly: System.Reflection.AssemblyProductAttribute("Vendinha-Samu.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Vendinha-Samu.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
