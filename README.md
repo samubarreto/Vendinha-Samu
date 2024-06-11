@@ -9,8 +9,9 @@
 5. [X] Gerar scripts.sql das Tabelas Clientes e Dívidas - DONE
 6. [X] Aplicar o schema num Postgres em localhost no pgAdmin - DONE
 7. [ ] Fazer a API em ASP.NET + Mapeamento das entidades com o NHibernate - IN PROGRESS
-8. [ ] Prototipar as interfaces do Frontend - TO DO
-9. [ ] Aplicar o protótipo e codar as interfaces com HTML, CSS e JS - TO DO
+8. [ ] Preparar Collection no Postman bonitinha pra conseguir testar os endpoints um a um - TO DO
+9. [ ] Prototipar as interfaces do Frontend - TO DO
+1. [ ] Aplicar o protótipo e codar as interfaces com HTML, CSS e JS - TO DO
 1. [ ] Testar a aplicação baseado nos casos préviamente estabelecidos - TO DO
 1. [ ] Documentar o motivo de uso das Libs - TO DO
 1. [ ] Documentar as instruções de uso da aplicação Vendinha Fullstack Interfocus 😎 - TO DO
