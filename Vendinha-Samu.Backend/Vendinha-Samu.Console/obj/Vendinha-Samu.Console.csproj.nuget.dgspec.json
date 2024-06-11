@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\samub\\OneDrive\\Área de Trabalho\\code\\13.Vendinha-Fullstack-Interfocus\\Vendinha-Samu.Backend\\Vendinha-Samu.Console\\Vendinha-Samu.Console.csproj": {}
+    "C:\\Users\\samub\\OneDrive\\Área de Trabalho\\code\\13.Vendinha-Fullstack-Interfocus\\Vendinha-Samu.Backend\\Vendinha-Samu.Console\\Vendinha-Samu.Console.csproj": {}
   },
   "projects": {
-    "c:\\Users\\samub\\OneDrive\\Área de Trabalho\\code\\13.Vendinha-Fullstack-Interfocus\\Vendinha-Samu.Backend\\Vendinha-Samu.Console\\Vendinha-Samu.Console.csproj": {
+    "C:\\Users\\samub\\OneDrive\\Área de Trabalho\\code\\13.Vendinha-Fullstack-Interfocus\\Vendinha-Samu.Backend\\Vendinha-Samu.Console\\Vendinha-Samu.Console.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\samub\\OneDrive\\Área de Trabalho\\code\\13.Vendinha-Fullstack-Interfocus\\Vendinha-Samu.Backend\\Vendinha-Samu.Console\\Vendinha-Samu.Console.csproj",
+        "projectUniqueName": "C:\\Users\\samub\\OneDrive\\Área de Trabalho\\code\\13.Vendinha-Fullstack-Interfocus\\Vendinha-Samu.Backend\\Vendinha-Samu.Console\\Vendinha-Samu.Console.csproj",
         "projectName": "Vendinha-Samu.Console",
-        "projectPath": "c:\\Users\\samub\\OneDrive\\Área de Trabalho\\code\\13.Vendinha-Fullstack-Interfocus\\Vendinha-Samu.Backend\\Vendinha-Samu.Console\\Vendinha-Samu.Console.csproj",
+        "projectPath": "C:\\Users\\samub\\OneDrive\\Área de Trabalho\\code\\13.Vendinha-Fullstack-Interfocus\\Vendinha-Samu.Backend\\Vendinha-Samu.Console\\Vendinha-Samu.Console.csproj",
         "packagesPath": "C:\\Users\\samub\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\samub\\OneDrive\\Área de Trabalho\\code\\13.Vendinha-Fullstack-Interfocus\\Vendinha-Samu.Backend\\Vendinha-Samu.Console\\obj\\",
+        "outputPath": "C:\\Users\\samub\\OneDrive\\Área de Trabalho\\code\\13.Vendinha-Fullstack-Interfocus\\Vendinha-Samu.Backend\\Vendinha-Samu.Console\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -48,6 +49,20 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "target": "Package",
+              "version": "[2.2.8, )"
+            },
+            "NHibernate": {
+              "target": "Package",
+              "version": "[5.5.1, )"
+            },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -64,7 +79,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-configuration xmlns="urn:nhibernate-configuration-2.2">
+	<session-factory>
+		<property name="dialect">NHibernate.Dialect.PostgreSQLDialect</property>
+		<property name="connection.driver_class">NHibernate.Driver.NpgsqlDriver</property>
+		<property name="connection.connection_string">Server=127.0.0.1;Port=5432;Database=vendinha;User Id=postgres;Password=samu123</property>
+		<property name="show_sql">true</property>
+		<property name="use_proxy_validator">false</property>
+		<mapping assembly="Vendinha-Samu.Console"></mapping>
+	</session-factory>
+</hibernate-configuration>

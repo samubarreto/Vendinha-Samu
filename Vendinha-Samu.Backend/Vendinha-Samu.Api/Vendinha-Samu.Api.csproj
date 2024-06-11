@@ -7,4 +7,8 @@
     <RootNamespace>Vendinha_Samu.Api</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Vendinha-Samu.Console\Vendinha-Samu.Console.csproj" />
+  </ItemGroup>
+
 </Project>
