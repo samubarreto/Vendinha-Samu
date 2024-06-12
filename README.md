@@ -1,5 +1,10 @@
-
 # Vendinha Fullstack Interfocus 😎 Samuel Barreto
+
+## Sumário
+1. [TO-DO LIST](#to-do-list)
+2. [O que contém no projeto](#projeto-de-sistema-de-gerenciamento-de-dívidas-de-clientes-feito-para-estágio-na-interfocus-inclui)
+3. [Instruções de Uso/Execução](#instruções-de-usoexecução)
+4. [Motivo de uso das libs](#motivo-de-uso-das-libs)
 
 ## **TO-DO LIST**
 
@@ -23,7 +28,7 @@
 2. Uma WEB API REST, feita com ASP.NET em C#
 3. Um banco de dados PostgreSQL para permanencia de dados via ORM NHibernate
 
-## Intruções de Uso/Execução
+## Instruções de Uso/Execução
 
 * abc
 
