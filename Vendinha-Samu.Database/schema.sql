@@ -8,7 +8,7 @@ depois execute tudo abaixo de uma vez, sem medo nem dó*/
 CREATE SEQUENCE clientes_seq;
 CREATE TABLE clientes (
     id_cliente INT NOT NULL DEFAULT NEXTVAL('clientes_seq') PRIMARY KEY,
-    nome_completo VARCHAR(30) NOT NULL,
+    nome_completo VARCHAR(50) NOT NULL,
     cpf CHAR(11) NOT NULL UNIQUE,
     data_nascimento DATE,
     email VARCHAR(50) NOT NULL UNIQUE

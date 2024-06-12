@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using NHibernate;
+﻿using NHibernate;
 using System.ComponentModel.DataAnnotations;
 using Vendinha_Samu.Console.Entidades;
 
@@ -16,17 +11,61 @@ namespace Vendinha_Samu.Console.Services
         {
             this.session = session;
         }
-        //public bool Criar(Cliente cliente, out List<ValidationResult> erros)
-        //{
-        //    if (Validacao(cliente, out erros))
-        //    {
-        //        using var sessao = session.OpenSession();
-        //        using var transaction = sessao.BeginTransaction();
-        //        sessao.Save(cliente);
-        //        transaction.Commit();
-        //        return true;
-        //    }
-        //    return false;
-        //}
+        public bool Criar(Cliente cliente, out List<ValidationResult> erros)
+        {
+            if (GeneralServices.Validacao(cliente, out erros))
+            {
+                using var sessao = session.OpenSession();
+                using var transaction = sessao.BeginTransaction();
+                sessao.Save(cliente);
+                transaction.Commit();
+                return true;
+            }
+            return false;
+        }
+
+        public bool Editar(Cliente cliente, out List<ValidationResult> erros)
+        {
+            if (GeneralServices.Validacao(cliente, out erros))
+            {
+                using var sessao = session.OpenSession();
+                using var transaction = sessao.BeginTransaction();
+                sessao.Merge(cliente);
+                transaction.Commit();
+                return true;
+            }
+            return false;
+        }
+
+        public bool Excluir(int id, out List<ValidationResult> erros)
+        {
+            erros = new List<ValidationResult>();
+            using var sessao = session.OpenSession();
+            using var transaction = sessao.BeginTransaction();
+            var cliente = sessao.Query<Cliente>().Where(c => c.Id == id).FirstOrDefault();
+            if (cliente == null)
+            {
+                erros.Add(new ValidationResult("Registro não encontrado", new[] { "id" }));
+                return false;
+            }
+
+            sessao.Delete(cliente);
+            transaction.Commit();
+            return true;
+        }
+
+        public virtual List<Cliente> Listar()
+        {
+            using var sessao = session.OpenSession();
+            var clientes = sessao.Query<Cliente>().ToList();
+            return clientes;
+        }
+
+        public virtual List<Cliente> Listar(string busca)
+        {
+            using var sessao = session.OpenSession();
+            var clientes = sessao.Query<Cliente>().Where(c => c.NomeCompleto.Contains(busca) || c.Email.Contains(busca)).OrderBy(c => c.NomeCompleto).ToList();
+            return clientes;
+        }
     }
 }
