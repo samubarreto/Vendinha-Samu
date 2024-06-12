@@ -16,17 +16,17 @@ namespace Vendinha_Samu.Console.Services
         {
             this.session = session;
         }
-        public bool Criar(Cliente cliente, out List<ValidationResult> erros)
-        {
-            if (Validacao(cliente, out erros))
-            {
-                using var sessao = session.OpenSession();
-                using var transaction = sessao.BeginTransaction();
-                sessao.Save(cliente);
-                transaction.Commit();
-                return true;
-            }
-            return false;
-        }
+        //public bool Criar(Cliente cliente, out List<ValidationResult> erros)
+        //{
+        //    if (Validacao(cliente, out erros))
+        //    {
+        //        using var sessao = session.OpenSession();
+        //        using var transaction = sessao.BeginTransaction();
+        //        sessao.Save(cliente);
+        //        transaction.Commit();
+        //        return true;
+        //    }
+        //    return false;
+        //}
     }
 }

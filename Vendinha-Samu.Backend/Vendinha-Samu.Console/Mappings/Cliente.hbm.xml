@@ -1,1 +1,18 @@
-﻿<?xml version="1.0" encoding="utf-8" ?> 
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Vendinha_Samu.Console"
+                   namespace="Vendinha_Samu.Console.Entidades">
+
+	<class name="Cliente" table="clientes">
+		<id name="Id" column="id_cliente" type="int">
+			<generator class="sequence" >
+				<param name="sequence">clientes_seq</param>
+			</generator>
+		</id>
+		<property name="NomeCompleto" column="nome_completo" type="string" length="50"/>
+		<property name="Cpf" column="cpf" type="string" length="11"/>
+		<property name="DataNascimento" column="data_nascimento" type="date"/>
+		<property name="Email" column="email" type="string" length="50"/>
+	</class>
+
+</hibernate-mapping>

@@ -1,1 +1,20 @@
-﻿<?xml version="1.0" encoding="utf-8" ?> 
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Vendinha_Samu.Console"
+                   namespace="Vendinha_Samu.Console.Entidades">
+
+	<class name="Divida" table="dividas">
+		<id name="IdDivida" column="id_divida" type="int">
+			<generator class="sequence" >
+				<param name="sequence">dividas_seq</param>
+			</generator>
+		</id>
+		<property name="IdCliente" column="id_cliente" type="int"/>
+		<property name="Valor" column="valor_divida" type="decimal"/>
+		<property name="DataCriacao" column="data_criacao" type="date"/>
+		<property name="Situacao" column="situacao" type="bool"/>
+		<property name="DataPagamento" column="data_pagamento" type="date"/>
+		<property name="Descricao" column="descricao" type="string" length="255"/>
+	</class>
+
+</hibernate-mapping>
