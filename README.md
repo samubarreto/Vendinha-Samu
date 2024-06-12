@@ -1,3 +1,4 @@
+
 # Vendinha Fullstack Interfocus 😎 Samuel Barreto
 
 ## **TO-DO LIST**

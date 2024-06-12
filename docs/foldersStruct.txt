@@ -1,16 +1,20 @@
 Vendinha-Fullstack-Interfocus/
-├── docs/
+├── Docs/
 │   ├── proposta.pdf
 │   ├── foldersstruct.txt
-│   ├── CasosDeTeste.md
+│   ├── anotacoes.md
+│   ├── DiagramaGeral.pdf
+│   ├── Tests.md
 ├── Vendinha-Samu.Backend/
+│   ├── Vendinha-Samu.Backend.sln/
+│   ├── ├── ... (Solution)
 │   ├── Vendinha-Samu.Api/
 │   ├── ├── ... (código fonte da API em ASP.NET e Controllers)
 │   ├── Vendinha-Samu.Console/
 │   ├── ├── ... (Entidades, Mappings, Services e Connection String)
-├── Frontend/
+├── Vendinha-Samu.Frontend/
 │   ├── ... (código fonte do frontend em HTML, CSS, JS, ReactJS)
-├── database/
+├── Vendinha-Samu.Database/
 │   ├── anotacoes.md
 │   ├── insert_clientes.sql
 │   ├── insert_dividas.sql

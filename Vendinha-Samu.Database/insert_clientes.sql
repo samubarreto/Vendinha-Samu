@@ -51,3 +51,5 @@ INSERT INTO clientes (nome_completo, cpf, data_nascimento, email) VALUES
 ('Cliente 48', '11262988080', '1985-03-01', 'cliente48@teste.com'),
 ('Cliente 49', '91305474074', '1986-04-01', 'cliente49@teste.com'),
 ('Cliente 50', '62452277045', '1987-05-01', 'cliente50@teste.com');
+
+$$ LANGUAGE plpgsql;

@@ -77,3 +77,5 @@ LIMIT
     10
 OFFSET
     10;
+
+$$ LANGUAGE plpgsql;
