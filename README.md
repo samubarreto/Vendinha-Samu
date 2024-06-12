@@ -1,12 +1,12 @@
 # Vendinha Fullstack Interfocus 😎 Samuel Barreto
 
 ## Sumário
-1. [TO-DO LIST](#to-do-list)
-2. [O que contém no projeto](#projeto-de-sistema-de-gerenciamento-de-dívidas-de-clientes-feito-para-estágio-na-interfocus-inclui)
-3. [Instruções de Uso/Execução](#instruções-de-usoexecução)
-4. [Motivo de uso das libs](#motivo-de-uso-das-libs)
+1. [TO-DO LIST](#1-to-do-list)
+2. [O que contém no projeto](#2-projeto-de-sistema-de-gerenciamento-de-dívidas-de-clientes-feito-para-estágio-na-interfocus-inclui)
+3. [Instruções de Uso/Execução](#3-instruções-de-usoexecução)
+4. [Motivo de uso das libs](#4-motivo-de-uso-das-libs)
 
-## **TO-DO LIST**
+## [1] TO-DO LIST
 
 1. [X] Organizar o ínicio do README.md, com as regras e requisitos já préviamente analisados - DONE
 2. [X] Montar casos de teste baseados nos requisitos apresentados - DONE
@@ -22,16 +22,16 @@
 1. [ ] Documentar o motivo de uso das Libs - TO DO
 1. [ ] Documentar as instruções de uso da aplicação Vendinha Fullstack Interfocus 😎 - TO DO
 
-## Projeto de sistema de gerenciamento de dívidas de clientes feito para estágio na Interfocus, inclui:
+## [2] Projeto de sistema de gerenciamento de dívidas de clientes feito para estágio na Interfocus, inclui:
 
 1. Interface web com HTML, CSS, JS e REACT.JS
 2. Uma WEB API REST, feita com ASP.NET em C#
 3. Um banco de dados PostgreSQL para permanencia de dados via ORM NHibernate
 
-## Instruções de Uso/Execução
+## [3] Instruções de Uso/Execução
 
 * abc
 
-## Motivo de uso das libs
+## [4] Motivo de uso das libs
 
 * abc
