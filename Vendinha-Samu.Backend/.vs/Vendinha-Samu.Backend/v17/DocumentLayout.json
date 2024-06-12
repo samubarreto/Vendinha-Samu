@@ -1,12 +1,37 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\samub\\OneDrive\\\u00C1rea de Trabalho\\code\\13.Vendinha-Fullstack-Interfocus\\Vendinha-Samu.Backend\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{78F61E3D-9303-4341-B5A9-DC9923E07A15}|Vendinha-Samu.Console\\Vendinha-Samu.Console.csproj|c:\\users\\samub\\onedrive\\\u00E1rea de trabalho\\code\\13.vendinha-fullstack-interfocus\\vendinha-samu.backend\\vendinha-samu.console\\entidades\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78F61E3D-9303-4341-B5A9-DC9923E07A15}|Vendinha-Samu.Console\\Vendinha-Samu.Console.csproj|solutionrelative:vendinha-samu.console\\entidades\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Cliente.cs",
+              "DocumentMoniker": "C:\\Users\\samub\\OneDrive\\\u00C1rea de Trabalho\\code\\13.Vendinha-Fullstack-Interfocus\\Vendinha-Samu.Backend\\Vendinha-Samu.Console\\Entidades\\Cliente.cs",
+              "RelativeDocumentMoniker": "Vendinha-Samu.Console\\Entidades\\Cliente.cs",
+              "ToolTip": "C:\\Users\\samub\\OneDrive\\\u00C1rea de Trabalho\\code\\13.Vendinha-Fullstack-Interfocus\\Vendinha-Samu.Backend\\Vendinha-Samu.Console\\Entidades\\Cliente.cs",
+              "RelativeToolTip": "Vendinha-Samu.Console\\Entidades\\Cliente.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T02:40:42.973Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
