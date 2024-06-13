@@ -14,17 +14,24 @@ namespace Vendinha_Samu.Console.Services
         {
             this.session = session;
         }
-        public bool Criar(Cliente cliente, out List<ValidationResult> erros)
+        public string Criar(Cliente cliente, out List<ValidationResult> erros)
         {
             if (GeneralServices.Validacao(cliente, out erros))
             {
                 using var sessao = session.OpenSession();
                 using var transaction = sessao.BeginTransaction();
                 sessao.Save(cliente);
-                transaction.Commit();
-                return true;
+                try
+                {
+                    transaction.Commit();
+                    return "Ok";
+                } catch (Exception ex)
+                {
+                    return $"{ex.Message}";
+                }
+                
             }
-            return false;
+            return "Erro ao Inserir";
         }
 
         public bool Editar(Cliente cliente, out List<ValidationResult> erros)

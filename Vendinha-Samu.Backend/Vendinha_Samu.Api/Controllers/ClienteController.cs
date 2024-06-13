@@ -30,15 +30,14 @@ namespace Vendinha_Samu.Api.Controllers
                 return BadRequest(ModelState);
             }
 
-            var sucesso = clienteService.Criar(cliente,
-                out List<ValidationResult> erros);
-            if (sucesso)
+            var retornoCriacao = clienteService.Criar(cliente, out List<ValidationResult> erros);
+            if (retornoCriacao == "Ok")
             {
-                return Ok(cliente);
+                return Ok($"Cliente {cliente.NomeCompleto} cadastrado!");
             }
             else
             {
-                return UnprocessableEntity(erros);
+                return UnprocessableEntity($"Erro ao cadastrar: {retornoCriacao}");
             }
         }
 
