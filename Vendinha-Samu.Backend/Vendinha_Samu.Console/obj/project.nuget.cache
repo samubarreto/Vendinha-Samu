@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "rLnPI4mcvE970UMVr3Sdx1E1iMower4U4KHlVEVD0hbQokgFABmKx9kFCvqAW+YIT0FgPI3ATwJsEZoouJARdg==",
+  "dgSpecHash": "unCLTrz4Q5dSWXA4JxnCqLkOHJcs1UctETcdF4BStVB06yR4+f+2toTyyw7I5ceZ31uHJz0UCeAWEr8ErVeZ5A==",
   "success": true,
   "projectFilePath": "C:\\Users\\Interfocus\\Desktop\\clones\\Vendinha-Fullstack-Interfocus\\Vendinha-Samu.Backend\\Vendinha_Samu.Console\\Vendinha_Samu.Console.csproj",
   "expectedPackageFiles": [
@@ -48,11 +48,7 @@
     "C:\\Users\\Interfocus\\.nuget\\packages\\system.text.encoding\\4.3.0\\system.text.encoding.4.3.0.nupkg.sha512",
     "C:\\Users\\Interfocus\\.nuget\\packages\\system.threading\\4.0.11\\system.threading.4.0.11.nupkg.sha512",
     "C:\\Users\\Interfocus\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
-    "C:\\Users\\Interfocus\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512",
-    "C:\\Users\\Interfocus\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.1\\microsoft.netcore.app.ref.8.0.1.nupkg.sha512",
-    "C:\\Users\\Interfocus\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.1\\microsoft.windowsdesktop.app.ref.8.0.1.nupkg.sha512",
-    "C:\\Users\\Interfocus\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.1\\microsoft.aspnetcore.app.ref.8.0.1.nupkg.sha512",
-    "C:\\Users\\Interfocus\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\8.0.1\\microsoft.netcore.app.host.win-x64.8.0.1.nupkg.sha512"
+    "C:\\Users\\Interfocus\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }

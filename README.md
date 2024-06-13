@@ -1,6 +1,7 @@
 # Vendinha Fullstack Interfocus 😎 Samuel Barreto
 
 ## Sumário
+
 1. [TO-DO LIST](#1-to-do-list)
 2. [O que contém no projeto](#2-projeto-de-sistema-de-gerenciamento-de-dívidas-de-clientes-feito-para-estágio-na-interfocus-inclui)
 3. [Instruções de Uso/Execução](#3-instruções-de-usoexecução)
@@ -17,13 +18,15 @@
 7. [X] /Console/Entidades - DONE
 8. [X] /Console/Mappings - DONE
 9. [X] /Console/Services - DONE
-10. [ ] /Api/Controllers - IN PROGRESS
-11. [ ] Preparar Collection no Postman bonitinha pra conseguir testar os endpoints um a um - TO DO
-12. [ ] Prototipar as interfaces do Frontend - TO DO
-13. [ ] Aplicar o protótipo e codar as interfaces com HTML, CSS, JS e React - TO DO
-14. [ ] Testar a aplicação baseado nos casos préviamente estabelecidos - TO DO
-15. [ ] Documentar o motivo de uso das Libs - TO DO
-16. [ ] Documentar as instruções de uso da aplicação Vendinha Fullstack Interfocus 😎 - TO DO
+1. [X] /Api/ClienteController - DONE
+1. [ ] Preparar Collection no Postman bonitinha pra conseguir testar os endpoints de Cliente - IN PROGRESS
+1. [ ] /Api/DividaController - TO DO
+1. [ ] Preparar Collection no Postman bonitinha pra conseguir testar os endpoints de Dívida - TO DO
+1. [ ] Prototipar as interfaces do Frontend - TO DO
+1. [ ] Aplicar o protótipo e codar as interfaces com HTML, CSS, JS e React - TO DO
+1. [ ] Testar a aplicação baseado nos casos préviamente estabelecidos - TO DO
+1. [ ] Documentar o motivo de uso das Libs - TO DO
+1. [ ] Documentar as instruções de uso da aplicação Vendinha Fullstack Interfocus 😎 - TO DO
 
 ## [2] Projeto de sistema de gerenciamento de dívidas de clientes feito para estágio na Interfocus, inclui:
 
