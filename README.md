@@ -22,11 +22,18 @@
 * [X] /Api/ClienteController READ [COLLECTION NO POSTMAN] - DONE
 * [ ] /Api/ClienteController CREATE - IN PROGRESS
 * [ ] /Api/ClienteController CREATE [COLLECTION NO POSTMAN] - IN PROGRESS
-* [ ] /Api/ClienteController UPDATE - IN PROGRESS
-* [ ] /Api/ClienteController UPDATE [COLLECTION NO POSTMAN] - IN PROGRESS
-* [ ] /Api/ClienteController DELETE - IN PROGRESS
-* [ ] /Api/ClienteController DELETE [COLLECTION NO POSTMAN] - IN PROGRESS
-* [ ] /Api/DividaController - TO DO
+* [ ] /Api/ClienteController UPDATE - TO DO
+* [ ] /Api/ClienteController UPDATE [COLLECTION NO POSTMAN] - TO DO
+* [ ] /Api/ClienteController DELETE - TO DO
+* [ ] /Api/ClienteController DELETE [COLLECTION NO POSTMAN] - TO DO
+* [ ] /Api/DividaController READ - TO DO
+* [ ] /Api/DividaController READ [COLLECTION NO POSTMAN] - TO DO
+* [ ] /Api/DividaController CREATE - TO DO
+* [ ] /Api/DividaController CREATE [COLLECTION NO POSTMAN] - TO DO
+* [ ] /Api/DividaController UPDATE - TO DO
+* [ ] /Api/DividaController UPDATE [COLLECTION NO POSTMAN] - TO DO
+* [ ] /Api/DividaController DELETE - TO DO
+* [ ] /Api/DividaController DELETE [COLLECTION NO POSTMAN] - TO DO
 * [ ] Preparar Collection no Postman bonitinha pra conseguir testar os endpoints de Dívida - TO DO
 * [ ] Prototipar as interfaces do Frontend - TO DO
 * [ ] Aplicar o protótipo e codar as interfaces com HTML, CSS, JS e React - TO DO
