@@ -1,6 +1,9 @@
 ﻿using NHibernate;
 using System.ComponentModel.DataAnnotations;
 using Vendinha_Samu.Console.Entidades;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Vendinha_Samu.Console.Services
 {
@@ -64,9 +67,20 @@ namespace Vendinha_Samu.Console.Services
         public virtual List<Cliente> Listar(string buscaCliente, int skip = 0, int pageSize = 0)
         {
             using var sessao = session.OpenSession();
-            var clientes = sessao.Query<Cliente>().Where(c => c.NomeCompleto.Contains(buscaCliente) ||
-                                                              c.Email.Contains(buscaCliente)).OrderBy(cliente => cliente.Id).ToList();
-            return clientes;
+            var consulta = sessao.Query<Cliente>().Where(c => c.NomeCompleto.Contains(buscaCliente) ||
+                                                              c.Email.Contains(buscaCliente) ||
+                                                              c.Cpf.Contains(buscaCliente))
+                                                              .OrderBy(cliente => cliente.Id)
+                                                              .AsEnumerable();
+            if (skip > 0)
+            {
+                consulta = consulta.Skip(skip);
+            }
+            if (pageSize > 0)
+            {
+                consulta = consulta.Take(pageSize);
+            }
+            return consulta.ToList();
         }
     }
 }
