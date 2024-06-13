@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Vendinha_Samu.Api.props" />
+</Project>

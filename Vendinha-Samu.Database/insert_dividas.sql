@@ -134,5 +134,3 @@ INSERT INTO dividas (id_cliente, valor_divida, situacao, descricao) VALUES
 
 (50, 45.00, FALSE, 'Compra Teste 50.1'),
 (50, 55.00, FALSE, 'Compra Teste 50.2');
-
-$$ LANGUAGE plpgsql;

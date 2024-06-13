@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Vendinha_Samu.Api.props" />
+</Project>
