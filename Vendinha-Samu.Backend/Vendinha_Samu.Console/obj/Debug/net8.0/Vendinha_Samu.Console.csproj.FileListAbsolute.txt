@@ -35,3 +35,40 @@ C:\Users\samub\OneDrive\Área de Trabalho\code\13.Vendinha-Fullstack-Interfocus\
 C:\Users\samub\OneDrive\Área de Trabalho\code\13.Vendinha-Fullstack-Interfocus\Vendinha-Samu.Backend\Vendinha_Samu.Console\obj\Debug\net8.0\Vendinha_Samu.Console.pdb
 C:\Users\samub\OneDrive\Área de Trabalho\code\13.Vendinha-Fullstack-Interfocus\Vendinha-Samu.Backend\Vendinha_Samu.Console\obj\Debug\net8.0\Vendinha_Samu.Console.genruntimeconfig.cache
 C:\Users\samub\OneDrive\Área de Trabalho\code\13.Vendinha-Fullstack-Interfocus\Vendinha-Samu.Backend\Vendinha_Samu.Console\obj\Debug\net8.0\ref\Vendinha_Samu.Console.dll
+C:\Users\Interfocus\Desktop\clones\Vendinha-Fullstack-Interfocus\Vendinha-Samu.Backend\Vendinha_Samu.Console\bin\Debug\net8.0\Vendinha_Samu.Console.exe
+C:\Users\Interfocus\Desktop\clones\Vendinha-Fullstack-Interfocus\Vendinha-Samu.Backend\Vendinha_Samu.Console\bin\Debug\net8.0\hibernate.cfg.xml
+C:\Users\Interfocus\Desktop\clones\Vendinha-Fullstack-Interfocus\Vendinha-Samu.Backend\Vendinha_Samu.Console\bin\Debug\net8.0\Vendinha_Samu.Console.deps.json
+C:\Users\Interfocus\Desktop\clones\Vendinha-Fullstack-Interfocus\Vendinha-Samu.Backend\Vendinha_Samu.Console\bin\Debug\net8.0\Vendinha_Samu.Console.runtimeconfig.json
+C:\Users\Interfocus\Desktop\clones\Vendinha-Fullstack-Interfocus\Vendinha-Samu.Backend\Vendinha_Samu.Console\bin\Debug\net8.0\Vendinha_Samu.Console.dll
+C:\Users\Interfocus\Desktop\clones\Vendinha-Fullstack-Interfocus\Vendinha-Samu.Backend\Vendinha_Samu.Console\bin\Debug\net8.0\Vendinha_Samu.Console.pdb
+C:\Users\Interfocus\Desktop\clones\Vendinha-Fullstack-Interfocus\Vendinha-Samu.Backend\Vendinha_Samu.Console\bin\Debug\net8.0\Antlr3.Runtime.dll
+C:\Users\Interfocus\Desktop\clones\Vendinha-Fullstack-Interfocus\Vendinha-Samu.Backend\Vendinha_Samu.Console\bin\Debug\net8.0\Iesi.Collections.dll
+C:\Users\Interfocus\Desktop\clones\Vendinha-Fullstack-Interfocus\Vendinha-Samu.Backend\Vendinha_Samu.Console\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Interfocus\Desktop\clones\Vendinha-Fullstack-Interfocus\Vendinha-Samu.Backend\Vendinha_Samu.Console\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Interfocus\Desktop\clones\Vendinha-Fullstack-Interfocus\Vendinha-Samu.Backend\Vendinha_Samu.Console\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Interfocus\Desktop\clones\Vendinha-Fullstack-Interfocus\Vendinha-Samu.Backend\Vendinha_Samu.Console\bin\Debug\net8.0\NHibernate.dll
+C:\Users\Interfocus\Desktop\clones\Vendinha-Fullstack-Interfocus\Vendinha-Samu.Backend\Vendinha_Samu.Console\bin\Debug\net8.0\Npgsql.dll
+C:\Users\Interfocus\Desktop\clones\Vendinha-Fullstack-Interfocus\Vendinha-Samu.Backend\Vendinha_Samu.Console\bin\Debug\net8.0\Remotion.Linq.dll
+C:\Users\Interfocus\Desktop\clones\Vendinha-Fullstack-Interfocus\Vendinha-Samu.Backend\Vendinha_Samu.Console\bin\Debug\net8.0\Remotion.Linq.EagerFetching.dll
+C:\Users\Interfocus\Desktop\clones\Vendinha-Fullstack-Interfocus\Vendinha-Samu.Backend\Vendinha_Samu.Console\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Interfocus\Desktop\clones\Vendinha-Fullstack-Interfocus\Vendinha-Samu.Backend\Vendinha_Samu.Console\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\Users\Interfocus\Desktop\clones\Vendinha-Fullstack-Interfocus\Vendinha-Samu.Backend\Vendinha_Samu.Console\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Interfocus\Desktop\clones\Vendinha-Fullstack-Interfocus\Vendinha-Samu.Backend\Vendinha_Samu.Console\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\Interfocus\Desktop\clones\Vendinha-Fullstack-Interfocus\Vendinha-Samu.Backend\Vendinha_Samu.Console\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Users\Interfocus\Desktop\clones\Vendinha-Fullstack-Interfocus\Vendinha-Samu.Backend\Vendinha_Samu.Console\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Interfocus\Desktop\clones\Vendinha-Fullstack-Interfocus\Vendinha-Samu.Backend\Vendinha_Samu.Console\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Interfocus\Desktop\clones\Vendinha-Fullstack-Interfocus\Vendinha-Samu.Backend\Vendinha_Samu.Console\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Interfocus\Desktop\clones\Vendinha-Fullstack-Interfocus\Vendinha-Samu.Backend\Vendinha_Samu.Console\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Interfocus\Desktop\clones\Vendinha-Fullstack-Interfocus\Vendinha-Samu.Backend\Vendinha_Samu.Console\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\Interfocus\Desktop\clones\Vendinha-Fullstack-Interfocus\Vendinha-Samu.Backend\Vendinha_Samu.Console\obj\Debug\net8.0\Vendinha_Samu.Console.csproj.AssemblyReference.cache
+C:\Users\Interfocus\Desktop\clones\Vendinha-Fullstack-Interfocus\Vendinha-Samu.Backend\Vendinha_Samu.Console\obj\Debug\net8.0\Vendinha_Samu.Console.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Interfocus\Desktop\clones\Vendinha-Fullstack-Interfocus\Vendinha-Samu.Backend\Vendinha_Samu.Console\obj\Debug\net8.0\Vendinha_Samu.Console.AssemblyInfoInputs.cache
+C:\Users\Interfocus\Desktop\clones\Vendinha-Fullstack-Interfocus\Vendinha-Samu.Backend\Vendinha_Samu.Console\obj\Debug\net8.0\Vendinha_Samu.Console.AssemblyInfo.cs
+C:\Users\Interfocus\Desktop\clones\Vendinha-Fullstack-Interfocus\Vendinha-Samu.Backend\Vendinha_Samu.Console\obj\Debug\net8.0\Vendinha_Samu.Console.csproj.CoreCompileInputs.cache
+C:\Users\Interfocus\Desktop\clones\Vendinha-Fullstack-Interfocus\Vendinha-Samu.Backend\Vendinha_Samu.Console\obj\Debug\net8.0\Vendinha_Samu.Console.sourcelink.json
+C:\Users\Interfocus\Desktop\clones\Vendinha-Fullstack-Interfocus\Vendinha-Samu.Backend\Vendinha_Samu.Console\obj\Debug\net8.0\Vendinha.CFB4C0B1.Up2Date
+C:\Users\Interfocus\Desktop\clones\Vendinha-Fullstack-Interfocus\Vendinha-Samu.Backend\Vendinha_Samu.Console\obj\Debug\net8.0\Vendinha_Samu.Console.dll
+C:\Users\Interfocus\Desktop\clones\Vendinha-Fullstack-Interfocus\Vendinha-Samu.Backend\Vendinha_Samu.Console\obj\Debug\net8.0\refint\Vendinha_Samu.Console.dll
+C:\Users\Interfocus\Desktop\clones\Vendinha-Fullstack-Interfocus\Vendinha-Samu.Backend\Vendinha_Samu.Console\obj\Debug\net8.0\Vendinha_Samu.Console.pdb
+C:\Users\Interfocus\Desktop\clones\Vendinha-Fullstack-Interfocus\Vendinha-Samu.Backend\Vendinha_Samu.Console\obj\Debug\net8.0\Vendinha_Samu.Console.genruntimeconfig.cache
+C:\Users\Interfocus\Desktop\clones\Vendinha-Fullstack-Interfocus\Vendinha-Samu.Backend\Vendinha_Samu.Console\obj\Debug\net8.0\ref\Vendinha_Samu.Console.dll
