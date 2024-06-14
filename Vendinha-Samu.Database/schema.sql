@@ -7,11 +7,14 @@ depois execute tudo abaixo de uma vez, sem medo nem dó*/
 
 CREATE SEQUENCE clientes_seq;
 CREATE TABLE clientes (
-    id_cliente INT NOT NULL DEFAULT NEXTVAL('clientes_seq') PRIMARY KEY,
+    id_cliente INT NOT NULL DEFAULT NEXTVAL('clientes_seq'),
     nome_completo VARCHAR(50) NOT NULL,
     cpf CHAR(11) NOT NULL UNIQUE,
     data_nascimento DATE,
-    email VARCHAR(50) NOT NULL UNIQUE
+    email VARCHAR(50) NOT NULL UNIQUE,
+    CONSTRAINT pk_cliente PRIMARY KEY (id_cliente),
+    CONSTRAINT unique_cpf UNIQUE (cpf),
+	CONSTRAINT unique_email UNIQUE (email)
 );
 
 ------------- DÍVIDAS ---------------
@@ -19,14 +22,15 @@ CREATE TABLE clientes (
 
 CREATE SEQUENCE dividas_seq;
 CREATE TABLE dividas (
-    id_divida INT NOT NULL DEFAULT NEXTVAL('dividas_seq') PRIMARY KEY,
+    id_divida INT NOT NULL DEFAULT NEXTVAL('dividas_seq'),
     id_cliente INT NOT NULL,
     valor_divida DECIMAL(8, 2) NOT NULL,
     data_criacao DATE NOT NULL DEFAULT CURRENT_DATE,
     situacao BOOL NOT NULL,
     data_pagamento DATE,
     descricao VARCHAR(255) NOT NULL,
-    CONSTRAINT fk_cliente FOREIGN KEY (id_cliente) REFERENCES clientes (id_cliente)
+    CONSTRAINT fk_cliente FOREIGN KEY (id_cliente) REFERENCES clientes (id_cliente),
+    CONSTRAINT pk_divida PRIMARY KEY (id_divida)
 );
 
 --------------- FUNCTIONS --------------

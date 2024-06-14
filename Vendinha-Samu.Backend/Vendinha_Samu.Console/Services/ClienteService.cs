@@ -27,9 +27,17 @@ namespace Vendinha_Samu.Console.Services
                     return "Ok";
                 } catch (Exception ex)
                 {
-                    return $"{ex.Message}";
+                    if (ex.InnerException.Message.Contains("unique_cpf"))
+                    {
+                        return $"Erro ao cadastrar o Cliente {cliente.NomeCompleto}:\n\n-Este CPF já está cadastrado!";
+                    } else if (ex.InnerException.Message.Contains("unique_email"))
+                    {
+                        return $"Erro ao cadastrar o Cliente {cliente.NomeCompleto}:\n\n-Este Email já está cadastrado!";
+                    } else
+                    {
+                        return $"Erro ao cadastrar o Cliente {cliente.NomeCompleto}:\n\n-{ex.Message}";
+                    }
                 }
-                
             }
             return "Erro ao Inserir";
         }

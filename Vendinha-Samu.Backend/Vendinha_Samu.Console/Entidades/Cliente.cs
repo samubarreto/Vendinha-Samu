@@ -4,7 +4,6 @@ namespace Vendinha_Samu.Console.Entidades
 {
     public class Cliente
     {
-        [Required(ErrorMessage = "O Id é obrigatório")]
         public int Id { get; set; }
 
         [Required(ErrorMessage = "O Nome é obrigatório")]
