@@ -1,41 +1,58 @@
 # Vendinha Fullstack Interfocus 😎 Samuel Barreto
 
-## Sumário
-
-1. [TO-DO LIST](#1-to-do-list)
-2. [O que contém no projeto](#2-projeto-de-sistema-de-gerenciamento-de-dívidas-de-clientes-feito-para-estágio-na-interfocus-inclui)
-3. [Instruções de Uso/Execução](#3-instruções-de-usoexecução)
-4. [Motivo de uso das libs](#4-motivo-de-uso-das-libs)
+> * Sumário
+>
+> 1. [TO-DO LIST](#1-to-do-list)
+> 2. [O que contém no projeto](#2-projeto-de-sistema-de-gerenciamento-de-dívidas-de-clientes-feito-para-estágio-na-interfocus-inclui)
+> 3. [Instruções de Uso/Execução](#3-instruções-de-usoexecução)
+> 4. [Motivo de uso das libs](#4-motivo-de-uso-das-libs)
 
 ## [1] TO-DO LIST
+
+### [1.1] PLANEJAMENTO E TDD
 
 * [X] Organizar o ínicio do README.md, com as regras e requisitos já préviamente analisados - DONE
 * [X] Montar casos de teste baseados nos requisitos apresentados - DONE
 * [X] Montar o diagrama geral da aplicação no [MIRO](https://miro.com/pt/mapeamento-processos/) - DONE
 * [X] Aprender melhor o pgAdmin ([Tutorial](https://www.youtube.com/watch?v=WFT5MaZN6g4&ab_channel=DatabaseStar)) - DONE
+
+### [1.2] DATABASE
+
 * [X] Desenvolver schema.sql das Tabelas Clientes e Dívidas, inserts de exemplo para clientes e dívidas e dqls úteis - DONE
 * [X] Aplicar o schema num Postgres em localhost no pgAdmin pra ver no que dá - DONE
+
+### [1.3] BACKEND BASE
+
 * [X] /Console/Entidades - DONE
 * [X] /Console/Mappings - DONE
 * [X] /Console/Services - DONE
+
+#### [1.3.0] BACKEND ENDPOINTS CLIENTES
+
 * [X] /Api/ClienteController READ - DONE
-* [X] /Api/ClienteController READ [COLLECTION NO POSTMAN] - DONE
+* [X] /Api/ClienteController READ [+COLLECTION NO POSTMAN] - DONE
 * [X] /Api/ClienteController CREATE - DONE
-* [X] /Api/ClienteController CREATE [COLLECTION NO POSTMAN] - DONE
+* [X] /Api/ClienteController CREATE [+COLLECTION NO POSTMAN] - DONE
 * [X] /Api/ClienteController UPDATE - DONE
-* [X] /Api/ClienteController UPDATE [COLLECTION NO POSTMAN] - DONE
+* [X] /Api/ClienteController UPDATE [+COLLECTION NO POSTMAN] - DONE
 * [X] /Api/ClienteController DELETE - DONE
-* [X] /Api/ClienteController DELETE [COLLECTION NO POSTMAN] - DONE
-* [ ] /Api/ClienteController Refatoração dos retornos de erro, usar o validationresult certo - IN PROGRESS
+* [X] /Api/ClienteController DELETE [+COLLECTION NO POSTMAN] - DONE
+* [ ] Urgente, refatorar Email, não é NOT NULL e fazer checagem de Data de Nascimento < hoje no back e banco - TO DO
+* [ ] /Api/ClienteController Refatoração dos retornos de erro, usar o ValidationResult certo - TO DO
+
+#### [1.3.1] BACKEND ENDPOINTS DÍVIDAS
+
 * [ ] /Api/DividaController READ - TO DO
-* [ ] /Api/DividaController READ [COLLECTION NO POSTMAN] - TO DO
+* [ ] /Api/DividaController READ [+COLLECTION NO POSTMAN] - TO DO
 * [ ] /Api/DividaController CREATE - TO DO
-* [ ] /Api/DividaController CREATE [COLLECTION NO POSTMAN] - TO DO
+* [ ] /Api/DividaController CREATE [+COLLECTION NO POSTMAN] - TO DO
 * [ ] /Api/DividaController UPDATE - TO DO
-* [ ] /Api/DividaController UPDATE [COLLECTION NO POSTMAN] - TO DO
+* [ ] /Api/DividaController UPDATE [+COLLECTION NO POSTMAN] - TO DO
 * [ ] /Api/DividaController DELETE - TO DO
-* [ ] /Api/DividaController DELETE [COLLECTION NO POSTMAN] - TO DO
-* [ ] Preparar Collection no Postman bonitinha pra conseguir testar os endpoints de Dívida - TO DO
+* [ ] /Api/DividaController DELETE [+COLLECTION NO POSTMAN] - TO DO
+
+### [1.4] FRONTEND
+
 * [ ] Prototipar as interfaces do Frontend - TO DO
 * [ ] Aplicar o protótipo e codar as interfaces com HTML, CSS, JS e React - TO DO
 * [ ] Testar a aplicação baseado nos casos préviamente estabelecidos - TO DO
