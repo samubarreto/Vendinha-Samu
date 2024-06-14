@@ -14,7 +14,8 @@ namespace Vendinha_Samu.Console.Services
         {
             this.session = session;
         }
-        public string Criar(Cliente cliente, out List<ValidationResult> erros)
+
+        public bool Criar(Cliente cliente, out List<ValidationResult> erros)
         {
             if (GeneralServices.Validacao(cliente, out erros))
             {
@@ -24,25 +25,18 @@ namespace Vendinha_Samu.Console.Services
                 {
                     sessao.Save(cliente);
                     transaction.Commit();
-                    return "Ok";
-                } catch (Exception ex)
+                    return true;
+                }
+                catch (Exception ex)
                 {
-                    if (ex.InnerException.Message.Contains("unique_cpf"))
-                    {
-                        return $"Este CPF já está cadastrado!";
-                    } else if (ex.InnerException.Message.Contains("unique_email"))
-                    {
-                        return $"Este Email já está cadastrado!";
-                    } else
-                    {
-                        return $"Erro ao cadastrar o Cliente";
-                    }
+                    HandleException(ex, erros);
+                    return false;
                 }
             }
-            return string.Join(", ", erros.Select(e => e.ErrorMessage));
+            return false;
         }
 
-        public string Editar(Cliente cliente, out List<ValidationResult> erros)
+        public bool Editar(Cliente cliente, out List<ValidationResult> erros)
         {
             if (GeneralServices.Validacao(cliente, out erros))
             {
@@ -52,33 +46,23 @@ namespace Vendinha_Samu.Console.Services
                 var clienteExistente = sessao.Get<Cliente>(cliente.Id);
                 if (clienteExistente == null)
                 {
-                    return $"Este Cliente não existe!";
+                    erros.Add(new ValidationResult("Este Cliente não existe!"));
+                    return false;
                 }
 
                 try
                 {
                     sessao.Merge(cliente);
                     transaction.Commit();
-                    return "Ok";
+                    return true;
                 }
                 catch (Exception ex)
                 {
-                    if (ex.InnerException.Message.Contains("unique_cpf"))
-                    {
-                        //new ValidationResult("Cliente não existe.");
-                        return $"Este CPF já está cadastrado!";
-                    }
-                    else if (ex.InnerException.Message.Contains("unique_email"))
-                    {
-                        return $"Este Email já está cadastrado!";
-                    }
-                    else
-                    {
-                        return $"Erro ao editar o Cliente";
-                    }
+                    HandleException(ex, erros);
+                    return false;
                 }
             }
-            return string.Join(", ", erros.Select(e => e.ErrorMessage));
+            return false;
         }
 
         public bool Excluir(int id, out List<ValidationResult> erros)
@@ -122,6 +106,29 @@ namespace Vendinha_Samu.Console.Services
                 consulta = consulta.Take(pageSize);
             }
             return consulta.ToList();
+        }
+
+        private void HandleException(Exception ex, List<ValidationResult> erros)
+        {
+            if (ex.InnerException != null)
+            {
+                if (ex.InnerException.Message.Contains("unique_cpf"))
+                {
+                    erros.Add(new ValidationResult("Este CPF já está cadastrado!"));
+                }
+                else if (ex.InnerException.Message.Contains("unique_email"))
+                {
+                    erros.Add(new ValidationResult("Este Email já está cadastrado!"));
+                }
+                else
+                {
+                    erros.Add(new ValidationResult("Erro ao processar a operação."));
+                }
+            }
+            else
+            {
+                erros.Add(new ValidationResult("Erro ao processar a operação."));
+            }
         }
     }
 }

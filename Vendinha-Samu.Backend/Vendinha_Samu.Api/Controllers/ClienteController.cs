@@ -30,14 +30,14 @@ namespace Vendinha_Samu.Api.Controllers
                 return BadRequest(ModelState);
             }
 
-            var retornoCriacao = clienteService.Criar(cliente, out List<ValidationResult> erros);
-            if (retornoCriacao == "Ok")
+            var sucesso = clienteService.Criar(cliente, out List<ValidationResult> erros);
+            if (sucesso)
             {
                 return Ok($"Cliente {cliente.NomeCompleto} cadastrado!");
             }
             else
             {
-                return UnprocessableEntity($"Erro ao cadastrar: {retornoCriacao}");
+                return UnprocessableEntity(erros);
             }
         }
 
@@ -49,28 +49,28 @@ namespace Vendinha_Samu.Api.Controllers
                 return BadRequest(ModelState);
             }
 
-            var retornoEdicao = clienteService.Editar(cliente, out List<ValidationResult> erros);
-            if (retornoEdicao == "Ok")
+            var sucesso = clienteService.Editar(cliente, out List<ValidationResult> erros);
+            if (sucesso)
             {
                 return Ok($"Cliente {cliente.NomeCompleto} editado!");
             }
             else
             {
-                return UnprocessableEntity($"Erro ao editar: {retornoEdicao}");
+                return UnprocessableEntity(erros);
             }
         }
 
         [HttpDelete("{idcliente}")]
         public IActionResult Remover(int idcliente)
         {
-            var cliente = clienteService.Excluir(idcliente, out List<ValidationResult> erros);
-            if (erros.Count == 0)
+            var sucesso = clienteService.Excluir(idcliente, out List<ValidationResult> erros);
+            if (sucesso)
             {
-                return Ok(cliente);
+                return Ok($"Cliente com id {idcliente} removido com sucesso.");
             }
             else
             {
-                return NotFound(cliente);
+                return NotFound(erros);
             }
         }
     }

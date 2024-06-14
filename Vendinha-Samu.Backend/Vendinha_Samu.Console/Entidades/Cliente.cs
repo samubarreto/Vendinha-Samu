@@ -18,6 +18,6 @@ namespace Vendinha_Samu.Console.Entidades
         public required DateTime DataNascimento { get; set; }
 
         [StringLength(50, ErrorMessage = "O email não pode passar de 50 caractéres")]
-        public required string Email { get; set; }
+        public string Email { get; set; }
     }
 }
