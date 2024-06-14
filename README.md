@@ -34,7 +34,7 @@
 * [X] /Api/ClienteController DELETE [+COLLECTION NO POSTMAN] - DONE
 * [X] Urgente: Refatorar Email, não é NOT NULL, é NULLABLE, oreiei, não vi direito o requisito - DONE
 * [ ] Urgente: Fazer checagem de Data de Nascimento < hoje no back e banco - IN PROGRESS
-* [ ] /Api/ClienteController Refatoração dos retornos de erro, usar o ValidationResult certo - TO DO
+* [X] /Api/ClienteController Refatoração dos retornos de erro, usar o ValidationResult certo - DONE
 
 ##### [1.3.1] BACKEND ENDPOINTS DÍVIDAS
 
