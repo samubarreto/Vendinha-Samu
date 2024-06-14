@@ -4,6 +4,7 @@ using Vendinha_Samu.Console.Entidades;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Vendinha_Samu.Console.Services
 {
@@ -85,8 +86,15 @@ namespace Vendinha_Samu.Console.Services
         public virtual List<Cliente> Listar()
         {
             using var sessao = session.OpenSession();
-            var clientes = sessao.Query<Cliente>().OrderBy(c => c.Id).ToList();
-            return clientes;
+            try
+            {
+                var clientes = sessao.Query<Cliente>().OrderBy(c => c.Id).ToList();
+                return clientes;
+            }
+            catch (Exception)
+            {
+                return [];
+            }
         }
 
         public virtual List<Cliente> Listar(string buscaCliente, int skip = 0, int pageSize = 0)
