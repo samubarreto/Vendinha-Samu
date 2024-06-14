@@ -1,10 +1,10 @@
 # Vendinha Fullstack Interfocus 😎 Samuel Barreto
 
-> Sumário`<br>`
-> [·TO-DO LIST](#1-to-do-list)`<br>`
-> [·O que contém no projeto](#2-projeto-de-sistema-de-gerenciamento-de-dívidas-de-clientes-feito-para-estágio-na-interfocus-inclui)`<br>`
-> [·Instruções de Uso/Execução](#3-instruções-de-usoexecução)`<br>`
-> [·Motivo de uso das libs](#4-motivo-de-uso-das-libs)`<br>`
+> Sumário `<br>`
+> [·TO-DO LIST](#1-to-do-list) `<br>`
+> [·O que contém no projeto](#2-projeto-de-sistema-de-gerenciamento-de-dívidas-de-clientes-feito-para-estágio-na-interfocus-inclui) `<br>`
+> [·Instruções de Uso/Execução](#3-instruções-de-usoexecução) `<br>`
+> [·Motivo de uso das libs](#4-motivo-de-uso-das-libs) `<br>`
 
 ### [1] TO-DO LIST
 
@@ -48,7 +48,7 @@
 * [ ] Aplicar o protótipo e codar as interfaces com HTML, CSS, JS e ReactJS - TO DO
 * [ ] Chamar os endpoints corretamente para criação, edição, leitura e deleção de clientes e dívidas - TO DO
 
-#### [1.5] TESTES E DOCUMENTAÇÃO
+#### [1.5] TESTES, DOCUMENTAÇÃO E ENTREGA
 
 * [ ] Testar a aplicação baseado nos casos préviamente estabelecidos - TO DO
 * [ ] Documentar o motivo de uso das Libs - TO DO

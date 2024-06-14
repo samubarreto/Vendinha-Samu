@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\samub\\OneDrive\\Área de Trabalho\\code\\0.Vendinha-Fullstack-Interfocus\\Vendinha-Samu.Backend\\Vendinha_Samu.Console\\Vendinha_Samu.Console.csproj": {}
+    "C:\\Users\\Interfocus\\Desktop\\clones\\Vendinha-Fullstack-Interfocus\\Vendinha-Samu.Backend\\Vendinha_Samu.Console\\Vendinha_Samu.Console.csproj": {}
   },
   "projects": {
-    "C:\\Users\\samub\\OneDrive\\Área de Trabalho\\code\\0.Vendinha-Fullstack-Interfocus\\Vendinha-Samu.Backend\\Vendinha_Samu.Console\\Vendinha_Samu.Console.csproj": {
+    "C:\\Users\\Interfocus\\Desktop\\clones\\Vendinha-Fullstack-Interfocus\\Vendinha-Samu.Backend\\Vendinha_Samu.Console\\Vendinha_Samu.Console.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\samub\\OneDrive\\Área de Trabalho\\code\\0.Vendinha-Fullstack-Interfocus\\Vendinha-Samu.Backend\\Vendinha_Samu.Console\\Vendinha_Samu.Console.csproj",
+        "projectUniqueName": "C:\\Users\\Interfocus\\Desktop\\clones\\Vendinha-Fullstack-Interfocus\\Vendinha-Samu.Backend\\Vendinha_Samu.Console\\Vendinha_Samu.Console.csproj",
         "projectName": "Vendinha_Samu.Console",
-        "projectPath": "C:\\Users\\samub\\OneDrive\\Área de Trabalho\\code\\0.Vendinha-Fullstack-Interfocus\\Vendinha-Samu.Backend\\Vendinha_Samu.Console\\Vendinha_Samu.Console.csproj",
-        "packagesPath": "C:\\Users\\samub\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\samub\\OneDrive\\Área de Trabalho\\code\\0.Vendinha-Fullstack-Interfocus\\Vendinha-Samu.Backend\\Vendinha_Samu.Console\\obj\\",
+        "projectPath": "C:\\Users\\Interfocus\\Desktop\\clones\\Vendinha-Fullstack-Interfocus\\Vendinha-Samu.Backend\\Vendinha_Samu.Console\\Vendinha_Samu.Console.csproj",
+        "packagesPath": "C:\\Users\\Interfocus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Interfocus\\Desktop\\clones\\Vendinha-Fullstack-Interfocus\\Vendinha-Samu.Backend\\Vendinha_Samu.Console\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\samub\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Interfocus\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -79,7 +79,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
