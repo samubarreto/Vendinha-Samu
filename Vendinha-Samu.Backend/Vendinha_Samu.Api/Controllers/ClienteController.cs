@@ -49,18 +49,14 @@ namespace Vendinha_Samu.Api.Controllers
                 return BadRequest(ModelState);
             }
 
-            var sucesso = clienteService.Editar(cliente, out List<ValidationResult> erros);
-            if (sucesso)
+            var retornoEdicao = clienteService.Editar(cliente, out List<ValidationResult> erros);
+            if (retornoEdicao == "Ok")
             {
-                return Ok(cliente);
-            }
-            else if (erros.Count == 0)
-            {
-                return NotFound();
+                return Ok($"Cliente {cliente.NomeCompleto} editado!");
             }
             else
             {
-                return UnprocessableEntity(erros);
+                return UnprocessableEntity($"Erro ao editar: {retornoEdicao}");
             }
         }
 

@@ -20,39 +20,65 @@ namespace Vendinha_Samu.Console.Services
             {
                 using var sessao = session.OpenSession();
                 using var transaction = sessao.BeginTransaction();
-                sessao.Save(cliente);
                 try
                 {
+                    sessao.Save(cliente);
                     transaction.Commit();
                     return "Ok";
                 } catch (Exception ex)
                 {
                     if (ex.InnerException.Message.Contains("unique_cpf"))
                     {
-                        return $"Erro ao cadastrar o Cliente {cliente.NomeCompleto}:\n\n-Este CPF já está cadastrado!";
+                        return $"Este CPF já está cadastrado!";
                     } else if (ex.InnerException.Message.Contains("unique_email"))
                     {
-                        return $"Erro ao cadastrar o Cliente {cliente.NomeCompleto}:\n\n-Este Email já está cadastrado!";
+                        return $"Este Email já está cadastrado!";
                     } else
                     {
-                        return $"Erro ao cadastrar o Cliente {cliente.NomeCompleto}:\n\n-{ex.Message}";
+                        return $"Erro ao cadastrar o Cliente";
                     }
                 }
             }
-            return "Erro ao Inserir";
+            return string.Join(", ", erros.Select(e => e.ErrorMessage));
         }
 
-        public bool Editar(Cliente cliente, out List<ValidationResult> erros)
+        public string Editar(Cliente cliente, out List<ValidationResult> erros)
         {
             if (GeneralServices.Validacao(cliente, out erros))
             {
                 using var sessao = session.OpenSession();
                 using var transaction = sessao.BeginTransaction();
-                sessao.Merge(cliente);
-                transaction.Commit();
-                return true;
+
+                var clienteExistente = sessao.Get<Cliente>(cliente.Id);
+                if (clienteExistente == null)
+                {
+                    return $"Este Cliente não existe!";
+                }
+
+                try
+                {
+                    sessao.Merge(cliente);
+                    transaction.Commit();
+                    return "Ok";
+                }
+                catch (Exception ex)
+                {
+                    if (ex.InnerException.Message.Contains("unique_cpf"))
+                    {
+                        //new ValidationResult("Cliente não existe.");
+                        return $"Este CPF já está cadastrado!";
+                    }
+                    else if (ex.InnerException.Message.Contains("unique_email"))
+                    {
+                        return $"Este Email já está cadastrado!";
+                    }
+                    else
+                    {
+                        return $"Erro ao editar o Cliente";
+                    }
+                }
             }
-            return false;
+            return string.Join(", ", erros.Select(e => e.ErrorMessage));
         }
 
         public bool Excluir(int id, out List<ValidationResult> erros)

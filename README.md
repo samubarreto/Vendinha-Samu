@@ -20,12 +20,13 @@
 * [X] /Console/Services - DONE
 * [X] /Api/ClienteController READ - DONE
 * [X] /Api/ClienteController READ [COLLECTION NO POSTMAN] - DONE
-* [ ] /Api/ClienteController CREATE - IN PROGRESS
-* [ ] /Api/ClienteController CREATE [COLLECTION NO POSTMAN] - IN PROGRESS
-* [ ] /Api/ClienteController UPDATE - TO DO
-* [ ] /Api/ClienteController UPDATE [COLLECTION NO POSTMAN] - TO DO
-* [ ] /Api/ClienteController DELETE - TO DO
-* [ ] /Api/ClienteController DELETE [COLLECTION NO POSTMAN] - TO DO
+* [X] /Api/ClienteController CREATE - DONE
+* [X] /Api/ClienteController CREATE [COLLECTION NO POSTMAN] - DONE
+* [X] /Api/ClienteController UPDATE - DONE
+* [X] /Api/ClienteController UPDATE [COLLECTION NO POSTMAN] - DONE
+* [X] /Api/ClienteController DELETE - DONE
+* [X] /Api/ClienteController DELETE [COLLECTION NO POSTMAN] - DONE
+* [ ] /Api/ClienteController Refatoração dos retornos de erro, usar o validationresult certo - IN PROGRESS
 * [ ] /Api/DividaController READ - TO DO
 * [ ] /Api/DividaController READ [COLLECTION NO POSTMAN] - TO DO
 * [ ] /Api/DividaController CREATE - TO DO
