@@ -1,10 +1,10 @@
 # Vendinha Fullstack Interfocus 😎 Samuel Barreto
 
-> Sumário<br>
-> [·TO-DO LIST](#1-to-do-list)<br>
-> [·O que contém no projeto](#2-projeto-de-sistema-de-gerenciamento-de-dívidas-de-clientes-feito-para-estágio-na-interfocus-inclui)<br>
-> [·Instruções de Uso/Execução](#3-instruções-de-usoexecução)<br>
-> [·Motivo de uso das libs](#4-motivo-de-uso-das-libs)<br>
+> Sumário`<br>`
+> [·TO-DO LIST](#1-to-do-list)`<br>`
+> [·O que contém no projeto](#2-projeto-de-sistema-de-gerenciamento-de-dívidas-de-clientes-feito-para-estágio-na-interfocus-inclui)`<br>`
+> [·Instruções de Uso/Execução](#3-instruções-de-usoexecução)`<br>`
+> [·Motivo de uso das libs](#4-motivo-de-uso-das-libs)`<br>`
 
 ### [1] TO-DO LIST
 
@@ -28,35 +28,33 @@
 
 ##### [1.3.0] BACKEND ENDPOINTS CLIENTES
 
-* [X] /Api/ClienteController READ - DONE
 * [X] /Api/ClienteController READ [+COLLECTION NO POSTMAN] - DONE
-* [X] /Api/ClienteController CREATE - DONE
 * [X] /Api/ClienteController CREATE [+COLLECTION NO POSTMAN] - DONE
-* [X] /Api/ClienteController UPDATE - DONE
 * [X] /Api/ClienteController UPDATE [+COLLECTION NO POSTMAN] - DONE
-* [X] /Api/ClienteController DELETE - DONE
 * [X] /Api/ClienteController DELETE [+COLLECTION NO POSTMAN] - DONE
 * [ ] Urgente, refatorar Email, não é NOT NULL e fazer checagem de Data de Nascimento < hoje no back e banco - TO DO
 * [ ] /Api/ClienteController Refatoração dos retornos de erro, usar o ValidationResult certo - TO DO
 
 ##### [1.3.1] BACKEND ENDPOINTS DÍVIDAS
 
-* [ ] /Api/DividaController READ - TO DO
 * [ ] /Api/DividaController READ [+COLLECTION NO POSTMAN] - TO DO
-* [ ] /Api/DividaController CREATE - TO DO
 * [ ] /Api/DividaController CREATE [+COLLECTION NO POSTMAN] - TO DO
-* [ ] /Api/DividaController UPDATE - TO DO
 * [ ] /Api/DividaController UPDATE [+COLLECTION NO POSTMAN] - TO DO
-* [ ] /Api/DividaController DELETE - TO DO
 * [ ] /Api/DividaController DELETE [+COLLECTION NO POSTMAN] - TO DO
 
 #### [1.4] FRONTEND
 
 * [ ] Prototipar as interfaces do Frontend - TO DO
-* [ ] Aplicar o protótipo e codar as interfaces com HTML, CSS, JS e React - TO DO
+* [ ] Aplicar o protótipo e codar as interfaces com HTML, CSS, JS e ReactJS - TO DO
+* [ ] Chamar os endpoints corretamente para criação, edição, leitura e deleção de clientes e dívidas - TO DO
+
+#### [1.5] TESTES E DOCUMENTAÇÃO
+
 * [ ] Testar a aplicação baseado nos casos préviamente estabelecidos - TO DO
 * [ ] Documentar o motivo de uso das Libs - TO DO
 * [ ] Documentar as instruções de uso da aplicação Vendinha Fullstack Interfocus 😎 - TO DO
+* [ ] Gravar apresentação do projeto - TO DO
+* [ ] Mandar repositório no email do Rodrigo - TO DO
 
 ### [2] Projeto de sistema de gerenciamento de dívidas de clientes feito para estágio na Interfocus, inclui:
 
