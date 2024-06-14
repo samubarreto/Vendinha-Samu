@@ -1,11 +1,6 @@
-/Vendinha-Samu.Backend/Vendinha_Samu.Api/bin
-/Vendinha-Samu.Backend/Vendinha_Samu.Api/bin/
-/Vendinha-Samu.Backend/Vendinha_Samu.Api/obj
-/Vendinha-Samu.Backend/Vendinha_Samu.Api/obj/
+# Ignore as pastas bin e obj em qualquer lugar no repositório
+**/bin/
+**/obj/
 
-/Vendinha-Samu.Backend/Vendinha_Samu.Console/obj/
-/Vendinha-Samu.Backend/Vendinha_Samu.Console/bin/
-/Vendinha-Samu.Backend/Vendinha_Samu.Console/obj
-/Vendinha-Samu.Backend/Vendinha_Samu.Console/bin
-
-/Vendinha-Samu.Backend/.vs/
+# Ignore a pasta .vs na raiz do repositório
+**/.vs/
