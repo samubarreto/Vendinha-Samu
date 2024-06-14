@@ -1,10 +1,10 @@
 # Vendinha Fullstack Interfocus 😎 Samuel Barreto
 
-> Sumário `<br>`
-> [·TO-DO LIST](#1-to-do-list) `<br>`
-> [·O que contém no projeto](#2-projeto-de-sistema-de-gerenciamento-de-dívidas-de-clientes-feito-para-estágio-na-interfocus-inclui) `<br>`
-> [·Instruções de Uso/Execução](#3-instruções-de-usoexecução) `<br>`
-> [·Motivo de uso das libs](#4-motivo-de-uso-das-libs) `<br>`
+> Sumário
+> [>TO-DO LIST](#1-to-do-list)
+> [>O que contém no projeto](#2-projeto-de-sistema-de-gerenciamento-de-dívidas-de-clientes-feito-para-estágio-na-interfocus-inclui)
+> [>Instruções de Uso/Execução](#3-instruções-de-usoexecução)
+> [>Motivo de uso das libs](#4-motivo-de-uso-das-libs)
 
 ### [1] TO-DO LIST
 
