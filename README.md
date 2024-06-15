@@ -3,11 +3,10 @@
 ---
 
 > Sumário
->
-> 1.[Resumo do Projeto](#resumo-projeto)
-> 2.[TO-DO LIST](#to-do-list)
-> 3.[Instruções de Uso/Execução](#instrucoes-de-uso)
-> 4.[Motivo de uso das bibliotecas](#justificativa-libs)
+1.[Resumo do Projeto](#resumo-projeto)
+2.[TO-DO LIST](#to-do-list)
+3.[Instruções de Uso/Execução](#instruções-de-usoexecução)
+4.[Motivo de uso das bibliotecas](#justificativa-libs)
 
 ---
 
@@ -82,7 +81,7 @@
 
 ---
 
-### ·Motivo de uso das Bibliotecas/Pacotes/Etc...
+### ·Justificativa de uso das Bibliotecas/Pacotes/Etc...
 
 * [BrasilAPI](https://github.com/RBonaldi/CPF.CNPJ)
   * Usei ela no dotnet pra validar o cpf muito facilmente, documentação brasileira, mole demais:
