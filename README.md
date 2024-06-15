@@ -96,6 +96,6 @@ Cpf.Validar("08597471077"); // True
   * Possibilita fazer consultas, inserções, deleções, updates e mais sem precisar escrever DQL, DML, DDL no C#
 
 * [Npgsql](https://github.com/npgsql/npgsql)
-  * Serve para facilitar a conexão com banco de dados Postgres em aplicações C#.NET
+  * Permite estabelecer conexões com bancos de dados Postgres no .net
 
 ---
