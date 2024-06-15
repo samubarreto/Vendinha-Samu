@@ -5,13 +5,13 @@
 > Sumário
 >
 > 1.[Resumo do Projeto](#resumo-projeto)
-> 2.[TO-DO LIST](#to-do)
+> 2.[TO-DO LIST](#to-do-list)
 > 3.[Instruções de Uso/Execução](#instrucoes-de-uso)
 > 4.[Motivo de uso das bibliotecas](#justificativa-libs)
 
 ---
 
-### ·Projeto de sistema de gerenciamento de dívidas de clientes feito para estágio na Interfocus, inclui:
+### ·Resumo do Projeto:
 
 1. Interface web com HTML, CSS, JS e REACT.JS
 2. Uma WEB API REST, feita com ASP.NET em C#
