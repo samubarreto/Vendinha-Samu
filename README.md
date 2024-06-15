@@ -1,9 +1,7 @@
 # Vendinha Fullstack Interfocus 😎 Samuel Barreto
 
----
-
 * Sumário
-  * [Resumo do Projeto](#resumo-projeto)
+  * [Resumo do Projeto](#resumo-do-projeto)
   * [TO-DO LIST](#to-do-list)
   * [Instruções de Uso/Execução](#instruções-de-usoexecução)
   * [Motivo de uso das bibliotecas](#justificativa-de-uso-das-bibliotecaspacotesetc)
