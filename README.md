@@ -2,11 +2,11 @@
 
 ---
 
-> Sumário
-1.[Resumo do Projeto](#resumo-projeto)
-2.[TO-DO LIST](#to-do-list)
-3.[Instruções de Uso/Execução](#instruções-de-usoexecução)
-4.[Motivo de uso das bibliotecas](#justificativa-de-uso-das-bibliotecaspacotesetc)
+* Sumário
+  * [Resumo do Projeto](#resumo-projeto)
+  * [TO-DO LIST](#to-do-list)
+  * [Instruções de Uso/Execução](#instruções-de-usoexecução)
+  * [Motivo de uso das bibliotecas](#justificativa-de-uso-das-bibliotecaspacotesetc)
 
 ---
 
