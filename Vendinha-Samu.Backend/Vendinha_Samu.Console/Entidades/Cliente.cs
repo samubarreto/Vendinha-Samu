@@ -17,7 +17,8 @@ namespace Vendinha_Samu.Console.Entidades
         [Required(ErrorMessage = "A data de nascimento é obrigatória")]
         public required DateTime DataNascimento { get; set; }
 
-        [StringLength(50, ErrorMessage = "O email não pode passar de 50 caractéres")]
-        public string Email { get; set; }
+        [StringLength(50, ErrorMessage = "O E-mail não pode passar de 50 caractéres")]
+        [EmailAddress(ErrorMessage = "O E-mail está inválido")]
+        public string? Email { get; set; }
     }
 }

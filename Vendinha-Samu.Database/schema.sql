@@ -66,12 +66,32 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 
+/* A função abaixo é executada sempre antes da
+inserção ou update dum cliente e impede que a
+data de nascimento seja maior que a data atual */
+CREATE OR REPLACE FUNCTION validar_data_nascimento()
+RETURNS TRIGGER AS $$
+BEGIN
+    IF NEW.data_nascimento >= CURRENT_DATE THEN
+        RAISE EXCEPTION 'A data de nascimento deve ser menor que a data atual.';
+    END IF;
+    RETURN NEW;
+END;
+$$ LANGUAGE plpgsql;
+
 ------------- TRIGGERS -----------------
 /* A trigger abaixo é acionada sempre ANTES
-da inserção de uma nova dívida e chama a função
-verifica_total_dividas() */
-
+da inserção ou update de uma dívida e
+chama a função verifica_total_dividas() */
 CREATE TRIGGER trigger_verifica_total_dividas
 BEFORE INSERT OR UPDATE ON dividas
 FOR EACH ROW
 EXECUTE FUNCTION verifica_total_dividas();
+
+/* A trigger abaixo é acionada sempre ANTES
+da inserção ou update de um cliente e chama
+a função verifica_data_nascimento() */
+CREATE TRIGGER verificar_data_nascimento
+BEFORE INSERT OR UPDATE ON clientes
+FOR EACH ROW
+EXECUTE FUNCTION validar_data_nascimento();

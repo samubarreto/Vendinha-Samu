@@ -1,10 +1,10 @@
 # Vendinha Fullstack Interfocus 😎 Samuel Barreto
 
 > Sumário
-> [>TO-DO LIST](#1-to-do-list)
-> [>O que contém no projeto](#2-projeto-de-sistema-de-gerenciamento-de-dívidas-de-clientes-feito-para-estágio-na-interfocus-inclui)
-> [>Instruções de Uso/Execução](#3-instruções-de-usoexecução)
-> [>Motivo de uso das libs](#4-motivo-de-uso-das-libs)
+> [&gt;TO-DO LIST](#1-to-do-list)
+> [&gt;O que contém no projeto](#2-projeto-de-sistema-de-gerenciamento-de-dívidas-de-clientes-feito-para-estágio-na-interfocus-inclui)
+> [&gt;Instruções de Uso/Execução](#3-instruções-de-usoexecução)
+> [&gt;Motivo de uso das libs](#4-motivo-de-uso-das-libs)
 
 ### [1] TO-DO LIST
 
@@ -33,8 +33,9 @@
 * [X] /Api/ClienteController UPDATE [+COLLECTION NO POSTMAN] - DONE
 * [X] /Api/ClienteController DELETE [+COLLECTION NO POSTMAN] - DONE
 * [X] Urgente: Refatorar Email, não é NOT NULL, é NULLABLE, oreiei, não vi direito o requisito - DONE
-* [ ] Urgente: Fazer checagem de Data de Nascimento < hoje no back e banco - IN PROGRESS
-* [X] /Api/ClienteController Refatoração dos retornos de erro, usar o ValidationResult certo - DONE
+* [X] Urgente: Fazer checagem de Data de Nascimento < hoje no back e banco - DONE
+* [X] Urgente: Refatoração dos retornos de erro, usar o ValidationResult certo - DONE
+* [ ] Urgente: Validar CPF - IN PROGRESS
 
 ##### [1.3.1] BACKEND ENDPOINTS DÍVIDAS
 
@@ -69,4 +70,4 @@
 
 ### [4] Motivo de uso das libs
 
-* abc
+* BrasilAPI
