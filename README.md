@@ -87,10 +87,15 @@
 ```csharp
 using CpfCnpjLibrary;
 
-Cpf.Validar("08597471077");     // True
+Cpf.Validar("08597471077"); // True
 ```
 
 * [NHibernate](https://nhibernate.info/)
-  * É um ORM, serve pra mapera objetos C# em tabelas de bancos de dados Postgresql, usamos ele pois a muitos anos atrás o EF, entity-framework não fazia migrações de bancos de dados Postgres.. Então usamos o NHibernate
+  * É um ORM, serve pra mapear objetos C# em entidades (tabelas) Postgres
+  * Usamos ele pois a muitos anos atrás o EF, entity-framework não fazia migrações de bancos de dados Postgres.. Então usamos o NHibernate
+  * Possibilita fazer consultas, inserções, deleções, updates e mais sem precisar escrever DQL, DML, DDL no C#
+
+* [Npgsql](https://github.com/npgsql/npgsql)
+  * Serve para facilitar a conexão com banco de dados Postgres em aplicações C#.NET
 
 ---
