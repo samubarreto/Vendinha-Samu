@@ -40,7 +40,7 @@ dívida seja >200, só permite caso o novo insert
 seja de uma dívida com situacao = true (dívida
 paga) */
 
-CREATE OR REPLACE FUNCTION verifica_total_dividas()
+CREATE OR REPLACE FUNCTION verificar_total_dividas()
 RETURNS TRIGGER AS $$
 DECLARE
     total DECIMAL(8, 2);
@@ -79,6 +79,28 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 
+/* A função abaixo é executada sempre antes da
+inserção ou update dum cliente e impede que o
+cpf seja inválido */
+CREATE OR REPLACE FUNCTION validar_cpf()
+RETURNS TRIGGER AS $$
+DECLARE
+    cpf_text VARCHAR(11);
+BEGIN
+    -- bota o novo cpf no cpftext declarado acima
+    cpf_text := NEW.cpf;
+
+    -- se tem 11 dígitos
+    IF LENGTH(cpf_text) <> 11 OR NOT (cpf_text ~ '^[0-9]+$') THEN
+        RAISE EXCEPTION 'CPF inválido. O CPF deve conter exatamente 11 dígitos numéricos.';
+    
+    END IF;
+
+    -- se n caiu no if retorna o cpf
+    RETURN NEW;
+END;
+$$ LANGUAGE plpgsql;
+
 ------------- TRIGGERS -----------------
 /* A trigger abaixo é acionada sempre ANTES
 da inserção ou update de uma dívida e
@@ -86,12 +108,20 @@ chama a função verifica_total_dividas() */
 CREATE TRIGGER trigger_verifica_total_dividas
 BEFORE INSERT OR UPDATE ON dividas
 FOR EACH ROW
-EXECUTE FUNCTION verifica_total_dividas();
+EXECUTE FUNCTION verificar_total_dividas();
 
 /* A trigger abaixo é acionada sempre ANTES
 da inserção ou update de um cliente e chama
 a função verifica_data_nascimento() */
-CREATE TRIGGER verificar_data_nascimento
+CREATE TRIGGER trigger_verifica_data_nascimento
 BEFORE INSERT OR UPDATE ON clientes
 FOR EACH ROW
 EXECUTE FUNCTION validar_data_nascimento();
+
+/* A trigger abaixo é acionada sempre ANTES
+da inserção ou update de um cliente e chama
+a função validar_cpf() */
+CREATE TRIGGER trigger_verifica_cpf
+BEFORE INSERT OR UPDATE ON clientes
+FOR EACH ROW
+EXECUTE FUNCTION validar_cpf();

@@ -30,7 +30,23 @@ namespace Vendinha_Samu.Console.Services
                 }
                 catch (Exception ex)
                 {
-                    HandleException(ex, erros);
+                    string memberName = "";
+                    if (ex.InnerException != null)
+                    {
+                        if (ex.InnerException.Message.Contains("unique_cpf"))
+                        {
+                            memberName = nameof(cliente.Cpf);
+                        }
+                        else if (ex.InnerException.Message.Contains("unique_email"))
+                        {
+                            memberName = nameof(cliente.Email);
+                        }
+                        else if (ex.InnerException.Message.Contains("data de nascimento"))
+                        {
+                            memberName = nameof(cliente.DataNascimento);
+                        }
+                    }
+                    HandleException(ex, erros, memberName);
                     return false;
                 }
             }
@@ -47,7 +63,7 @@ namespace Vendinha_Samu.Console.Services
                 var clienteExistente = sessao.Get<Cliente>(cliente.Id);
                 if (clienteExistente == null)
                 {
-                    erros.Add(new ValidationResult("Este Cliente não existe!"));
+                    erros.Add(new ValidationResult("Este Cliente não existe!", new[] { nameof(cliente.Id) }));
                     return false;
                 }
 
@@ -59,7 +75,23 @@ namespace Vendinha_Samu.Console.Services
                 }
                 catch (Exception ex)
                 {
-                    HandleException(ex, erros);
+                    string memberName = "";
+                    if (ex.InnerException != null)
+                    {
+                        if (ex.InnerException.Message.Contains("unique_cpf"))
+                        {
+                            memberName = nameof(cliente.Cpf);
+                        }
+                        else if (ex.InnerException.Message.Contains("unique_email"))
+                        {
+                            memberName = nameof(cliente.Email);
+                        }
+                        else if (ex.InnerException.Message.Contains("data de nascimento"))
+                        {
+                            memberName = nameof(cliente.DataNascimento);
+                        }
+                    }
+                    HandleException(ex, erros, memberName);
                     return false;
                 }
             }
@@ -116,27 +148,32 @@ namespace Vendinha_Samu.Console.Services
             return consulta.ToList();
         }
 
-        private void HandleException(Exception ex, List<ValidationResult> erros)
+        private void HandleException(Exception ex, List<ValidationResult> erros, string memberName = "")
         {
             if (ex.InnerException != null)
             {
                 if (ex.InnerException.Message.Contains("unique_cpf"))
                 {
-                    erros.Add(new ValidationResult("Este CPF já está cadastrado!"));
+                    erros.Add(new ValidationResult("Este CPF já está cadastrado!", new[] { memberName }));
                 }
                 else if (ex.InnerException.Message.Contains("unique_email"))
                 {
-                    erros.Add(new ValidationResult("Este Email já está cadastrado!"));
+                    erros.Add(new ValidationResult("Este Email já está cadastrado!", new[] { memberName }));
+                }
+                else if (ex.InnerException.Message.Contains("data de nascimento"))
+                {
+                    erros.Add(new ValidationResult("Insira uma Data de Nascimento válida!", new[] { memberName }));
                 }
                 else
                 {
-                    erros.Add(new ValidationResult("Erro ao processar a operação."));
+                    erros.Add(new ValidationResult("Erro ao processar a operação.", new[] { memberName }));
                 }
             }
             else
             {
-                erros.Add(new ValidationResult("Erro ao processar a operação."));
+                erros.Add(new ValidationResult("Erro ao processar a operação.", new[] { memberName }));
             }
         }
+
     }
 }

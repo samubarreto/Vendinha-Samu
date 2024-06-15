@@ -28,21 +28,24 @@
 
 ##### [1.3.0] BACKEND ENDPOINTS CLIENTES
 
-* [X] /Api/ClienteController READ [+COLLECTION NO POSTMAN] - DONE
-* [X] /Api/ClienteController CREATE [+COLLECTION NO POSTMAN] - DONE
-* [X] /Api/ClienteController UPDATE [+COLLECTION NO POSTMAN] - DONE
-* [X] /Api/ClienteController DELETE [+COLLECTION NO POSTMAN] - DONE
+* [X] READ   [+COLLECTION NO POSTMAN] - DONE
+* [X] CREATE [+COLLECTION NO POSTMAN] - DONE
+* [X] UPDATE [+COLLECTION NO POSTMAN] - DONE
+* [X] DELETE [+COLLECTION NO POSTMAN] - DONE
+
+##### URGÊNCIAS
+
 * [X] Urgente: Refatorar Email, não é NOT NULL, é NULLABLE, oreiei, não vi direito o requisito - DONE
 * [X] Urgente: Fazer checagem de Data de Nascimento < hoje no back e banco - DONE
-* [X] Urgente: Refatoração dos retornos de erro, usar o ValidationResult certo - DONE
-* [ ] Urgente: Validar CPF - IN PROGRESS
+* [X] Urgente: Refatoração dos retornos de erro, usar o ValidationResult certo (junto com um HandleException cabuloso, retornando o membername sempre, pra facilitar no front) - DONE
+* [X] Urgente: Validar CPF na API (usei uma tal de biblioteca Cpf.Cnpj muito foda, não validei 100% a nível de banco pois daria um trabalho inifinito, no banco só valida se tem 11 dígitos) - DONE
 
 ##### [1.3.1] BACKEND ENDPOINTS DÍVIDAS
 
-* [ ] /Api/DividaController READ [+COLLECTION NO POSTMAN] - TO DO
-* [ ] /Api/DividaController CREATE [+COLLECTION NO POSTMAN] - TO DO
-* [ ] /Api/DividaController UPDATE [+COLLECTION NO POSTMAN] - TO DO
-* [ ] /Api/DividaController DELETE [+COLLECTION NO POSTMAN] - TO DO
+* [ ] READ   [+COLLECTION NO POSTMAN] - TO DO
+* [ ] CREATE [+COLLECTION NO POSTMAN] - TO DO
+* [ ] UPDATE [+COLLECTION NO POSTMAN] - TO DO
+* [ ] DELETE [+COLLECTION NO POSTMAN] - TO DO
 
 #### [1.4] FRONTEND
 
@@ -70,4 +73,14 @@
 
 ### [4] Motivo de uso das libs
 
-* BrasilAPI
+* [BrasilAPI](https://github.com/RBonaldi/CPF.CNPJ)
+
+Usei ela no dotnet pra validar o cpf muito facilmente, documentação brasileira, mole demais:
+
+```csharp
+using CpfCnpjLibrary;
+
+Cpf.Validar("08597471077");     // True
+```
+
+* tal

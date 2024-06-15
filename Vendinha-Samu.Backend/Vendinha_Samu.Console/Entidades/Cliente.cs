@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using Vendinha_Samu.Console.Services;
 
 namespace Vendinha_Samu.Console.Entidades
 {
@@ -11,7 +12,7 @@ namespace Vendinha_Samu.Console.Entidades
         public required string NomeCompleto { get; set; }
 
         [Required(ErrorMessage = "O CPF é obrigatório")]
-        [RegularExpression(@"\d{11}", ErrorMessage = "O CPF deve conter exatamente 11 dígitos, apenas dígitos, sem máscara")]
+        [GeneralServices.ValidacaoCpf(ErrorMessage = "O CPF informado é inválido.")]
         public required string Cpf { get; set; }
 
         [Required(ErrorMessage = "A data de nascimento é obrigatória")]
