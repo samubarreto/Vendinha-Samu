@@ -40,7 +40,7 @@ dívida seja >200, só permite caso o novo insert
 seja de uma dívida com situacao = true (dívida
 paga) */
 
-CREATE OR REPLACE FUNCTION verificar_total_dividas()
+CREATE OR REPLACE FUNCTION validar_total_dividas()
 RETURNS TRIGGER AS $$
 DECLARE
     total DECIMAL(8, 2);
@@ -108,7 +108,7 @@ chama a função verifica_total_dividas() */
 CREATE TRIGGER trigger_verifica_total_dividas
 BEFORE INSERT OR UPDATE ON dividas
 FOR EACH ROW
-EXECUTE FUNCTION verificar_total_dividas();
+EXECUTE FUNCTION validar_total_dividas();
 
 /* A trigger abaixo é acionada sempre ANTES
 da inserção ou update de um cliente e chama

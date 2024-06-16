@@ -49,7 +49,7 @@
 * [X] Urgente: Fazer checagem de Data de Nascimento < hoje no back e banco - DONE
 * [X] Urgente: Refatoração dos retornos de erro, usar o ValidationResult certo (junto com um HandleException cabuloso, retornando o membername sempre, pra facilitar no front) - DONE
 * [X] Urgente: Validar CPF na API (usei uma tal de biblioteca Cpf.Cnpj muito foda, documentação brasileira, não validei 100% a nível de banco pois daria um trabalho inifinito, no banco só valida se tem 11 dígitos) - DONE
-* [ ] Tentar refatorar a validação de CPF do banco usando regex, se for possível - IN PROGRESS
+* [ ] Ter certeza que não estou esquecendo de nada - IN PROGRESS
 
 ###### ·BACKEND ENDPOINTS DÍVIDAS
 
