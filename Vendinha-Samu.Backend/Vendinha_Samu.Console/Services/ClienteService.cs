@@ -1,10 +1,6 @@
 ﻿using NHibernate;
 using System.ComponentModel.DataAnnotations;
 using Vendinha_Samu.Console.Entidades;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Vendinha_Samu.Console.Services
 {

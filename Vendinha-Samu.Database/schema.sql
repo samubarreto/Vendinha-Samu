@@ -26,7 +26,7 @@ CREATE TABLE dividas (
     id_cliente INT NOT NULL,
     valor_divida DECIMAL(8, 2) NOT NULL,
     data_criacao DATE NOT NULL DEFAULT CURRENT_DATE,
-    situacao BOOL NOT NULL,
+    situacao BOOL NOT NULL DEFAULT false,
     data_pagamento DATE,
     descricao VARCHAR(255) NOT NULL,
     CONSTRAINT fk_cliente FOREIGN KEY (id_cliente) REFERENCES clientes (id_cliente),
