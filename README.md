@@ -20,59 +20,59 @@
 
 ### ·TO-DO LIST
 
-###### ·PLANEJAMENTO INICIAL
+###### PLANEJAMENTO INICIAL
 
-* [X] Organizar o ínicio do README.md, com as regras e requisitos já préviamente analisados - DONE
-* [X] Montar casos de teste baseados nos requisitos apresentados - DONE
-* [X] Montar o diagrama geral da aplicação no [MIRO](https://miro.com/pt/mapeamento-processos/) - DONE
-* [X] Aprender melhor o pgAdmin ([Tutorial](https://www.youtube.com/watch?v=WFT5MaZN6g4&ab_channel=DatabaseStar)) - DONE
+* [X] Organizar o ínicio do README.md, com as regras e requisitos já préviamente analisados
+* [X] Montar casos de teste baseados nos requisitos apresentados
+* [X] Montar o diagrama geral da aplicação no [MIRO](https://miro.com/pt/mapeamento-processos/)
+* [X] Aprender melhor o pgAdmin ([Tutorial](https://www.youtube.com/watch?v=WFT5MaZN6g4&ab_channel=DatabaseStar))
 
-###### ·DATABASE
+###### DATABASE
 
-* [X] Desenvolver schema.sql das Tabelas Clientes e Dívidas, inserts de exemplo para clientes e dívidas e dqls úteis - DONE
-* [X] Aplicar o schema num Postgres em localhost no pgAdmin pra ver no que dá - DONE
+* [X] Desenvolver schema.sql das Tabelas Clientes e Dívidas, inserts de exemplo para clientes e dívidas e dqls úteis
+* [X] Aplicar o schema num Postgres em localhost no pgAdmin pra ver no que dá
 
-###### ·BACKEND BASE
+###### BACKEND BASE
 
-* [X] /Console/Entidades - DONE
-* [X] /Console/Mappings - DONE
-* [X] /Console/Services - DONE
+* [X] /Console/Entidades
+* [X] /Console/Mappings
+* [X] /Console/Services
 
-###### ·BACKEND ENDPOINTS CLIENTES
+###### BACKEND ENDPOINTS CLIENTES
 
-* [X] READ   [+COLLECTION NO POSTMAN] - DONE
-* [X] CREATE [+COLLECTION NO POSTMAN] - DONE
-* [X] UPDATE [+COLLECTION NO POSTMAN] - DONE
-* [X] DELETE [+COLLECTION NO POSTMAN] - DONE
+* [X] READ   [+COLLECTION NO POSTMAN]
+* [X] CREATE [+COLLECTION NO POSTMAN]
+* [X] UPDATE [+COLLECTION NO POSTMAN]
+* [X] DELETE [+COLLECTION NO POSTMAN]
 
-###### ·URGÊNCIAS
+###### URGÊNCIAS
 
-* [X] Urgente: Refatorar Email, não é NOT NULL, é NULLABLE, oreiei, não vi direito o requisito - DONE
-* [X] Urgente: Fazer checagem de Data de Nascimento < hoje no back e banco - DONE
-* [X] Urgente: Refatoração dos retornos de erro, usar o ValidationResult certo (junto com um HandleException cabuloso, retornando o membername sempre, pra facilitar no front) - DONE
-* [X] Urgente: Validar CPF na API (usei uma tal de biblioteca Cpf.Cnpj muito foda, documentação brasileira, não validei 100% a nível de banco pois daria um trabalho inifinito, no banco só valida se tem 11 dígitos) - DONE
-* [X] Ter certeza que não estou esquecendo de nada (Eu acho que não esqueci de nada) - DONE
+* [X] Urgente: Refatorar Email, não é NOT NULL, é NULLABLE, oreiei, não vi direito o requisito
+* [X] Urgente: Fazer checagem de Data de Nascimento < hoje no back e banco
+* [X] Urgente: Refatoração dos retornos de erro, usar o ValidationResult certo (junto com um HandleException cabuloso, retornando o membername sempre, pra facilitar no front)
+* [X] Urgente: Validar CPF na API (usei uma tal de biblioteca Cpf.Cnpj muito foda, documentação brasileira, não validei 100% a nível de banco pois daria um trabalho inifinito, no banco só valida se tem 11 dígitos)
+* [X] Ter certeza que não estou esquecendo de nada (Eu acho que não esqueci de nada)
 
-###### ·BACKEND ENDPOINTS DÍVIDAS
+###### BACKEND ENDPOINTS DÍVIDAS
 
-* [ ] READ   [+COLLECTION NO POSTMAN] - TO DO
-* [ ] CREATE [+COLLECTION NO POSTMAN] - TO DO
-* [ ] UPDATE [+COLLECTION NO POSTMAN] - TO DO
-* [ ] DELETE [+COLLECTION NO POSTMAN] - TO DO
+* [ ] READ   [+COLLECTION NO POSTMAN]
+* [ ] CREATE [+COLLECTION NO POSTMAN]
+* [ ] UPDATE [+COLLECTION NO POSTMAN]
+* [ ] DELETE [+COLLECTION NO POSTMAN]
 
-###### ·FRONTEND
+###### FRONTEND
 
-* [ ] Prototipar as interfaces do Frontend - TO DO
-* [ ] Aplicar o protótipo e codar as interfaces com HTML, CSS, JS e ReactJS - TO DO
-* [ ] Chamar os endpoints corretamente para criação, edição, leitura e deleção de clientes e dívidas - TO DO
+* [ ] Prototipar as interfaces do Frontend
+* [ ] Aplicar o protótipo e codar as interfaces com HTML, CSS, JS e ReactJS
+* [ ] Chamar os endpoints corretamente para criação, edição, leitura e deleção de clientes e dívidas
 
-###### ·TESTES, DOCUMENTAÇÃO E ENTREGA
+###### TESTES, DOCUMENTAÇÃO E ENTREGA
 
-* [ ] Testar a aplicação baseado nos casos préviamente estabelecidos - TO DO
-* [ ] Documentar o motivo de uso das Libs - TO DO
-* [ ] Documentar as instruções de uso da aplicação Vendinha Fullstack Interfocus 😎 - TO DO
-* [ ] Gravar apresentação do projeto - TO DO
-* [ ] Mandar repositório no email do Rodrigo - TO DO
+* [ ] Testar a aplicação baseado nos casos préviamente estabelecidos
+* [ ] Documentar o motivo de uso das Libs
+* [ ] Documentar as instruções de uso da aplicação Vendinha Fullstack Interfocus 😎
+* [ ] Gravar apresentação do projeto
+* [ ] Mandar repositório no email do Rodrigo
 
 ---
 
