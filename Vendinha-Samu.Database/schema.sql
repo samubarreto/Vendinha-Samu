@@ -10,7 +10,7 @@ CREATE TABLE clientes (
     id_cliente INT NOT NULL DEFAULT NEXTVAL('clientes_seq'),
     nome_completo VARCHAR(50) NOT NULL,
     cpf CHAR(11) NOT NULL,
-    data_nascimento DATE,
+    data_nascimento DATE NOT NULL,
     email VARCHAR(50) NULL,
     CONSTRAINT pk_cliente PRIMARY KEY (id_cliente),
     CONSTRAINT unique_cpf UNIQUE (cpf),

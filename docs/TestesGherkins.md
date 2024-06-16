@@ -8,11 +8,35 @@ Cenário: Usuário insere dados válidos para um novo cliente
   E clica no botão "Salvar"
   Então o cliente é criado e aparece na lista de clientes
 
+Cenário: Usuário insere dados válidos para um novo cliente
+  Dado que o usuário acessa a página de criação de cliente
+  Quando ele insere "Nome Completo", "CPF válido" e "Data de Nascimento"
+  E clica no botão "Salvar"
+  Então o cliente é criado e aparece na lista de clientes mesmo sem Email, pois email é nullable
+
 Cenário: Usuário insere um CPF inválido
   Dado que o usuário acessa a página de criação de cliente
   Quando ele insere "Nome Completo", "CPF inválido", "Data de Nascimento" e "Email"
   E clica no botão "Salvar"
   Então uma mensagem de erro "CPF inválido" é exibida
+
+Cenário: Usuário insere um Email inválido
+  Dado que o usuário acessa a página de criação de cliente
+  Quando ele insere "Nome Completo", "CPF inválido", "Data de Nascimento" e "Email"
+  E clica no botão "Salvar"
+  Então uma mensagem de erro "Email inválido" é exibida
+
+Cenário: Usuário insere um Email já utilizado
+  Dado que o usuário acessa a página de criação de cliente
+  Quando ele insere "Nome Completo", "CPF inválido", "Data de Nascimento" e "Email"
+  E clica no botão "Salvar"
+  Então uma mensagem de erro "Email já utilizado" é exibida
+
+Cenário: Usuário insere um CPF já utilizado
+  Dado que o usuário acessa a página de criação de cliente
+  Quando ele insere "Nome Completo", "CPF inválido", "Data de Nascimento" e "Email"
+  E clica no botão "Salvar"
+  Então uma mensagem de erro "CPF já utilizado" é exibida
 
 ##### Funcionalidade: Editar Cliente
 
@@ -21,6 +45,12 @@ Cenário: Usuário atualiza os dados de um cliente existente com dados válidos
   Quando ele insere "Nome Completo atualizado", "CPF válido", "Data de Nascimento" e "Email"
   E clica no botão "Salvar"
   Então os dados do cliente são atualizados na lista
+
+Cenário: Usuário atualiza os dados de um cliente existente com dados válidos
+  Dado que o usuário acessa a página de edição de um cliente existente
+  Quando ele insere "Nome Completo atualizado", "CPF válido" e "Data de Nascimento"
+  E clica no botão "Salvar"
+  Então os dados do cliente são atualizados na lista, o email é nullable
 
 Cenário: Usuário tenta atualizar o cliente com um email inválido
   Dado que o usuário acessa a página de edição de um cliente existente
@@ -34,6 +64,18 @@ Cenário: Usuário tenta atualizar o cliente com um CPF inválido
   E clica no botão "Salvar"
   Então uma mensagem de erro "CPF inválido" é exibida
 
+Cenário: Usuário tenta atualizar o cliente com um CPF já utilizado
+  Dado que o usuário acessa a página de edição de um cliente existente
+  Quando ele insere "Nome Completo", "CPF já usado", "Data de Nascimento" e "Email válido"
+  E clica no botão "Salvar"
+  Então uma mensagem de erro "CPF já utilizado" é exibida
+
+Cenário: Usuário tenta atualizar o cliente com um Email já utilizado
+  Dado que o usuário acessa a página de edição de um cliente existente
+  Quando ele insere "Nome Completo", "CPF", "Data de Nascimento" e "Email usado"
+  E clica no botão "Salvar"
+  Então uma mensagem de erro "Email já utilizado" é exibida
+
 ##### Funcionalidade: Excluir Cliente
 
 Cenário: Usuário exclui um cliente da lista
@@ -46,24 +88,23 @@ Cenário: Usuário exclui um cliente da lista
 
 Cenário: Usuário acessa a lista de clientes
   Dado que o usuário acessa a página de listagem de clientes
-  Então a lista de clientes é exibida ordenada pelo maior valor de dívida ao menor
+  Então a lista de clientes é exibida ordenada pelo maior valor de dívida TOTAL ao menor
 
 Cenário: Existem mais de 10 clientes cadastrados
   Dado que o usuário acessa a página de listagem de clientes
   E existem mais de 10 clientes cadastrados
-  Então apenas 10 clientes são exibidos por página do grid
+  Então apenas 10 clientes são exibidos por página do grid, ordenados pelo maior valor de dívida TOTAL ao menor
 
 ##### Funcionalidade: Buscar Cliente
 
-Cenário: Usuário busca um cliente pelo nome
+Cenário: Usuário busca um cliente pelo nome, cpf ou email
   Dado que o usuário acessa a página de listagem de clientes
-  Quando ele insere o nome do cliente na barra de busca
-  E clica no botão "Buscar"
-  Então a lista de clientes é filtrada com os nomes correspondentes
+  Quando ele insere o nome, cpf ou email do cliente na barra de busca
+  Então a lista de clientes é filtrada com os nomes, cpfs ou emails correspondentes
 
 ##### Funcionalidade: Campo Obrigatório
 
-Cenário: Usuário tenta criar ou editar um cliente sem preencher todos os campos
+Cenário: Usuário tenta criar ou editar um cliente sem preencher todos os campos obrigatórios (nome, cpf, data de nascimento)
   Dado que o usuário está na página de criação ou edição de cliente
   Quando ele deixa um ou mais campos obrigatórios em branco
   E clica no botão "Salvar"
@@ -73,15 +114,9 @@ Cenário: Usuário tenta criar ou editar um cliente sem preencher todos os campo
 
 Cenário: Usuário insere um CPF inválido
   Dado que o usuário está na página de criação ou edição de cliente
-  Quando ele insere um CPF com formatação correta, mas com dígitos inválidos
+  Quando ele insere um CPF com dígitos inválidos
   E clica no botão "Salvar"
   Então uma mensagem de erro "CPF inválido" é exibida
-
-Cenário: Usuário insere um CPF válido, mas com a formatação parcialmente incorreta
-  Dado que o usuário está na página de criação ou edição de cliente
-  Quando ele insere um CPF sem máscara/com máscara/com máscara parcial/com espaços no começo/fim do texto
-  E clica no botão "Salvar"
-  Então o cliente é cadastrado, e o sistema corrige erros de formatação do CPF, barrando apenas CPFs inválidos
 
 ##### Funcionalidade: Listar Dívidas por Cliente
 
@@ -96,10 +131,8 @@ Cenário: Usuário visualiza a lista de dívidas de um cliente específico
 Cenário: Usuário marca uma dívida como paga
   Dado que o usuário acessa a lista de dívidas de um cliente
   Quando ele seleciona uma dívida
-  E seleciona a forma de pagamento
   E marca como paga
   Então a situação da dívida é atualizada para "Pago"
-  E a forma de pagamento fica numa coluna ao lado
   E o registro da dívida vai para o fim da listagem de dívidas
 
 ##### Funcionalidade: Validar Limite de Dívidas
@@ -117,13 +150,13 @@ Cenário: Usuário tenta adicionar uma dívida que excede o limite de 200 reais
 Cenário: Criação de um cliente com dados válidos
   Dado que o sistema recebe um POST no endpoint "/clientes" com JSON contendo "Nome Completo", "CPF", "Data de Nascimento" e "Email"
   Quando o JSON é válido
-  Então o sistema retorna status 201 Created
+  Então o sistema retorna status 200 Ok
   E o cliente é salvo no banco de dados
 
 Cenário: Tentativa de criação de um cliente com CPF inválido
   Dado que o sistema recebe um POST no endpoint "/clientes" com JSON contendo um "CPF inválido"
   Quando o JSON é processado
-  Então o sistema retorna status 400 Bad Request
+  Então o sistema retorna status 402 Unprocessable Entity
   E uma mensagem de erro "CPF inválido" é exibida
 
 ##### Funcionalidade: Listagem de Clientes
