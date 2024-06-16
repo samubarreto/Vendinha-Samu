@@ -1,10 +1,11 @@
-# Vendinha Fullstack Interfocus do Samu 😎 
+# Vendinha Fullstack Interfocus do Samu 😎
 
 ### ·Sumário
-  * [Resumo do Projeto](#resumo-do-projeto)
-  * [TO-DO LIST](#to-do-list)
-  * [Instruções de Uso/Execução](#instruções-de-usoexecução)
-  * [Motivo de uso das bibliotecas](#justificativa-de-uso-das-bibliotecaspacotesetc)
+
+* [Resumo do Projeto](#resumo-do-projeto)
+* [TO-DO LIST](#to-do-list)
+* [Instruções de Uso/Execução](#instruções-de-usoexecução)
+* [Motivo de uso das bibliotecas](#justificativa-de-uso-das-bibliotecaspacotesetc)
 
 ---
 
@@ -50,7 +51,7 @@
 * [X] Urgente: Fazer checagem de Data de Nascimento < hoje no back e banco - DONE
 * [X] Urgente: Refatoração dos retornos de erro, usar o ValidationResult certo (junto com um HandleException cabuloso, retornando o membername sempre, pra facilitar no front) - DONE
 * [X] Urgente: Validar CPF na API (usei uma tal de biblioteca Cpf.Cnpj muito foda, documentação brasileira, não validei 100% a nível de banco pois daria um trabalho inifinito, no banco só valida se tem 11 dígitos) - DONE
-* [ ] Ter certeza que não estou esquecendo de nada (Eu acho que não esqueci de nada) - DONE
+* [X] Ter certeza que não estou esquecendo de nada (Eu acho que não esqueci de nada) - DONE
 
 ###### ·BACKEND ENDPOINTS DÍVIDAS
 
