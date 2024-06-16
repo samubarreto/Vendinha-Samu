@@ -1,6 +1,6 @@
-# Vendinha Fullstack Interfocus 😎 Samuel Barreto
+# Vendinha Fullstack Interfocus do Samu 😎 
 
-* Sumário
+### ·Sumário
   * [Resumo do Projeto](#resumo-do-projeto)
   * [TO-DO LIST](#to-do-list)
   * [Instruções de Uso/Execução](#instruções-de-usoexecução)
@@ -10,27 +10,28 @@
 
 ### ·Resumo do Projeto:
 
-1. Interface web com HTML, CSS, JS e REACT.JS
-2. Uma WEB API REST, feita com ASP.NET em C#
-3. Um banco de dados PostgreSQL para permanencia de dados via ORM NHibernate
+* Interface web com HTML, CSS, JS e REACT.JS
+* Uma WEB API REST, feita com ASP.NET em C#
+* Um banco de dados PostgreSQL para permanencia de dados via ORM NHibernate
+* Organiza e administra Dívidas de Clientes
 
 ---
 
 ### ·TO-DO LIST
 
-#### ·PLANEJAMENTO INICIAL
+###### ·PLANEJAMENTO INICIAL
 
 * [X] Organizar o ínicio do README.md, com as regras e requisitos já préviamente analisados - DONE
 * [X] Montar casos de teste baseados nos requisitos apresentados - DONE
 * [X] Montar o diagrama geral da aplicação no [MIRO](https://miro.com/pt/mapeamento-processos/) - DONE
 * [X] Aprender melhor o pgAdmin ([Tutorial](https://www.youtube.com/watch?v=WFT5MaZN6g4&ab_channel=DatabaseStar)) - DONE
 
-#### ·DATABASE
+###### ·DATABASE
 
 * [X] Desenvolver schema.sql das Tabelas Clientes e Dívidas, inserts de exemplo para clientes e dívidas e dqls úteis - DONE
 * [X] Aplicar o schema num Postgres em localhost no pgAdmin pra ver no que dá - DONE
 
-#### ·BACKEND BASE
+###### ·BACKEND BASE
 
 * [X] /Console/Entidades - DONE
 * [X] /Console/Mappings - DONE
@@ -83,7 +84,7 @@
 ### ·Justificativa de uso das Bibliotecas/Pacotes/Etc...
 
 * [BrasilAPI](https://github.com/RBonaldi/CPF.CNPJ)
-  * Usei ela no dotnet pra validar o cpf muito facilmente, documentação brasileira, mole demais:
+  * Usei ela no dotnet pra validar o cpf muito facilmente, documentação brasileira, criei um novo DataValidation dentro do GeneralServieces using a lib, mole demais:
 
 ```csharp
 using CpfCnpjLibrary;
@@ -92,11 +93,12 @@ Cpf.Validar("08597471077"); // True
 ```
 
 * [NHibernate](https://nhibernate.info/)
+
   * É um ORM, serve pra mapear objetos C# em entidades (tabelas) Postgres
   * Usamos ele pois a muitos anos atrás o EF, entity-framework não fazia migrações de bancos de dados Postgres.. Então usamos o NHibernate
   * Possibilita fazer consultas, inserções, deleções, updates e mais sem precisar escrever DQL, DML, DDL no C#
-
 * [Npgsql](https://github.com/npgsql/npgsql)
+
   * Permite estabelecer conexões com bancos de dados Postgres no .net
 
 ---
