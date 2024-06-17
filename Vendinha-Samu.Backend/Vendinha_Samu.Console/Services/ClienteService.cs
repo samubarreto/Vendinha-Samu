@@ -106,9 +106,17 @@ namespace Vendinha_Samu.Console.Services
                 return false;
             }
 
-            sessao.Delete(cliente);
-            transaction.Commit();
-            return true;
+            try
+            {
+                sessao.Delete(cliente);
+                transaction.Commit();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                erros.Add(new ValidationResult($"Não é possível apagar o Cliente {cliente.NomeCompleto} pois ele possui dívidas em aberto.", new[] { "id" }));
+                return false;
+            }
         }
 
         public virtual List<Cliente> Listar()
