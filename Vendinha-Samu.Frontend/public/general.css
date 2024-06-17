@@ -1,0 +1,27 @@
+:root {
+  font-family: monospace;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: #fff;
+  background-color: #222222;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
