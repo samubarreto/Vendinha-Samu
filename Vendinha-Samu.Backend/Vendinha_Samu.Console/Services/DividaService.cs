@@ -52,20 +52,19 @@ namespace Vendinha_Samu.Console.Services
                 using var sessao = session.OpenSession();
                 using var transaction = sessao.BeginTransaction();
 
-                var dividaExistente = sessao.Get<Divida>(divida.IdDivida);
-                if (dividaExistente == null)
-                {
-                    erros.Add(new ValidationResult("Esta Dívida não existe!", new[] { nameof(divida.IdDivida) }));
-                    return false;
-                }
-
                 try
                 {
+                    var dividaExistente = sessao.Get<Divida>(divida.IdDivida);
+                    if (dividaExistente == null)
+                    {
+                        erros.Add(new ValidationResult("Esta Dívida não existe!", new[] { nameof(divida.IdDivida) }));
+                        return false;
+                    }
+
                     sessao.Merge(divida);
                     transaction.Commit();
                     return true;
-                }
-                catch (Exception ex)
+                } catch (Exception ex)
                 {
                     string memberName = "";
                     if (ex.InnerException != null)
