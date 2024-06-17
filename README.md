@@ -55,10 +55,10 @@
 
 ###### BACKEND ENDPOINTS DÍVIDAS
 
-* [ ] READ   [+Postman Collection]
-* [ ] CREATE [+Postman Collection]
-* [ ] UPDATE [+Postman Collection]
-* [ ] DELETE [+Postman Collection]
+* [X] READ   [+Postman Collection]
+* [X] CREATE [+Postman Collection]
+* [X] UPDATE [+Postman Collection]
+* [X] DELETE [+Postman Collection]
 
 ###### BACKEND ENDPOINTS DTOs (Data Transfer Object) ENTRE CLIENTES E DÍVIDAS
 

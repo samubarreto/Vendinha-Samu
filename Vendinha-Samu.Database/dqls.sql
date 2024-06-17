@@ -16,6 +16,26 @@ GROUP BY
 ORDER BY
 	cl.id_cliente;
 
+/* Clientes e somatório de suas dívidas EM ABERTO */
+
+SELECT
+    cl.id_cliente AS "Id-Cliente",
+    cl.nome_completo AS "Nome-Completo",
+    cl.cpf AS "CPF",
+    EXTRACT(YEAR FROM AGE(cl.data_nascimento)) AS "Idade",
+    cl.email AS "Email",
+    SUM(dv.valor_divida) AS "Total-Dívida"
+FROM
+    clientes cl
+JOIN
+    dividas dv ON dv.id_cliente = cl.id_cliente
+WHERE
+	dv.situacao = false
+GROUP BY
+    cl.id_cliente
+ORDER BY
+	cl.id_cliente;
+
 /* Clientes e suas dívidas separadas */
 SELECT
     cl.id_cliente AS "Id-Cliente",

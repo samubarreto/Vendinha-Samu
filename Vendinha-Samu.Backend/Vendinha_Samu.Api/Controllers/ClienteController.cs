@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Vendinha_Samu.Api.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/clientes")]
     public class ClienteController : ControllerBase
     {
         private readonly ClienteService clienteService;
