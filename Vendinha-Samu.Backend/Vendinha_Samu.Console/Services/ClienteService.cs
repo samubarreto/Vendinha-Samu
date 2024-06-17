@@ -144,6 +144,47 @@ namespace Vendinha_Samu.Console.Services
             return consulta.ToList();
         }
 
+        //public virtual List<ClienteComDividaDTO> ListarClientesDividaTotal(string buscaCliente = null, int skip = 0, int pageSize = 0)
+        //{
+        //    using var sessao = session.OpenSession();
+
+        //    var consulta = sessao.Query<Cliente>()
+        //                         .GroupJoin(sessao.Query<Divida>(),
+        //                                    cliente => cliente.Id,
+        //                                    divida => divida.IdCliente,
+        //                                    (cliente, dividas) => new { Cliente = cliente, Dividas = dividas.DefaultIfEmpty() })
+        //                         .Select(group => new ClienteComDividaDTO
+        //                         {
+        //                             IdCliente = group.Cliente.Id,
+        //                             NomeCompleto = group.Cliente.NomeCompleto,
+        //                             CPF = group.Cliente.Cpf,
+        //                             Idade = DateTime.Now.Year - group.Cliente.DataNascimento.Year,
+        //                             Email = group.Cliente.Email,
+        //                             TotalDivida = group.Dividas.DefaultIfEmpty().Sum(d => d != null ? d.Valor : 0)
+        //                         });
+
+        //    if (!string.IsNullOrEmpty(buscaCliente))
+        //    {
+        //        consulta = consulta.Where(dto => dto.NomeCompleto.Contains(buscaCliente) ||
+        //                                         dto.Email.Contains(buscaCliente) ||
+        //                                         dto.CPF.Contains(buscaCliente));
+        //    }
+
+        //    consulta = consulta.OrderBy(dto => dto.TotalDivida);
+
+        //    if (skip > 0)
+        //    {
+        //        consulta = consulta.Skip(skip);
+        //    }
+        //    if (pageSize > 0)
+        //    {
+        //        consulta = consulta.Take(pageSize);
+        //    }
+
+        //    return consulta.ToList();
+        //}
+
+
         private void HandleException(Exception ex, List<ValidationResult> erros, string memberName = "")
         {
             if (ex.InnerException != null)

@@ -40,10 +40,10 @@
 
 ###### BACKEND ENDPOINTS CLIENTES
 
-* [X] READ   [+COLLECTION NO POSTMAN]
-* [X] CREATE [+COLLECTION NO POSTMAN]
-* [X] UPDATE [+COLLECTION NO POSTMAN]
-* [X] DELETE [+COLLECTION NO POSTMAN]
+* [X] READ   [+Postman Collection]
+* [X] CREATE [+Postman Collection]
+* [X] UPDATE [+Postman Collection]
+* [X] DELETE [+Postman Collection]
 
 ###### URGÊNCIAS
 
@@ -55,10 +55,15 @@
 
 ###### BACKEND ENDPOINTS DÍVIDAS
 
-* [ ] READ   [+COLLECTION NO POSTMAN]
-* [ ] CREATE [+COLLECTION NO POSTMAN]
-* [ ] UPDATE [+COLLECTION NO POSTMAN]
-* [ ] DELETE [+COLLECTION NO POSTMAN]
+* [ ] READ   [+Postman Collection]
+* [ ] CREATE [+Postman Collection]
+* [ ] UPDATE [+Postman Collection]
+* [ ] DELETE [+Postman Collection]
+
+###### BACKEND ENDPOINTS DTOs (Data Transfer Object) ENTRE CLIENTES E DÍVIDAS
+
+* [ ] READ Clientes com Dívidas [+Postman Collection]
+* [ ] READ Dívidas de Cliente [+Postman Collection]
 
 ###### FRONTEND
 

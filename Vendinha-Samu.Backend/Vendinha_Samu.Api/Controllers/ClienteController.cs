@@ -22,6 +22,13 @@ namespace Vendinha_Samu.Api.Controllers
             return Ok(clientes);
         }
 
+        //[HttpGet("divida")]
+        //public IActionResult ListarClientesDividaTotal(string pesquisa, int skip = 0, int pageSize = 0)
+        //{
+        //    var clientes = string.IsNullOrEmpty(pesquisa) ? clienteService.ListarClientesDividaTotal() : clienteService.ListarClientesDividaTotal(pesquisa, skip, pageSize);
+        //    return Ok(clientes);
+        //}
+
         [HttpPost]
         public IActionResult Criar([FromBody] Cliente cliente)
         {
