@@ -64,7 +64,8 @@ namespace Vendinha_Samu.Console.Services
                     sessao.Merge(divida);
                     transaction.Commit();
                     return true;
-                } catch (Exception ex)
+                }
+                catch (Exception ex)
                 {
                     string memberName = "";
                     if (ex.InnerException != null)
@@ -93,7 +94,7 @@ namespace Vendinha_Samu.Console.Services
             var divida = sessao.Query<Divida>().Where(d => d.IdDivida == id).FirstOrDefault();
             if (divida == null)
             {
-                erros.Add(new ValidationResult("Registro não encontrado", new[] { "id" }));
+                erros.Add(new ValidationResult($"Registro de dívida [{id}] não encontrado", new[] { "id" }));
                 return false;
             }
 
