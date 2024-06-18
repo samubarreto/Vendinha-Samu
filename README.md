@@ -60,7 +60,7 @@
 * [X] UPDATE [+Postman Collection]
 * [X] DELETE [+Postman Collection]
 
-###### BACKEND ENDPOINTS DTOs (Data Transfer Object) ENTRE CLIENTES E DÍVIDAS
+###### BACKEND ENDPOINTS DTOs (Data Transfer Object) ENTRE CLIENTES E DÍVIDAS -- [IMPEDIMENTO] NÃO SEI COMO FAZER DE JEITO NENHUM
 
 * [ ] READ Clientes com Dívidas [+Postman Collection]
 * [ ] READ Dívidas de Cliente [+Postman Collection]
