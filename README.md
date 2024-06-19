@@ -68,7 +68,7 @@
 ###### FRONTEND
 
 * [X] Prototipar Interface do grid de cards de clientes
-* [ ] Prototipar Interface de tabela de dívidas de um cliente
+* [X] Prototipar Interface de tabela de dívidas de um cliente
 * [ ] Prototipar Modal de Formulário de Inserção/Edição de Cliente/Dívida
 * [ ] Prototipar Modal de Confirmação de Inserção/Edição/Baixa/Exclusão de Cliente/Dívida
 * [ ] Aplicar o protótipo e codar as interfaces com HTML, CSS, JS e ReactJS
