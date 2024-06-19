@@ -60,14 +60,17 @@
 * [X] UPDATE [+Postman Collection]
 * [X] DELETE [+Postman Collection]
 
-###### BACKEND ENDPOINTS DTOs (Data Transfer Object) ENTRE CLIENTES E DÍVIDAS -- [IMPEDIMENTO] NÃO SEI COMO FAZER DE JEITO NENHUM
+###### BACKEND ENDPOINTS DTOs (Data Transfer Object) ENTRE CLIENTES E DÍVIDAS - [IMPEDIMENTO] NÃO SEI COMO FAZER DE JEITO NENHUM
 
 * [ ] READ Clientes com Dívidas [+Postman Collection]
 * [ ] READ Dívidas de Cliente [+Postman Collection]
 
 ###### FRONTEND
 
-* [ ] Prototipar as interfaces do Frontend
+* [X] Prototipar Interface do grid de cards de clientes
+* [ ] Prototipar Interface de tabela de dívidas de um cliente
+* [ ] Prototipar Modal de Formulário de Inserção/Edição de Cliente/Dívida
+* [ ] Prototipar Modal de Confirmação de Inserção/Edição/Baixa
 * [ ] Aplicar o protótipo e codar as interfaces com HTML, CSS, JS e ReactJS
 * [ ] Chamar os endpoints corretamente para criação, edição, leitura e deleção de clientes e dívidas
 
