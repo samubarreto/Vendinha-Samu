@@ -76,6 +76,8 @@
 
 ###### FRONTEND HTML, CSS, JS & REACTJS
 
+* [ ] Desenvolver componente de header
+* [ ] Desenvolver componente de paginamento
 * [ ] Desenvolver a interface do grid de cards de clientes, componente de card de cliente
 * [ ] Adicionar funcionalidade de listagem dinâmica dos clientes
 * [ ] Desenvolver a interface da tabela de dívidas de um cliente, componente de tabela de dívidas
