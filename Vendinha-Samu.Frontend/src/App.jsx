@@ -1,11 +1,21 @@
-import { useState } from 'react'
+import { BrowserRouter, registerPathTypeParameter } from 'simple-react-routing';
+import GridCardsClientes from './clientes/GridCardsClientes.jsx';
+import Layout from './layout/Layout.jsx';
 
 export default function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <h1>IN PROGRESS 🤓</h1>
+      <BrowserRouter
+        notFoundPage={<GridCardsClientes></GridCardsClientes>}
+        routes={[
+          {
+            path: "clientes",
+            component: <GridCardsClientes></GridCardsClientes>
+          },
+        ]}>
+        <Layout></Layout>
+      </BrowserRouter>
     </>
   )
 }

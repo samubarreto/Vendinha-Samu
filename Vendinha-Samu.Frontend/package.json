@@ -11,7 +11,8 @@
   },
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "simple-react-routing": "^0.0.8"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
