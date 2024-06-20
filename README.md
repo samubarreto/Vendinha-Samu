@@ -69,8 +69,8 @@
 
 * [X] Prototipar Interface do grid de cards de clientes
 * [X] Prototipar Interface de tabela de dívidas de um cliente
-* [ ] Prototipar Modal de Formulário de Inserção/Edição de Cliente/Dívida
-* [ ] Prototipar Modal de Confirmação de Inserção/Edição/Baixa/Exclusão de Cliente/Dívida
+* [X] Prototipar Modal de Formulário de Inserção/Edição de Cliente/Dívida
+* [X] Prototipar Modal de Confirmação de Inserção/Edição/Baixa/Exclusão de Cliente/Dívida
 * [ ] Aplicar o protótipo e codar as interfaces com HTML, CSS, JS e ReactJS
 * [ ] Chamar os endpoints corretamente para criação, edição, leitura e deleção de clientes e dívidas
 
