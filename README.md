@@ -74,6 +74,10 @@
 * [ ] Aplicar o protótipo e codar as interfaces com HTML, CSS, JS e ReactJS
 * [ ] Chamar os endpoints corretamente para criação, edição, leitura e deleção de clientes e dívidas
 
+###### FINALIZAÇÃO
+
+* [ ] Identificar e Refatorar o que tiver de estranho em todo o código de front e back
+
 ###### TESTES, DOCUMENTAÇÃO E ENTREGA
 
 * [ ] Testar a aplicação baseado nos casos préviamente estabelecidos
