@@ -67,12 +67,22 @@
 
 ###### FRONTEND
 
+###### FRONTEND PROTÓTIPO
+
 * [X] Prototipar Interface do grid de cards de clientes
 * [X] Prototipar Interface de tabela de dívidas de um cliente
 * [X] Prototipar Modal de Formulário de Inserção/Edição de Cliente/Dívida
 * [X] Prototipar Modal de Confirmação de Inserção/Edição/Baixa/Exclusão de Cliente/Dívida
-* [ ] Aplicar o protótipo e codar as interfaces com HTML, CSS, JS e ReactJS
-* [ ] Chamar os endpoints corretamente para criação, edição, leitura e deleção de clientes e dívidas
+
+###### FRONTEND HTML, CSS, JS & REACTJS
+
+* [ ] Desenvolver a interface do grid de cards de clientes, componente de card de cliente
+* [ ] Adicionar funcionalidade de listagem dinâmica dos clientes
+* [ ] Desenvolver a interface da tabela de dívidas de um cliente, componente de tabela de dívidas
+* [ ] Adicionar funcionalidade de listagem dinâmica das dívidas de um cliente
+* [ ] Desenvolver componente de modal de confirmação/exclusão/edição/inserção/baixa
+* [ ] Desenvolver componente de formulário de cliente/dívida
+* [ ] Fazer o Fetch dos endpoints corretamente por meio dos serviços disponíveis na pasta do front src/services/[...]
 
 ###### FINALIZAÇÃO
 
