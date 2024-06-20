@@ -74,6 +74,10 @@
 * [X] Prototipar Modal de Formulário de Inserção/Edição de Cliente/Dívida
 * [X] Prototipar Modal de Confirmação de Inserção/Edição/Baixa/Exclusão de Cliente/Dívida
 
+###### DETALHES
+
+* [ ] Refatorar: Banco e mapeamento do Back para armazenar caminho da imagem de perfil do cliente na tabela cliente
+
 ###### FRONTEND HTML, CSS, JS & REACTJS
 
 * [ ] Desenvolver componente de header
