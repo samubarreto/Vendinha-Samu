@@ -1,0 +1,16 @@
+.base-icon {
+  vertical-align: middle;
+  fill: var(--cor-branco);
+  height: 14px;
+  width: 14px;
+}
+
+h1 .base-icon {
+  margin: 0 0 5px 10px;
+  height: 40px;
+  width: 40px;
+}
+
+.black {
+  fill: var(--cor-preto);
+}

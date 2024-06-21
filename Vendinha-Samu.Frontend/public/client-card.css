@@ -1,1 +1,68 @@
-/* 🤠 */
+.client-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--cor-branco);
+  padding: 10px;
+  border-radius: 30px;
+}
+
+.profile-img-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.profile-img {
+  height: 120px;
+  width: 120px;
+  border-radius: 120px;
+}
+
+.vertical-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.small-button {
+  cursor: pointer;
+  background-color: var(--cor-cinza-bem-escuro);
+  border: none;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.client-name-age {
+  text-align: center;
+  text-wrap: pretty;
+  text-transform: uppercase;
+  color: var(--cor-cinza-bem-escuro);
+  font-weight: 900;
+  font-size: .8rem;
+}
+
+.client-email {
+  text-align: center;
+  text-wrap: nowrap;
+  text-transform: lowercase;
+  color: var(--cor-cinza-claro);
+  font-weight: 900;
+  font-size: .7rem;
+}
+
+.debt-sum-client {
+  background-color: var(--cor-vermelho);
+  color: var(--cor-branco);
+  border: none;
+  border-radius: 30px;
+  width: 100%;
+  padding: 2px 0;
+  font-weight: 900;
+  font-size: 1.5rem;
+}

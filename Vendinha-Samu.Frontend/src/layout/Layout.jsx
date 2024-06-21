@@ -1,5 +1,5 @@
 import { RenderComponent } from "simple-react-routing"
-import Header1 from "./Header1"
+import Header1 from "./Header"
 
 export default function Layout() {
   return (

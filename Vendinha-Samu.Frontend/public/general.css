@@ -1,10 +1,10 @@
 :root {
-  font-family: monospace;
+  font-family: "Space Mono", monospace;
   line-height: 1.5;
   font-weight: 400;
 
-  color: #fff;
-  background-color: #222222;
+  color: var(--cor-branco);
+  background-color: var(--cor-cinza-bem-escuro);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -13,6 +13,9 @@
 }
 
 * {
+  font-family: "Space Mono", monospace;
+  line-height: 1.5;
+  font-weight: 400;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -22,6 +25,5 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  min-height: 100dvh;
 }
