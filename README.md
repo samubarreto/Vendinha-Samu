@@ -130,6 +130,12 @@ Cpf.Validar("08597471077"); // True
   * Possibilita fazer consultas, inserções, deleções, updates e mais sem precisar escrever DQL, DML, DDL no C#
 * [Npgsql](https://github.com/npgsql/npgsql)
 
-  * Permite estabelecer conexões com bancos de dados Postgres no .net
+  * Permite estabelecer conexões com bancos de dados Postgres no dotnet
+* [React](https://github.com/facebook/react)
+
+  * Biblioteca utilizada para o desenvolvimento do Frontend, possibilita a divisão dos arquivos em componentes e fornece hooks como o useState, useEffect, useRegular para gerenciamento de estado mais facilmente. Modular e reutilizável.
+* [simple-react-routing](https://github.com/rodrigo-web-developer/simple-react-router)
+
+  * Biblioteca do React usada no lugar do react-router-dom para organização simplificada das rotas.
 
 ---
