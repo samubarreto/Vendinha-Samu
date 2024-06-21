@@ -12,7 +12,7 @@ CREATE TABLE clientes (
     cpf CHAR(11) NOT NULL,
     data_nascimento DATE NOT NULL,
     email VARCHAR(50) NULL,
-	source_imagem_perfil TEXT NOT NULL DEFAULT './src/assets/profile_placeholder.png',
+	source_imagem_perfil TEXT DEFAULT 'profile_placeholder.png',
     CONSTRAINT pk_cliente PRIMARY KEY (id_cliente),
     CONSTRAINT unique_cpf UNIQUE (cpf),
 	CONSTRAINT unique_email UNIQUE (email)
@@ -102,6 +102,19 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 
+/* A função abaixo é executada sempre antes da
+inserção ou update dum cliente e preenche a foto
+de perfil com o placeholder caso esteja vazio */
+CREATE OR REPLACE FUNCTION setar_padrao_perfil()
+RETURNS TRIGGER AS $$
+BEGIN
+    IF (NEW.source_imagem_perfil = '') OR  (NEW.source_imagem_perfil IS NULL) THEN
+        NEW.source_imagem_perfil := 'profile_placeholder.png';
+    END IF;
+    RETURN NEW;
+END;
+$$ LANGUAGE plpgsql;
+
 ------------- TRIGGERS -----------------
 /* A trigger abaixo é acionada sempre ANTES
 da inserção ou update de uma dívida e
@@ -126,3 +139,11 @@ CREATE TRIGGER trigger_verifica_cpf
 BEFORE INSERT OR UPDATE ON clientes
 FOR EACH ROW
 EXECUTE FUNCTION validar_cpf();
+
+/* A trigger abaixo é acionada sempre ANTES
+da inserção ou update de um cliente e chama
+a função setar_padrao_perfil() */
+CREATE TRIGGER trigger_seta_imagem_padrao_perfil
+BEFORE INSERT OR UPDATE ON clientes
+FOR EACH ROW
+EXECUTE FUNCTION setar_padrao_perfil();
