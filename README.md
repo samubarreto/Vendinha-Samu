@@ -60,7 +60,7 @@
 * [X] UPDATE [+Postman Collection]
 * [X] DELETE [+Postman Collection]
 
-###### BACKEND ENDPOINTS DTOs (Data Transfer Object) ENTRE CLIENTES E DÍVIDAS - [IMPEDIMENTO] NÃO SEI COMO FAZER DE JEITO NENHUM
+###### BACKEND ENDPOINTS DTOs (Data Transfer Object) ou Viewmodel? ENTRE CLIENTES E DÍVIDAS - [IMPEDIMENTO] NÃO SEI COMO FAZER DE JEITO NENHUM
 
 * [ ] READ Clientes com Dívidas [+Postman Collection]
   ·(nome_completo, data_nascimento, email, source_imagem_perfil, somatorio_dividas)
@@ -114,7 +114,7 @@
 
 ### ·Justificativa de uso das Bibliotecas/Pacotes/Etc...
 
-* [BrasilAPI](https://github.com/RBonaldi/CPF.CNPJ)
+* [CPF.CNPJ](https://github.com/RBonaldi/CPF.CNPJ)
   * Usei ela no dotnet pra validar o cpf muito facilmente, documentação brasileira, criei um novo DataValidation dentro do GeneralServieces using a lib, mole demais:
 
 ```csharp
