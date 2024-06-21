@@ -1,14 +1,19 @@
 .client-card {
+  z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   background-color: var(--cor-branco);
-  padding: 10px;
-  border-radius: 30px;
+  padding: 20px 5px;
+  border-radius: 40px;
+  gap: 8px;
+  max-width: 300px;
+  box-shadow: 0 8px 0 0 var(--cor-preto);
 }
 
 .profile-img-row {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -17,9 +22,11 @@
 }
 
 .profile-img {
-  height: 120px;
-  width: 120px;
-  border-radius: 120px;
+  z-index: 3;
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  box-shadow: 0 4px 5px 0 var(--cor-cinza-transparente-bem-claro);
 }
 
 .vertical-buttons {
@@ -32,19 +39,45 @@
 
 .small-button {
   cursor: pointer;
+  z-index: 2;
+  position: absolute;
   background-color: var(--cor-cinza-bem-escuro);
   border: none;
-  border-radius: 50%;
-  padding: 5px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 5px 8px 5px 20px;
+  transition: all .15s;
+}
+
+.small-button.top {
+  align-self: center;
+  top: 38px;
+}
+
+.small-button.bottom {
+  align-self: center;
+  bottom: 38px;
+}
+
+.small-button.top:hover,
+.small-button.bottom:hover {
+  padding: 5px 8px 5px 30px;
+  background-color: var(--cor-vermelho);
+}
+
+.small-button.top:active,
+.small-button.bottom:active {
+  background-color: var(--cor-vermelho-transparente);
 }
 
 .client-name-age {
   text-align: center;
-  text-wrap: pretty;
+  text-wrap: balance;
   text-transform: uppercase;
   color: var(--cor-cinza-bem-escuro);
   font-weight: 900;
   font-size: .8rem;
+  padding: 0 5px;
 }
 
 .client-email {
@@ -57,12 +90,25 @@
 }
 
 .debt-sum-client {
+  cursor: pointer;
   background-color: var(--cor-vermelho);
   color: var(--cor-branco);
   border: none;
-  border-radius: 30px;
-  width: 100%;
-  padding: 2px 0;
+  border-radius: 40px;
+  width: 80%;
+  padding: 4px 0;
+  margin: 0 40px;
   font-weight: 900;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  overflow: hidden;
+  transition: all .3s;
+}
+
+.debt-sum-client:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px var(--cor-vermelho-transparente);
+}
+
+.debt-sum-client:active {
+  transform: scale(1);
 }

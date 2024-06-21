@@ -12,7 +12,7 @@ CREATE TABLE clientes (
     cpf CHAR(11) NOT NULL,
     data_nascimento DATE NOT NULL,
     email VARCHAR(50) NULL,
-	source_imagem_perfil TEXT NOT NULL DEFAULT './src/assets/default_profile.png',
+	source_imagem_perfil TEXT NOT NULL DEFAULT './src/assets/profile_placeholder.png',
     CONSTRAINT pk_cliente PRIMARY KEY (id_cliente),
     CONSTRAINT unique_cpf UNIQUE (cpf),
 	CONSTRAINT unique_email UNIQUE (email)

@@ -21,9 +21,11 @@
   box-sizing: border-box;
 }
 
-body {
+#root {
+  min-height: 100dvh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100dvh;
+  gap: 30px;
 }
