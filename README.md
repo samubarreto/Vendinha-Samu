@@ -63,9 +63,10 @@
 ###### BACKEND ENDPOINTS DTOs (Data Transfer Object) ENTRE CLIENTES E DÍVIDAS - [IMPEDIMENTO] NÃO SEI COMO FAZER DE JEITO NENHUM
 
 * [ ] READ Clientes com Dívidas [+Postman Collection]
+  ·(nome_completo, data_nascimento, email, source_imagem_perfil, somatorio_dividas)
 * [ ] READ Dívidas de Cliente [+Postman Collection]
-
-###### FRONTEND
+  ·(nome_completo, data_nascimento, cpf, email, source_imagem_perfil)
+  ·(id_divida, descricao, valor, data_pagamento, situacao)
 
 ###### FRONTEND PROTÓTIPO
 

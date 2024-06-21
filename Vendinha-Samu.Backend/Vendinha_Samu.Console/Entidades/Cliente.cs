@@ -21,5 +21,7 @@ namespace Vendinha_Samu.Console.Entidades
         [StringLength(50, ErrorMessage = "O E-mail não pode passar de 50 caractéres")]
         [EmailAddress(ErrorMessage = "O E-mail está inválido")]
         public string? Email { get; set; }
+
+        public string? SourceImagemPerfil { get; set; }
     }
 }
