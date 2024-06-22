@@ -71,7 +71,7 @@
 ###### DETALHES
 
 * [X] Refatorar: Protótipo, banco e mapeamento do Back para armazenar caminho da imagem de perfil do cliente na tabela cliente
-* [ ] REFATORAR TOTALMENTE BANCO E BACK DO
+* [ ] REFATORAR TOTALMENTE BANCO E BACK DO USO DA IMAGEM DE PERFIL
 
 ###### FRONTEND HTML, CSS, JS & REACTJS
 
@@ -98,7 +98,7 @@
 * [ ] Documentar as instruções de uso da aplicação Vendinha Fullstack Interfocus 😎
 * [ ] Gravar apresentação do projeto
 * [ ] Mandar repositório no email do Rodrigo
-* [ ] (**TENTAR)** **** Subir a aplicação inteira no Github Pages
+* [ ] **TENTAR** **** Subir a aplicação inteira no Github Pages
 
 ---
 
