@@ -1,0 +1,50 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 90%;
+  background-color: var(--cor-branco);
+  border-radius: 30px;
+  padding: 5px 12px;
+}
+
+footer button {
+  background-color: var(--cor-cinza-escuro);
+  color: var(--cor-branco);
+  padding: 5px 12px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+footer button:hover {
+  transition: all .15s;
+  transform: scale(1.02);
+  box-shadow: 0 0 10px 1px var(--cor-cinza-bem-escuro);
+}
+
+footer button:active {
+  transition: all .15s;
+  transform: scale(.98);
+}
+
+.page-button {
+  padding: 0 5px;
+  height: 50%;
+}
+
+.page-container {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.current-page {
+  border-radius: 50px;
+  padding: 5px 20px;
+  background-color: var(--cor-cinza-escuro);
+  color: var(--cor-branco);
+  cursor: default;
+}

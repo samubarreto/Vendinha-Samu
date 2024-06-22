@@ -1,9 +1,10 @@
 h1 {
-  width: fit-content;
+  min-width: fit-content;
+  max-width: 100%;
   color: var(--cor-preto);
   background-color: var(--cor-branco);
   text-align: center;
   border-radius: 30px;
-  font-weight: 900;
-  padding: 5px 50px;
+  padding: 0 50px;
+  font-size: 1.5rem;
 }

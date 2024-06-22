@@ -1,11 +1,12 @@
 import CardCliente from "./CardCliente.jsx"
-import SearchBar from "./SearchBar.jsx"
+import SearchBarClientes from "./SearchBarClientes.jsx"
+import FooterClientes from "./FooterClientes.jsx"
 
 export default function GridCardsClientes() {
   return (
     <>
-      <SearchBar></SearchBar>
-      <div className="clients-grid">
+      <SearchBarClientes></SearchBarClientes>
+      <main className="clients-grid">
         <CardCliente></CardCliente>
         <CardCliente></CardCliente>
         <CardCliente></CardCliente>
@@ -16,7 +17,8 @@ export default function GridCardsClientes() {
         <CardCliente></CardCliente>
         <CardCliente></CardCliente>
         <CardCliente></CardCliente>
-      </div>
+      </main>
+      <FooterClientes></FooterClientes>
     </>
   )
 }

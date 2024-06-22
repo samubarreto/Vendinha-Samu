@@ -7,9 +7,9 @@
   background-color: var(--cor-branco);
   padding: 20px 5px;
   border-radius: 40px;
-  gap: 8px;
+  gap: 5px;
   max-width: 300px;
-  box-shadow: 0 8px 0 0 var(--cor-preto);
+  box-shadow: 0 5px 0 0 var(--cor-preto);
 }
 
 .profile-img-row {
@@ -23,8 +23,8 @@
 
 .profile-img {
   z-index: 3;
-  height: 140px;
-  width: 140px;
+  height: 120px;
+  width: 120px;
   border-radius: 50%;
   box-shadow: 0 4px 5px 0 var(--cor-cinza-transparente-bem-claro);
 }
@@ -51,12 +51,12 @@
 
 .small-button.top {
   align-self: center;
-  top: 38px;
+  top: 28px;
 }
 
 .small-button.bottom {
   align-self: center;
-  bottom: 38px;
+  bottom: 28px;
 }
 
 .small-button.top:hover,
@@ -75,7 +75,6 @@
   text-wrap: balance;
   text-transform: uppercase;
   color: var(--cor-cinza-bem-escuro);
-  font-weight: 900;
   font-size: .8rem;
   padding: 0 5px;
 }
@@ -85,7 +84,6 @@
   text-wrap: nowrap;
   text-transform: lowercase;
   color: var(--cor-cinza-claro);
-  font-weight: 900;
   font-size: .7rem;
 }
 
@@ -98,8 +96,7 @@
   width: 80%;
   padding: 4px 0;
   margin: 0 40px;
-  font-weight: 900;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   overflow: hidden;
   transition: all .3s;
 }

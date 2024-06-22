@@ -1,6 +1,6 @@
 import { BrowserRouter, registerPathTypeParameter } from 'simple-react-routing';
 import GridCardsClientes from './clientes/GridCardsClientes.jsx';
-import Layout from './layout/Layout.jsx';
+import Layout from './general/Layout.jsx';
 
 export default function App() {
 

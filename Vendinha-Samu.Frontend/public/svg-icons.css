@@ -8,16 +8,31 @@
 
 h1 .base-icon {
   margin: 0 0 5px 10px;
-  height: 40px;
-  width: 40px;
+  height: 30px;
+  width: 30px;
+}
+
+.new-client-button .base-icon {
+  width: 16px;
+  height: 16px;
+  margin: 0 0 5px 8px;
+}
+
+input[type="search"] .base-icon {
+  width: 24px;
+  height: 24px;
 }
 
 button.debt-sum-client .base-icon {
-  margin: 0 0 3px 10px;
+  margin: 0 0 5px 10px;
   height: 20px;
   width: 20px;
 }
 
 .black {
   fill: var(--cor-preto);
+}
+
+.green {
+  fill: var(--cor-verde);
 }
