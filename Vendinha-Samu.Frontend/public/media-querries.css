@@ -45,3 +45,25 @@
     font-size: .7rem;
   }
 }
+
+@media (max-width: 1025px) {
+  .clients-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    place-items: center;
+  }
+
+  .client-card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 411px) {
+  h1 {
+    font-size: .6rem;
+  }
+
+  input[type="search"] {
+    min-width: 250px;
+  }
+}

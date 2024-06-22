@@ -10,6 +10,7 @@ footer {
 }
 
 footer button {
+  text-wrap: nowrap;
   background-color: var(--cor-cinza-escuro);
   color: var(--cor-branco);
   padding: 5px 12px;
@@ -22,7 +23,7 @@ footer button {
 footer button:hover {
   transition: all .15s;
   transform: scale(1.02);
-  box-shadow: 0 0 10px 1px var(--cor-cinza-bem-escuro);
+  box-shadow: 0 0 5px 1px var(--cor-cinza-transparente);
 }
 
 footer button:active {
