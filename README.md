@@ -82,15 +82,15 @@
 ###### FRONTEND HTML, CSS, JS & REACTJS
 
 * [X] Desenvolver componente de header
-* [ ] Desenvolver a interface do grid de cards de clientes, componente de card de cliente
+* [X] Desenvolver a interface do grid de cards de clientes, componente de card de cliente
 * [ ] Desenvolver a interface da tabela de dívidas de um cliente, componente de tabela de dívidas
 * [ ] Desenvolver componente de modal de confirmação/exclusão/edição/inserção/baixa
 * [ ] Desenvolver componente de formulário de cliente/dívida
 * [ ] Desenvolver componente de paginamento
 * [ ] Adicionar funcionalidade de listagem dinâmica dos clientes
 * [ ] Adicionar funcionalidade de listagem dinâmica das dívidas de um cliente
-* [ ] CRUD Clientes
-* [ ] CRUD Dívidas
+* [ ] CRUD Clientes no front
+* [ ] CRUD Dívidas no front
 
 ###### FINALIZAÇÃO
 
