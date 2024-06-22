@@ -71,6 +71,7 @@
 ###### DETALHES
 
 * [X] Refatorar: Protótipo, banco e mapeamento do Back para armazenar caminho da imagem de perfil do cliente na tabela cliente
+* [ ] REFATORAR TOTALMENTE BANCO E BACK PRA SALVAR A IMAGEM DE PERFIL CORRETAMENTE
 
 ###### FRONTEND HTML, CSS, JS & REACTJS
 
