@@ -1,0 +1,47 @@
+@media (max-width:1367px) {
+  h1 {
+    font-size: 1rem;
+  }
+
+  input[type="search"] {
+    min-width: 340px;
+  }
+
+  .profile-img {
+    height: 80px;
+    width: 80px;
+  }
+
+  .client-name-age {
+    font-size: .6rem;
+  }
+
+  .client-email {
+    font-size: .5rem;
+  }
+
+  .debt-sum-client {
+    font-size: 1rem;
+  }
+
+  .small-button {
+    padding: 1px 5px 1px 13px;
+  }
+
+  .small-button:hover {
+    padding: 1px 5px 1px 20px;
+  }
+
+  .small-button.top {
+    top: 17px;
+  }
+
+  .small-button.bottom {
+    bottom: 17px;
+  }
+
+  footer,
+  footer button {
+    font-size: .7rem;
+  }
+}

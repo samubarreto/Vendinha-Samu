@@ -50,23 +50,19 @@
 }
 
 .small-button.top {
-  align-self: center;
   top: 28px;
 }
 
 .small-button.bottom {
-  align-self: center;
   bottom: 28px;
 }
 
-.small-button.top:hover,
-.small-button.bottom:hover {
+.small-button:hover {
   padding: 5px 8px 5px 30px;
   background-color: var(--cor-vermelho);
 }
 
-.small-button.top:active,
-.small-button.bottom:active {
+.small-button:active {
   background-color: var(--cor-vermelho-transparente);
 }
 
