@@ -1,4 +1,5 @@
 ﻿using Vendinha_Samu.Console.Entidades;
+using Vendinha_Samu.Console.DTOs;
 using Vendinha_Samu.Console.Services;
 using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel.DataAnnotations;

@@ -124,7 +124,10 @@ namespace Vendinha_Samu.Console.Services
             using var sessao = session.OpenSession();
             try
             {
-                var clientes = sessao.Query<Cliente>().OrderBy(c => c.Id).ToList();
+                var clientes = sessao
+                    .Query<Cliente>()
+                    .OrderBy(c => c.Id)
+                    .ToList();
                 return clientes;
             }
             catch (Exception)
