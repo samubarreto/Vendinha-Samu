@@ -59,6 +59,7 @@
 * [X] CREATE [+Postman Collection]
 * [X] UPDATE [+Postman Collection]
 * [X] DELETE [+Postman Collection]
+* [ ] READ DÍVIDAS/{idcliente}
 
 ###### FRONTEND PROTÓTIPO
 
