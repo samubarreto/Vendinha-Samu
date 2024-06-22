@@ -83,6 +83,7 @@
 
 * [X] Desenvolver componente de header
 * [X] Desenvolver a interface do grid de cards de clientes, componente de card de cliente
+* [X] Deixar inferface de  grid de cards de clientes responsiva
 * [ ] Desenvolver a interface da tabela de dívidas de um cliente, componente de tabela de dívidas
 * [ ] Desenvolver componente de modal de confirmação/exclusão/edição/inserção/baixa
 * [ ] Desenvolver componente de formulário de cliente/dívida
