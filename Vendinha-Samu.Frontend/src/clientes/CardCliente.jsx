@@ -1,6 +1,10 @@
-export default function CardCliente() {
+import { Link } from 'react';
+
+export default function CardCliente(properties) {
+
   return (
     <>
+
       <div className="client-card">
         <div className="profile-img-row">
           <img className="profile-img" src="./src/assets/profile_placeholder.png" alt="Imagem de Perfil"></img>
@@ -20,8 +24,19 @@ export default function CardCliente() {
 
         </div>
 
-        <p className="client-name-age">MICHAEL JACKSON OLIVEIRA MORAES CARDOSO, 31</p>
-        <p className="client-email">micael.jack@gmail.com</p>
+        {/* <p className="client-name-age">{cliente.nome}, {cliente.dataNascimento}</p>
+        <p className="client-email">{cliente.email}</p>
+        <Link to={`cliente/${cliente.id}/dividas`}>
+          <button className="debt-sum-client">{dividas.somatorio_dividas}
+            <svg xmlns="http://www.w3.org/2000/svg" className="base-icon debt-svg" viewBox="0 0 16 16">
+              <path d="M1 3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zm7 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4" />
+              <path d="M0 5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V7a2 2 0 0 1-2-2z" />
+            </svg>
+          </button>
+        </Link> */}
+
+        <p className="client-name-age">LUCAS OLIVEIRA MORAES DIAS, 60</p>
+        <p className="client-email">luqueta.games@gmail.com</p>
         <button className="debt-sum-client">R$200,00
           <svg xmlns="http://www.w3.org/2000/svg" className="base-icon debt-svg" viewBox="0 0 16 16">
             <path d="M1 3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zm7 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4" />
@@ -29,6 +44,7 @@ export default function CardCliente() {
           </svg>
         </button>
       </div>
+
     </>
   )
 }

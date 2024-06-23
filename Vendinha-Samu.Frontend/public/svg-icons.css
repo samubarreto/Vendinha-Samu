@@ -30,6 +30,10 @@ button.debt-sum-client .base-icon {
   width: 20px;
 }
 
+button.credits-button .base-icon {
+  margin: 0 5px 3px 0;
+}
+
 .black {
   fill: var(--cor-preto);
 }
