@@ -105,53 +105,60 @@
 ### ·Instruções de Uso/Execução
 
 1) Tenha o SDK do DOTNET instalado:
+
 ```
 https://dotnet.microsoft.com/pt-br/download
 ```
+
 2) Tenha o NPM instalado:
+
 ```
 https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
 ```
+
 3) Tenha uma IDE para Postgresql instalada, recomendo o pgAdmin:
+
 ```
 https://www.pgadmin.org/download/pgadmin-4-windows/
 ```
 
 4) Abra um terminal e clone o repositório:
+
 ```bash
 git clone https://github.com/samubarreto/Vendinha-Fullstack-Interfocus.git
 ```
 
 5) Acesse o diretório do repositório clonado:
+
 ```bash
 cd .\Vendinha-Fullstack-Interfocus\
 ```
 
 6) Abra o diretório atual no Explorador de Arquivos pra facilitar a explicação:
+
 ```bash
 explorer .
 ```
 
 7) Encontre e abra a pasta Vendinha-Samu.Database
-
-8) Abra os arquivos schema.sql, insert_clientes.sql e insert_dividas.sql com qualquer editor de texto/código (Bloco de notas)
-
+8) Abra o arquivo schema.sql com qualquer editor de texto/código (Bloco de notas)
 9) Abra sua IDE do Postgresql (pgAdmin)
-
 10) Registre um novo servidor com as seguintes informações:
+
 - Nome: localhost(qualquer nome)
 - Host: 127.0.0.1
 - Porta: 5432
 - Senha: samu123
 
 11) Dentro do servidor registrado crie um banco de dados com nome = vendinha_samu
-
 12) Abra uma nova Querry tool para o banco vendinha_samu:
+
 - Cole o conteúdo do schema.sql e execute
 - Cole o conteúdo do insert_clientes.sql e execute
 - Cole o conteúdo do insert_dividas.sql e execute
 
 13) Volte para o explorador de arquivos, no diretório root (Vendinha-Fullstack-Interfocus), abra o terminal e siga os comandos:
+
 ```bash
 cd .\Vendinha-Samu.Backend\
 cd .\Vendinha_Samu.Api\
@@ -159,8 +166,8 @@ dotnet watch run
 ```
 
 14) Se estiver tudo certo, a API deve estar rodando agora.. Perfeito
-
 15) Volte para o explorador de arquivos, no diretório root (Vendinha-Fullstack-Interfocus), abra outro terminal e siga os comandos:
+
 ```bash
 cd .\Vendinha-Samu.Frontend\
 npm i vite
@@ -198,8 +205,9 @@ Cpf.Validar("08597471077"); // True
   * Biblioteca do React usada no lugar do react-router-dom para definição simplificada das rotas.
 
 ---
+
 <div align="center">
- 
+
 [![Portfolio](https://img.shields.io/badge/Portfolio-255E63?style=for-the-badge&logo=About.me&logoColor=white)](https://samubarreto.github.io/Portfolio/)
 [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/samubrreto/)
 
