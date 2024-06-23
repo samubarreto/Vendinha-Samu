@@ -89,9 +89,14 @@ namespace Vendinha_Samu.Console.Services
         public bool Excluir(int id, out List<ValidationResult> erros)
         {
             erros = new List<ValidationResult>();
+
             using var sessao = session.OpenSession();
             using var transaction = sessao.BeginTransaction();
-            var divida = sessao.Query<Divida>().Where(d => d.IdDivida == id).FirstOrDefault();
+
+            var divida = sessao
+                .Query<Divida>()
+                .Where(d => d.IdDivida == id)
+                .FirstOrDefault();
             if (divida == null)
             {
                 erros.Add(new ValidationResult($"Registro de dívida [{id}] não encontrado", new[] { "id" }));
@@ -111,39 +116,23 @@ namespace Vendinha_Samu.Console.Services
             }
         }
 
-        public virtual List<Divida> Listar()
+        public List<Divida> Listar(int idClienteDivida)
         {
             using var sessao = session.OpenSession();
             try
             {
-                var dividas = sessao.Query<Divida>().OrderBy(d => d.IdDivida).ToList();
+                var dividas = sessao
+                    .Query<Divida>()
+                    .Where(d => d.IdCliente == idClienteDivida)
+                    .OrderBy(d => d.Situacao)
+                    .OrderByDescending(d => d.Valor)
+                    .ToList();
                 return dividas;
             }
             catch (Exception)
             {
                 return [];
             }
-        }
-
-        public virtual List<Divida> Listar(string buscaCliente, int skip = 0, int pageSize = 0)
-        {
-            using var sessao = session.OpenSession();
-            var consulta = sessao.Query<Divida>().Where(d => d.Descricao.Contains(buscaCliente) ||
-                                                             d.Valor.ToString().Contains(buscaCliente) ||
-                                                             d.DataCriacao.ToString().Contains(buscaCliente) ||
-                                                             d.DataPagamento.ToString().Contains(buscaCliente) ||
-                                                             d.IdDivida.ToString().Contains(buscaCliente))
-                                                             .OrderBy(divida => divida.IdDivida)
-                                                             .AsEnumerable();
-            if (skip > 0)
-            {
-                consulta = consulta.Skip(skip);
-            }
-            if (pageSize > 0)
-            {
-                consulta = consulta.Take(pageSize);
-            }
-            return consulta.ToList();
         }
 
         private void HandleException(Exception ex, List<ValidationResult> erros, string memberName = "")

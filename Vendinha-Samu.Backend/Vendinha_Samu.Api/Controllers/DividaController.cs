@@ -14,11 +14,10 @@ namespace Vendinha_Samu.Api.Controllers
             this.dividaService = dividaService;
         }
 
-        [HttpGet]
-        public IActionResult Listar(string pesquisa, int skip = 0, int pageSize = 0)
+        [HttpGet("{id_cliente_divida}")]
+        public IActionResult Listar(int id_cliente_divida)
         {
-            var clientes = string.IsNullOrEmpty(pesquisa) ? dividaService.Listar() : dividaService.Listar(pesquisa, skip, pageSize);
-            return Ok(clientes);
+            return Ok(dividaService.Listar(id_cliente_divida));
         }
 
         [HttpPost]

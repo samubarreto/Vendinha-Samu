@@ -55,11 +55,11 @@
 
 ###### BACKEND ENDPOINTS DÍVIDAS
 
-* [X] READ   [+Postman Collection]
+* [X] READ DÍVIDAS/{idcliente}   [+Postman Collection]
 * [X] CREATE [+Postman Collection]
 * [X] UPDATE [+Postman Collection]
 * [X] DELETE [+Postman Collection]
-* [ ] READ DÍVIDAS/{idcliente}
+* [ ] SKIP PAGE SIZE DE DÍVIDAS
 
 ###### FRONTEND PROTÓTIPO
 

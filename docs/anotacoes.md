@@ -20,7 +20,7 @@
   * Deve ter um campo IDADE, calculado quando necessário
   * A listagem deve exibir páginas de 10 em 10 registros
   * Deve haver um campo de busca por nome
-  * Deve haver no fim da lista um somatório do total de dívidas dos clientes (De todos os clientes, provavelmente)
+  * Deve haver no fim da lista um somatório do total de dívidas do cliente
 * Listagem de Dívidas:
   * Deve ser possível marcar uma dívida como paga
   * Deve aparecer a soma das dívidas de um cliente
