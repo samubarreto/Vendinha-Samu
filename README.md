@@ -72,6 +72,7 @@
 * [X] Refatorar: Protótipo, banco e mapeamento do Back para armazenar caminho da imagem de perfil do cliente na tabela cliente
 * [X] Refatorar totalmente o banco e backend para imagem de perfil [+Postman Collection]
 * [X] Refatorar banco, adicionar deleção em cascata do cliente, pra ser possível apagar mesmo que tenha dívidas
+* [X] Refatorar banco, para ter uam coluna do somatório de dívidas de um cliente 🙂
 
 ###### FRONTEND HTML, CSS, JS & REACTJS
 
@@ -94,7 +95,7 @@
 ###### TESTES, DOCUMENTAÇÃO E ENTREGA
 
 * [ ] Testar a aplicação baseado nos casos préviamente estabelecidos
-* [ ] Exportar Collection de Testes do Postman
+* [ ] Exportar Collection do Postman
 * [X] Documentar o motivo de uso das Libs
 * [X] Documentar as instruções de uso da aplicação Vendinha Fullstack Interfocus 😎
 * [ ] Enviar repositório
@@ -104,6 +105,7 @@
 ### ·Instruções de Uso/Execução
 
 1) Tenha o GIT instalado:
+
 ```
 https://git-scm.com/download/win
 ```
