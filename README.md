@@ -70,8 +70,8 @@
 ###### REFATORAÇÕES IMPORTANTES GERAIS
 
 * [X] Refatorar: Protótipo, banco e mapeamento do Back para armazenar caminho da imagem de perfil do cliente na tabela cliente
-* [ ] Refatorar totalmente o banco e backend para imagem de perfil [+Postman Collection]
-* [ ] Refatorar banco, adicionar deleção em cascata do cliente, pra ser possível apagar mesmo que tenha dívidas
+* [X] Refatorar totalmente o banco e backend para imagem de perfil [+Postman Collection]
+* [X] Refatorar banco, adicionar deleção em cascata do cliente, pra ser possível apagar mesmo que tenha dívidas
 
 ###### FRONTEND HTML, CSS, JS & REACTJS
 

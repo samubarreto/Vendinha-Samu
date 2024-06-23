@@ -92,26 +92,35 @@ namespace Vendinha_Samu.Api.Controllers
             {
                 return NotFound();
             }
+
             var imagem = Request.Form.Files.FirstOrDefault();
             if (imagem == null)
             {
-                return BadRequest();
+                return BadRequest("Nenhuma imagem foi enviada.");
             }
 
-            using var ms = new MemoryStream();
-            imagem.CopyTo(ms);
-            ms.Position = 0;
-            var nome = Guid.NewGuid().ToString() + ".png";
-
-            if (!Directory.Exists($"{env.WebRootPath}/profile_pics"))
+            var allowedExtensions = new[] { ".jpg", ".jpeg", ".png", ".gif" };
+            var extension = Path.GetExtension(imagem.FileName).ToLower();
+            if (!allowedExtensions.Contains(extension))
             {
-                Directory.CreateDirectory($"{env.WebRootPath}/profile_pics");
+                return BadRequest("Formato de imagem não suportado.");
             }
 
-            System.IO.File.WriteAllBytes($"{env.WebRootPath}/profile_pics/{nome}", ms.ToArray());
+            var nomeArquivo = Guid.NewGuid().ToString() + extension;
 
-            cliente.UrlPerfil = $"http://127.0.0.1:7258/profile_pics/{nome}";
+            var profilePicsPath = Path.Combine(env.WebRootPath, "profile_pics");
+            if (!Directory.Exists(profilePicsPath))
+            {
+                Directory.CreateDirectory(profilePicsPath);
+            }
 
+            var filePath = Path.Combine(profilePicsPath, nomeArquivo);
+            using (var stream = new FileStream(filePath, FileMode.Create))
+            {
+                imagem.CopyTo(stream);
+            }
+
+            cliente.UrlPerfil = $"http://127.0.0.1:7258/profile_pics/{nomeArquivo}";
             clienteService.Editar(cliente, out _);
 
             return Ok(new { cliente.UrlPerfil });

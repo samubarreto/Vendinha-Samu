@@ -12,7 +12,7 @@ CREATE TABLE clientes (
     cpf CHAR(11) NOT NULL,
     data_nascimento DATE NOT NULL,
     email VARCHAR(50) NULL,
-	profile_url TEXT DEFAULT 'http://127.0.0.1:7258/profile_pics/profile_placeholder.png',
+	profile_url TEXT,
     CONSTRAINT pk_cliente PRIMARY KEY (id_cliente),
     CONSTRAINT unique_cpf UNIQUE (cpf),
 	CONSTRAINT unique_email UNIQUE (email)
@@ -109,7 +109,7 @@ CREATE OR REPLACE FUNCTION setar_padrao_perfil()
 RETURNS TRIGGER AS $$
 BEGIN
     IF (NEW.profile_url = '') OR  (NEW.profile_url IS NULL) THEN
-        NEW.profile_url := 'profile_placeholder.png';
+        NEW.profile_url := 'http://127.0.0.1:7258/profile_pics/profile_placeholder.png';
     END IF;
     RETURN NEW;
 END;
