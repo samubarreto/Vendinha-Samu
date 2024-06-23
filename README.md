@@ -59,7 +59,7 @@
 * [X] CREATE [+Postman Collection]
 * [X] UPDATE [+Postman Collection]
 * [X] DELETE [+Postman Collection]
-* [ ] SKIP PAGE SIZE DE DÍVIDAS
+* [ ] Skip e Page Size da listagem de dívidas de cliente
 
 ###### FRONTEND PROTÓTIPO
 
@@ -68,10 +68,11 @@
 * [X] Prototipar Modal de Formulário de Inserção/Edição de Cliente/Dívida
 * [X] Prototipar Modal de Confirmação de Inserção/Edição/Baixa/Exclusão de Cliente/Dívida
 
-###### DETALHES
+###### REFATORAÇÕES IMPORTANTES GERAIS
 
 * [X] Refatorar: Protótipo, banco e mapeamento do Back para armazenar caminho da imagem de perfil do cliente na tabela cliente
-* [ ] REFATORAR TOTALMENTE BANCO E BACK DO USO DA IMAGEM DE PERFIL
+* [ ] Refatorar totalmente o banco e backend para imagem de perfil
+* [ ] Refatorar banco, adicionar deleção em cascata do cliente, pra ser possível apagar mesmo que tenha dívidas
 
 ###### FRONTEND HTML, CSS, JS & REACTJS
 
@@ -89,7 +90,7 @@
 
 ###### FINALIZAÇÃO
 
-* [ ] Identificar e Refatorar o que tiver de estranho em todo o código de front e back
+* [ ] Identificar e Refatorar o que tiver de estranho em todo o código de front, back e banco
 
 ###### TESTES, DOCUMENTAÇÃO E ENTREGA
 
@@ -98,7 +99,7 @@
 * [ ] Documentar as instruções de uso da aplicação Vendinha Fullstack Interfocus 😎
 * [ ] Gravar apresentação do projeto
 * [ ] Mandar repositório no email do Rodrigo
-* [ ] **TENTAR** **** Subir a aplicação inteira no Github Pages
+* [ ] **TENTAR** **** Subir a aplicação inteira no Github Pages (Não sei se é possível)
 
 ---
 
