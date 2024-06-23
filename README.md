@@ -96,9 +96,7 @@
 * [ ] Testar a aplicação baseado nos casos préviamente estabelecidos
 * [X] Documentar o motivo de uso das Libs
 * [X] Documentar as instruções de uso da aplicação Vendinha Fullstack Interfocus 😎
-* [ ] Gravar apresentação do projeto
 * [ ] Mandar repositório no email do Rodrigo
-* [ ] **TENTAR** **** Subir a aplicação inteira no Github Pages (Não sei se é possível)
 
 ---
 
