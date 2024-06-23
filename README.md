@@ -135,3 +135,5 @@ Cpf.Validar("08597471077"); // True
   * Biblioteca do React usada no lugar do react-router-dom para organização simplificada das rotas.
 
 ---
+[![Portfolio](https://img.shields.io/badge/Portfolio-255E63?style=for-the-badge&logo=About.me&logoColor=white)](https://samubarreto.github.io/Portfolio/)
+[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/samubrreto/)
