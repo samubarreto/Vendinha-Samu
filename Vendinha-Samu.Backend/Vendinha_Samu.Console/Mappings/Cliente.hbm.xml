@@ -14,7 +14,6 @@
 		<property name="DataNascimento" column="data_nascimento" type="date"/>
 		<property name="Email" column="email" type="string" length="50"/>
 		<property name="UrlPerfil" column="profile_url" type="string" length="5000"/>
-
 	</class>
 
 </hibernate-mapping>

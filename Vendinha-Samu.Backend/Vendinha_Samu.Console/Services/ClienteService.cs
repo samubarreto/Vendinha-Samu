@@ -1,4 +1,5 @@
 ﻿using NHibernate;
+using NHibernate.Linq;
 using System.ComponentModel.DataAnnotations;
 using Vendinha_Samu.Console.Entidades;
 

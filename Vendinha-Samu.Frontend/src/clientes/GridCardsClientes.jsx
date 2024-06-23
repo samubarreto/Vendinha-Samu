@@ -7,25 +7,31 @@ import { listarDividas, deletarDivida, postPutDivida } from "../services/dividaA
 import { useEffect, useState } from "react"
 
 export default function GridCardsClientes() {
-  // console.log(listarClientes("", 10, 10)
-  //   .then((payload) => {
-  //     console.log(payload.json())
-  //   }));
+  const [cards, setCards] = useState([]);
+  const [busca, setBusca] = useState("");
+  const [page, setPage] = useState(0);
+
+  useEffect(() => {
+    listarClientes(busca, 0, 10)
+      .then(resposta => {
+        if (resposta.status == 200) {
+          resposta.json()
+            .then(clientes => {
+              setCards(clientes);
+            })
+        }
+      });
+  }, [busca, page]);
   return (
     <>
-      <SearchBarClientes></SearchBarClientes>
+      <SearchBarClientes value={busca} onChange={(event) => { setBusca(event.target.value) }}></SearchBarClientes>
+
       <main className="clients-grid">
-        <CardCliente></CardCliente>
-        <CardCliente></CardCliente>
-        <CardCliente></CardCliente>
-        <CardCliente></CardCliente>
-        <CardCliente></CardCliente>
-        <CardCliente></CardCliente>
-        <CardCliente></CardCliente>
-        <CardCliente></CardCliente>
-        <CardCliente></CardCliente>
-        <CardCliente></CardCliente>
+        {cards.map(cliente => {
+          return <CardCliente key={cliente.id_cliente} cliente={cliente}></CardCliente>
+        })}
       </main>
+
       <FooterClientes></FooterClientes>
     </>
   )

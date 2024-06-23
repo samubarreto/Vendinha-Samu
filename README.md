@@ -94,15 +94,16 @@
 ###### TESTES, DOCUMENTAÇÃO E ENTREGA
 
 * [ ] Testar a aplicação baseado nos casos préviamente estabelecidos
+* [ ] Exportar Collection de Testes do Postman
 * [X] Documentar o motivo de uso das Libs
 * [X] Documentar as instruções de uso da aplicação Vendinha Fullstack Interfocus 😎
-* [ ] Mandar repositório no email do Rodrigo
+* [ ] Enviar repositório
 
 ---
 
 ### ·Instruções de Uso/Execução
 
-1) Tenha o SDK do DOTNET instalado:
+1) Tenha o SDK do DOTNET 8.0 instalado:
 
 ```
 https://dotnet.microsoft.com/pt-br/download

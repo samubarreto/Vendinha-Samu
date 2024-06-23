@@ -5,7 +5,7 @@
 
 	<class name="Divida" table="dividas">
 		<id name="IdDivida" column="id_divida" type="int">
-			<generator class="sequence" >
+			<generator class="sequence">
 				<param name="sequence">dividas_seq</param>
 			</generator>
 		</id>

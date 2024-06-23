@@ -1,8 +1,8 @@
 import { URL_API } from "./generalApi";
 
 export function listarClientes(pesquisa, skip, pageSize) {
-  var response = fetch(URL_API + "/api/clientes?pesquisa=" + pesquisa + "&" + `skip=${skip}&pageSize=${pageSize}`);
-  return response;
+  console.log(`${URL_API}/api/clientes?pesquisa=${pesquisa}&skip=${skip}&pageSize=${pageSize}`);
+  return fetch(`${URL_API}/api/clientes?pesquisa=${pesquisa}&skip=${skip}&pageSize=${pageSize}`);
 }
 
 export function getClienteById(id_cliente) {
