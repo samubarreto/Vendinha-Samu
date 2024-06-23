@@ -14,12 +14,6 @@ namespace Vendinha_Samu.Api.Controllers
             this.dividaService = dividaService;
         }
 
-        [HttpGet]
-        public IActionResult ListarTodasDividasOrdenadasPorSomatorioDeDividas()
-        {
-            return Ok(dividaService.ListarTodasDividasOrdenadasPorSomatorioDeDividas());
-        }
-
         [HttpGet("{id_cliente_divida}")]
         public IActionResult ListarDividasDeUmCliente(int id_cliente_divida)
         {

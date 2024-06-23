@@ -116,31 +116,6 @@ namespace Vendinha_Samu.Console.Services
             }
         }
 
-        public List<DividaResumo> ListarTodasDividasOrdenadasPorSomatorioDeDividas(string pesquisa = "", int skip = 0, int pageSize = 0)
-        {
-            using var sessao = session.OpenSession();
-            try
-            {
-                var dividas = sessao
-                    .Query<Divida>()
-                    .GroupBy(d => d.IdCliente)
-                    .Select(g => new DividaResumo
-                    {
-                        IdCliente = g.Key,
-                        TotalDivida = g.Sum(d => d.Valor)
-                    })
-                    .OrderByDescending(d => d.TotalDivida)
-                    .ToList();
-
-                return dividas;
-            }
-            catch (Exception ex)
-            {
-                System.Console.WriteLine(ex);
-                return new List<DividaResumo>();
-            }
-        }
-
         public List<Divida> ListarDividasDeUmCliente(int idClienteDivida)
         {
             using var sessao = session.OpenSession();
