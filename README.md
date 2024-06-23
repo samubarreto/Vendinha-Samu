@@ -167,7 +167,7 @@ npm i vite
 npm run dev
 ```
 
-16) Se estiver tudo certo, a API e o Frontend devem estar rodando perfeitamente agora 🤠
+16) Se estiver tudo certo, tanto o banco, quanto a API Backend e o Frontend devem estar rodando perfeitamente agora, pronto pra gerenciar dívidas de clientes 🤠
 
 ---
 
