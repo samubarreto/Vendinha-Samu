@@ -13,12 +13,8 @@
 		<property name="Cpf" column="cpf" type="string" length="11"/>
 		<property name="DataNascimento" column="data_nascimento" type="date"/>
 		<property name="Email" column="email" type="string" length="50"/>
-		<property name="SourceImagemPerfil" column="source_imagem_perfil" type="string" length="5000"/>
-		<!--<map name="SomatorioDividas" lazy="false" generic="true">
-			<key column="id_cliente"></key>
-			<one-to-many class="Divida"></one-to-many>
-		</map>-->
-		
+		<property name="UrlPerfil" column="profile_url" type="string" length="5000"/>
+
 	</class>
 
 </hibernate-mapping>

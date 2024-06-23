@@ -112,89 +112,40 @@ namespace Vendinha_Samu.Console.Services
                 transaction.Commit();
                 return true;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                erros.Add(new ValidationResult($"Não é possível apagar o Cliente {cliente.NomeCompleto} pois ele possui dívidas em aberto.", new[] { "id" }));
+                erros.Add(new ValidationResult($"Ocorreu um erro ao Excluir o Cliente [{cliente.Id}] {cliente.NomeCompleto} ", new[] { "id" }));
                 return false;
             }
         }
 
-        public virtual List<Cliente> Listar()
+        public List<Cliente> Listar(string pesquisa = "", int skip = 0, int pageSize = 0)
         {
             using var sessao = session.OpenSession();
-            try
-            {
-                var clientes = sessao
-                    .Query<Cliente>()
-                    .OrderBy(c => c.Id)
-                    .ToList();
-                return clientes;
-            }
-            catch (Exception)
-            {
-                return [];
-            }
-        }
+            var consulta = sessao.Query<Cliente>();
 
-        public virtual List<Cliente> Listar(string buscaCliente, int skip = 0, int pageSize = 0)
-        {
-            using var sessao = session.OpenSession();
-            var consulta = sessao.Query<Cliente>().Where(c => c.NomeCompleto.Contains(buscaCliente) ||
-                                                              c.Email.Contains(buscaCliente) ||
-                                                              c.Cpf.Contains(buscaCliente))
-                                                              .OrderBy(cliente => cliente.Id)
-                                                              .AsEnumerable();
+            if (!String.IsNullOrEmpty(pesquisa))
+            {
+                consulta = sessao.Query<Cliente>().Where(c => c.NomeCompleto.Contains(pesquisa) || c.Cpf.Contains(pesquisa));
+            }
+
             if (skip > 0)
             {
                 consulta = consulta.Skip(skip);
             }
+
             if (pageSize > 0)
             {
                 consulta = consulta.Take(pageSize);
             }
+
             return consulta.ToList();
         }
 
-        //public virtual List<ClienteComDividaDTO> ListarClientesDividaTotal(string buscaCliente = null, int skip = 0, int pageSize = 0)
-        //{
-        //    using var sessao = session.OpenSession();
-
-        //    var consulta = sessao.Query<Cliente>()
-        //                         .GroupJoin(sessao.Query<Divida>(),
-        //                                    cliente => cliente.Id,
-        //                                    divida => divida.IdCliente,
-        //                                    (cliente, dividas) => new { Cliente = cliente, Dividas = dividas.DefaultIfEmpty() })
-        //                         .Select(group => new ClienteComDividaDTO
-        //                         {
-        //                             IdCliente = group.Cliente.Id,
-        //                             NomeCompleto = group.Cliente.NomeCompleto,
-        //                             CPF = group.Cliente.Cpf,
-        //                             Idade = DateTime.Now.Year - group.Cliente.DataNascimento.Year,
-        //                             Email = group.Cliente.Email,
-        //                             TotalDivida = group.Dividas.DefaultIfEmpty().Sum(d => d != null ? d.Valor : 0)
-        //                         });
-
-        //    if (!string.IsNullOrEmpty(buscaCliente))
-        //    {
-        //        consulta = consulta.Where(dto => dto.NomeCompleto.Contains(buscaCliente) ||
-        //                                         dto.Email.Contains(buscaCliente) ||
-        //                                         dto.CPF.Contains(buscaCliente));
-        //    }
-
-        //    consulta = consulta.OrderBy(dto => dto.TotalDivida);
-
-        //    if (skip > 0)
-        //    {
-        //        consulta = consulta.Skip(skip);
-        //    }
-        //    if (pageSize > 0)
-        //    {
-        //        consulta = consulta.Take(pageSize);
-        //    }
-
-        //    return consulta.ToList();
-        //}
-
+        public Cliente RetornaPeloId(int id_cliente)
+        {
+            return session.OpenSession().Get<Cliente>(id_cliente);
+        }
 
         private void HandleException(Exception ex, List<ValidationResult> erros, string memberName = "")
         {

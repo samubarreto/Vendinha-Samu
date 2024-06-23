@@ -34,7 +34,7 @@ WHERE
 GROUP BY
     cl.id_cliente
 ORDER BY
-	cl.id_cliente;
+	SUM(dv.valor_divida) desc, cl.nome_completo;
 
 /* Clientes e suas dívidas separadas */
 SELECT

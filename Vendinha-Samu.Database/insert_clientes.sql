@@ -1,7 +1,7 @@
 ------------- CLIENTES ---------------
 
-INSERT INTO clientes (nome_completo, cpf, data_nascimento, email, source_imagem_perfil) VALUES
-('Cliente 01', '77120005065', '2008-06-01', 'cliente51@teste.com', 'teste.jpg'),
+INSERT INTO clientes (nome_completo, cpf, data_nascimento, email, profile_url) VALUES
+('Cliente 01', '77120005065', '2008-06-01', 'cliente51@teste.com', null),
 ('Cliente 02', '48350876077', '1959-07-01', 'cliente52@teste.com', null),
 ('Cliente 03', '10068351054', '1935-08-01', 'cliente53@teste.com', null),
 ('Cliente 04', '14462563085', '2002-12-25', 'cliente54@teste.com', null),

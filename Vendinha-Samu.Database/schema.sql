@@ -12,7 +12,7 @@ CREATE TABLE clientes (
     cpf CHAR(11) NOT NULL,
     data_nascimento DATE NOT NULL,
     email VARCHAR(50) NULL,
-	source_imagem_perfil TEXT DEFAULT 'profile_placeholder.png',
+	profile_url TEXT DEFAULT 'http://127.0.0.1:7258/profile_pics/profile_placeholder.png',
     CONSTRAINT pk_cliente PRIMARY KEY (id_cliente),
     CONSTRAINT unique_cpf UNIQUE (cpf),
 	CONSTRAINT unique_email UNIQUE (email)
@@ -30,7 +30,7 @@ CREATE TABLE dividas (
     situacao BOOL NOT NULL DEFAULT false,
     data_pagamento DATE,
     descricao VARCHAR(255) NOT NULL,
-    CONSTRAINT fk_cliente FOREIGN KEY (id_cliente) REFERENCES clientes (id_cliente),
+    CONSTRAINT fk_cliente FOREIGN KEY (id_cliente) REFERENCES clientes (id_cliente) ON DELETE CASCADE,
     CONSTRAINT pk_divida PRIMARY KEY (id_divida)
 );
 
@@ -108,8 +108,8 @@ de perfil com o placeholder caso esteja vazio */
 CREATE OR REPLACE FUNCTION setar_padrao_perfil()
 RETURNS TRIGGER AS $$
 BEGIN
-    IF (NEW.source_imagem_perfil = '') OR  (NEW.source_imagem_perfil IS NULL) THEN
-        NEW.source_imagem_perfil := 'profile_placeholder.png';
+    IF (NEW.profile_url = '') OR  (NEW.profile_url IS NULL) THEN
+        NEW.profile_url := 'profile_placeholder.png';
     END IF;
     RETURN NEW;
 END;

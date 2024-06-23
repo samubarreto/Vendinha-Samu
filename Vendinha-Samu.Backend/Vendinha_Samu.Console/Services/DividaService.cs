@@ -111,7 +111,7 @@ namespace Vendinha_Samu.Console.Services
             }
             catch (Exception ex)
             {
-                erros.Add(new ValidationResult($"Não foi possível apagar a Dívida [{divida.IdDivida}].", new[] { "id" }));
+                erros.Add(new ValidationResult($"Não foi possível apagar a Dívida [{divida.IdDivida}]. {ex}", new[] { "id" }));
                 return false;
             }
         }
