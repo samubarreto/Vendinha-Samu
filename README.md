@@ -150,12 +150,10 @@ explorer .
 - Porta: 5432
 - Senha: samu123
 
-11) Dentro do servidor registrado crie um banco de dados com nome = vendinha_samu
-12) Abra uma nova Querry tool para o banco vendinha_samu:
+11) Conecte-se ao servidor registrado crie um banco de dados com nome = vendinha_samu
+12) Abra uma nova Querry para o banco vendinha_samu:
 
 - Cole o conteúdo do schema.sql e execute
-- Cole o conteúdo do insert_clientes.sql e execute
-- Cole o conteúdo do insert_dividas.sql e execute
 
 13) Volte para o explorador de arquivos, no diretório root (Vendinha-Fullstack-Interfocus), abra o terminal e siga os comandos:
 
@@ -174,7 +172,7 @@ npm i vite
 npm run dev
 ```
 
-16) Se estiver tudo certo, tanto o banco, quanto a API Backend e o Frontend devem estar rodando perfeitamente agora, pronto pra gerenciar dívidas de clientes 🤠
+16) Se estiver tudo certo, tanto o banco, quanto a API Backend e o Frontend devem estar rodando perfeitamente agora, pronto pra gerenciar dívidas de clientes no seu navegador 🤠
 
 ---
 
