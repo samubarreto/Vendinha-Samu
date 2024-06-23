@@ -103,58 +103,63 @@
 
 ### ·Instruções de Uso/Execução
 
-1) Tenha o SDK do DOTNET 8.0 instalado:
+1) Tenha o GIT instalado:
+```
+https://git-scm.com/download/win
+```
+
+2) Tenha o SDK do DOTNET 8.0 instalado:
 
 ```
 https://dotnet.microsoft.com/pt-br/download
 ```
 
-2) Tenha o NPM instalado:
+3) Tenha o NPM instalado:
 
 ```
 https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
 ```
 
-3) Tenha uma IDE para Postgresql instalada, recomendo o pgAdmin:
+4) Tenha uma IDE para Postgresql instalada, recomendo o pgAdmin:
 
 ```
 https://www.pgadmin.org/download/pgadmin-4-windows/
 ```
 
-4) Abra um terminal e clone o repositório:
+5) Abra um terminal e clone o repositório:
 
 ```bash
 git clone https://github.com/samubarreto/Vendinha-Fullstack-Interfocus.git
 ```
 
-5) Acesse o diretório do repositório clonado:
+6) Acesse o diretório do repositório clonado:
 
 ```bash
 cd .\Vendinha-Fullstack-Interfocus\
 ```
 
-6) Abra o diretório atual no Explorador de Arquivos pra facilitar a explicação:
+7) Abra o diretório atual no Explorador de Arquivos pra facilitar a explicação:
 
 ```bash
 explorer .
 ```
 
-7) Encontre e abra a pasta Vendinha-Samu.Database
-8) Abra o arquivo schema.sql com qualquer editor de texto/código (Bloco de notas)
-9) Abra sua IDE do Postgresql (pgAdmin)
-10) Registre um novo servidor com as seguintes informações:
+8) Encontre e abra a pasta Vendinha-Samu.Database
+9) Abra o arquivo schema.sql com qualquer editor de texto/código (Bloco de notas)
+10) Abra sua IDE do Postgresql (pgAdmin)
+11) Registre um novo servidor com as seguintes informações:
 
 - Nome: localhost(qualquer nome)
 - Host: 127.0.0.1
 - Porta: 5432
 - Senha: samu123
 
-11) Conecte-se ao servidor registrado crie um banco de dados com nome = vendinha_samu
-12) Abra uma nova Querry para o banco vendinha_samu:
+12) Conecte-se ao servidor registrado crie um banco de dados com nome = vendinha_samu
+13) Abra uma nova Querry para o banco vendinha_samu:
 
 - Cole o conteúdo do schema.sql e execute
 
-13) Volte para o explorador de arquivos, no diretório root (Vendinha-Fullstack-Interfocus), abra o terminal e siga os comandos:
+14) Volte para o explorador de arquivos, no diretório root (Vendinha-Fullstack-Interfocus), abra o terminal e siga os comandos:
 
 ```bash
 cd .\Vendinha-Samu.Backend\
@@ -162,8 +167,8 @@ cd .\Vendinha_Samu.Api\
 dotnet watch run
 ```
 
-14) Se estiver tudo certo, a API deve estar rodando agora.. Perfeito
-15) Volte para o explorador de arquivos, no diretório root (Vendinha-Fullstack-Interfocus), abra outro terminal e siga os comandos:
+15) Se estiver tudo certo, a API deve estar rodando agora.. Perfeito
+16) Volte para o explorador de arquivos, no diretório root (Vendinha-Fullstack-Interfocus), abra outro terminal e siga os comandos:
 
 ```bash
 cd .\Vendinha-Samu.Frontend\
@@ -171,7 +176,7 @@ npm i vite
 npm run dev
 ```
 
-16) Se estiver tudo certo, tanto o banco, quanto a API Backend e o Frontend devem estar rodando perfeitamente agora, pronto pra gerenciar dívidas de clientes no seu navegador 🤠
+17) Se estiver tudo certo, tanto o banco, quanto a API Backend e o Frontend devem estar rodando perfeitamente agora, pronto pra gerenciar dívidas de clientes no seu navegador 🤠
 
 ---
 
