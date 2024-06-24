@@ -79,14 +79,14 @@
 * [X] Desenvolver componente de header
 * [X] Desenvolver a interface do grid de cards de clientes, componente de card de cliente
 * [X] Deixar inferface de  grid de cards de clientes responsiva
-* [ ] Desenvolver a interface da tabela de dívidas de um cliente, componente de tabela de dívidas
+* [X] Adicionar funcionalidade de listagem dinâmica dos clientes (paginamento)
 * [ ] Desenvolver componente de modal de confirmação de exclusão/edição/inserção/baixa
-* [ ] Desenvolver componente de formulário de cliente/dívida
+* [ ] Desenvolver a interface da tabela de dívidas de um cliente, componente de tabela de dívidas
+* [ ] Desenvolver componente de formulário de cliente
+* [ ] Desenvolver componente de formulário de dívida
 * [ ] Desenvolver componente de paginamento
-* [X] Adicionar funcionalidade de listagem dinâmica dos clientes
-* [ ] Adicionar funcionalidade de listagem dinâmica das dívidas de um cliente
-* [ ] CRUD Clientes no front
-* [ ] CRUD Dívidas no front
+* [ ] CRUD Clientes no front Finalizado
+* [ ] CRUD Dívidas no front Finalizado
 
 ###### FINALIZAÇÃO
 
@@ -98,7 +98,7 @@
 * [ ] Exportar Collection do Postman
 * [X] Documentar o motivo de uso das Libs
 * [X] Documentar as instruções de uso da aplicação Vendinha Fullstack Interfocus 😎
-* [ ] Enviar repositório
+* [ ] Entregar repositório
 
 ---
 

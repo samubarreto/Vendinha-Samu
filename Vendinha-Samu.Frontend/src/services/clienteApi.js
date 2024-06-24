@@ -1,6 +1,8 @@
 import { URL_API } from "./general";
+let skip;
 
-export function listarClientes(pesquisa, skip, pageSize) {
+export function listarClientes(pesquisa = '', page = 0, pageSize = 0) {
+  page <= 1 ? skip = 0 : skip = (page - 1) * pageSize;
   return fetch(`${URL_API}/api/clientes?pesquisa=${pesquisa}&skip=${skip}&pageSize=${pageSize}`);
 }
 
