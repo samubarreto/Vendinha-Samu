@@ -23,6 +23,6 @@ namespace Vendinha_Samu.Console.Entidades
         public string? Email { get; set; }
         [Url]
         public string? UrlPerfil { get; set; }
-        public Decimal? SomatorioDividas { get; set; }
+        public Decimal? SomatorioDividasEmAberto { get; set; }
     }
 }
