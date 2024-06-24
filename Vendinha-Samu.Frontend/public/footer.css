@@ -23,7 +23,7 @@ footer button {
 footer button:hover {
   transition: all .15s;
   transform: scale(1.02);
-  box-shadow: 0 0 5px 1px var(--cor-cinza-transparente);
+  box-shadow: 0 0 5px 1px var(--cor-cinza-transparente-claro);
 }
 
 footer button:active {
