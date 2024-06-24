@@ -1,8 +1,10 @@
 import { Link } from 'react';
+import { calculaIdade } from '../services/general';
 
 export default function CardCliente(properties) {
 
   const cliente = properties.cliente;
+  let idadeCliente = calculaIdade(cliente.dataNascimento);
 
   return (
     <>
@@ -26,7 +28,7 @@ export default function CardCliente(properties) {
 
         </div>
 
-        <p className="client-name-age">{cliente.nomeCompleto}, {cliente.dataNascimento}</p>
+        <p className="client-name-age">{cliente.nomeCompleto}, {idadeCliente}</p>
         <p className="client-email">{cliente.email}</p>
         {/* <Link to={`cliente/${cliente.id}/dividas`}> */}
         <button className="debt-sum-client">R${(cliente.somatorioDividasEmAberto).toFixed(2)}

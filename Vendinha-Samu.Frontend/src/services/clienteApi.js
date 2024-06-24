@@ -1,4 +1,4 @@
-import { URL_API } from "./generalApi";
+import { URL_API } from "./general";
 
 export function listarClientes(pesquisa, skip, pageSize) {
   return fetch(`${URL_API}/api/clientes?pesquisa=${pesquisa}&skip=${skip}&pageSize=${pageSize}`);

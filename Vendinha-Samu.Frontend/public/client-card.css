@@ -27,6 +27,7 @@
   width: 120px;
   border-radius: 50%;
   box-shadow: 0 4px 5px 0 var(--cor-cinza-transparente-bem-claro);
+  object-fit: cover;
 }
 
 .vertical-buttons {

@@ -110,7 +110,7 @@ CREATE OR REPLACE FUNCTION setar_padrao_perfil()
 RETURNS TRIGGER AS $$
 BEGIN
     IF (NEW.profile_url = '') OR  (NEW.profile_url IS NULL) THEN
-        NEW.profile_url := 'http://127.0.0.1:7258/profile_pics/profile_placeholder.png';
+        NEW.profile_url := 'https://127.0.0.1:7258/profile_pics/profile_placeholder.png';
     END IF;
     RETURN NEW;
 END;
@@ -193,192 +193,192 @@ EXECUTE FUNCTION atualizar_somatorio_dividas_abertas();
 ------------- INSERT CLIENTES ---------------
 
 INSERT INTO clientes (nome_completo, cpf, data_nascimento, email, profile_url) VALUES
-('Cliente 01', '77120005065', '2008-06-01', 'cliente51@teste.com', null),
-('Cliente 02', '48350876077', '1959-07-01', 'cliente52@teste.com', null),
-('Cliente 03', '10068351054', '1935-08-01', 'cliente53@teste.com', null),
-('Cliente 04', '14462563085', '2002-12-25', 'cliente54@teste.com', null),
-('Cliente 05', '11265316007', '1957-10-01', 'cliente55@teste.com', null),
-('Cliente 06', '68436606060', '1944-11-01', 'cliente56@teste.com', null),
-('Cliente 07', '32676983083', '2006-12-01', 'cliente57@teste.com', null),
-('Cliente 08', '41087006007', '1995-01-01', 'cliente58@teste.com', null),
-('Cliente 09', '03249721050', '2003-02-01', 'cliente59@teste.com', null),
-('Cliente 10', '47811148064', '1966-01-01', 'cliente10@teste.com', null),
-('Cliente 11', '61637755031', '1949-02-01', 'cliente11@teste.com', null),
-('Cliente 12', '62139599047', '1962-03-01', 'cliente12@teste.com', null),
-('Cliente 13', '57559315003', '1979-04-01', 'cliente13@teste.com', null),
-('Cliente 14', '78456336076', '1986-05-01', 'cliente14@teste.com', null),
-('Cliente 15', '79372405043', '1998-06-01', 'cliente15@teste.com', null),
-('Cliente 16', '30250729032', '2001-07-01', 'cliente16@teste.com', null),
-('Cliente 17', '93076257005', '1968-08-01', 'cliente17@teste.com', null),
-('Cliente 18', '40932903002', '1956-09-01', 'cliente18@teste.com', null),
-('Cliente 19', '63594256022', '2000-10-01', 'cliente19@teste.com', null),
-('Cliente 20', '61221479075', '1954-11-01', 'cliente20@teste.com', null),
-('Cliente 21', '13103426011', '1977-12-01', 'cliente21@teste.com', null),
-('Cliente 22', '04503698036', '1981-01-01', 'cliente22@teste.com', null),
-('Cliente 23', '45867427048', '1990-02-01', 'cliente23@teste.com', null),
-('Cliente 24', '14694191063', '1971-03-01', 'cliente24@teste.com', null),
-('Cliente 25', '42716710023', '1999-04-01', 'cliente25@teste.com', null),
-('Cliente 26', '02310014010', '2003-05-01', 'cliente26@teste.com', null),
-('Cliente 27', '95952082050', '1955-06-01', 'cliente27@teste.com', null),
-('Cliente 28', '38256267097', '1943-07-01', 'cliente28@teste.com', null),
-('Cliente 29', '55116715094', '1972-08-01', 'cliente29@teste.com', null),
-('Cliente 30', '80963690086', '1965-09-01', 'cliente30@teste.com', null),
-('Cliente 31', '40276271050', '1991-10-01', 'cliente31@teste.com', null),
-('Cliente 32', '23739885009', '1974-11-01', 'cliente32@teste.com', null),
-('Cliente 33', '49690081080', '1952-12-01', 'cliente33@teste.com', null),
-('Cliente 34', '58841830034', '1988-01-01', 'cliente34@teste.com', null),
-('Cliente 35', '53493792085', '1970-02-01', 'cliente35@teste.com', null),
-('Cliente 36', '87209279083', '1985-03-01', 'cliente36@teste.com', null),
-('Cliente 37', '54660159035', '2007-04-01', 'cliente37@teste.com', null),
-('Cliente 38', '36696253050', '1966-05-01', 'cliente38@teste.com', null),
-('Cliente 39', '75853255096', '1984-06-01', 'cliente39@teste.com', null),
-('Cliente 40', '01154904008', '1976-07-01', 'cliente40@teste.com', null),
-('Cliente 41', '89452629037', '1987-08-01', 'cliente41@teste.com', null),
-('Cliente 42', '76603915006', '1993-09-01', 'cliente42@teste.com', null),
-('Cliente 43', '51892787008', '2008-10-01', 'cliente43@teste.com', null),
-('Cliente 44', '06159542001', '1978-11-01', 'cliente44@teste.com', null),
-('Cliente 45', '94178442023', '1980-12-01', 'cliente45@teste.com', null),
-('Cliente 46', '54882125072', '1983-01-01', 'cliente46@teste.com', null),
-('Cliente 47', '07546146038', '1984-02-01', 'cliente47@teste.com', null),
-('Cliente 48', '11262988080', '1985-03-01', 'cliente48@teste.com', null),
-('Cliente 49', '91305474074', '1986-04-01', 'cliente49@teste.com', null),
-('Cliente 50', '62452277045', '1987-05-01', 'cliente50@teste.com', null);
+('Ana Carolina Silva', '77120005065', '2008-06-01', 'ana.carolina.silva@teste.com', null),
+('João da Silva Oliveira', '48350876077', '1959-07-01', 'joao.silva.oliveira@teste.com', null),
+('Maria de Fátima Santos', '10068351054', '1935-08-01', 'maria.fatima.santos@teste.com', null),
+('Pedro Henrique Souza', '14462563085', '2002-12-25', 'pedro.henrique.souza@teste.com', null),
+('Carla Cristina Pereira', '11265316007', '1957-10-01', 'carla.cristina.pereira@teste.com', null),
+('Antônio José Santos', '68436606060', '1944-11-01', 'antonio.jose.santos@teste.com', null),
+('Luiza da Silva Martins', '32676983083', '2006-12-01', 'luiza.silva.martins@teste.com', null),
+('Rafael da Costa', '41087006007', '1995-01-01', 'rafael.da.costa@teste.com', null),
+('Amanda de Oliveira Ferreira', '03249721050', '2003-02-01', 'amanda.oliveira.ferreira@teste.com', null),
+('Marcos Vinícius Silva', '47811148064', '1966-01-01', 'marcos.vinicius.silva@teste.com', null),
+('Juliana Aparecida Oliveira', '61637755031', '1949-02-01', 'juliana.aparecida.oliveira@teste.com', null),
+('Fernando Almeida Santos', '62139599047', '1962-03-01', 'fernando.almeida.santos@teste.com', null),
+('Carolina da Costa Santos', '57559315003', '1979-04-01', 'carolina.da.costa.santos@teste.com', null),
+('Paulo Roberto Lima', '78456336076', '1986-05-01', 'paulo.roberto.lima@teste.com', null),
+('Camila Oliveira Santos', '79372405043', '1998-06-01', 'camila.oliveira.santos@teste.com', null),
+('Márcio Luiz Pereira', '30250729032', '2001-07-01', 'marcio.luiz.pereira@teste.com', null),
+('Ana Paula Alves Costa', '93076257005', '1968-08-01', 'ana.paula.alves.costa@teste.com', null),
+('Lucas da Silva Souza', '40932903002', '1956-09-01', 'lucas.da.silva.souza@teste.com', null),
+('Tatiana Costa Martins', '63594256022', '2000-10-01', 'tatiana.costa.martins@teste.com', null),
+('Diego Oliveira Santos', '61221479075', '1954-11-01', 'diego.oliveira.santos@teste.com', null),
+('Patrícia Lima Costa', '13103426011', '1977-12-01', 'patricia.lima.costa@teste.com', null),
+('Marcelo Almeida Pereira', '04503698036', '1981-01-01', 'marcelo.almeida.pereira@teste.com', null),
+('Aline Oliveira Costa', '45867427048', '1990-02-01', 'aline.oliveira.costa@teste.com', null),
+('Rodrigo da Silva', '14694191063', '1971-03-01', 'rodrigo.da.silva@teste.com', null),
+('Bianca Costa Martins', '42716710023', '1999-04-01', 'bianca.costa.martins@teste.com', null),
+('Guilherme da Costa', '02310014010', '2003-05-01', 'guilherme.da.costa@teste.com', null),
+('Mariana Oliveira Santos', '95952082050', '1955-06-01', 'mariana.oliveira.santos@teste.com', null),
+('Felipe da Silva Oliveira', '38256267097', '1943-07-01', 'felipe.da.silva.oliveira@teste.com', null),
+('Vanessa Lima Costa', '55116715094', '1972-08-01', 'vanessa.lima.costa@teste.com', null),
+('Leonardo Oliveira Souza', '80963690086', '1965-09-01', 'leonardo.oliveira.souza@teste.com', null),
+('Gabriela Almeida Costa', '40276271050', '1991-10-01', 'gabriela.almeida.costa@teste.com', null),
+('Bruno da Silva Costa', '23739885009', '1974-11-01', 'bruno.da.silva.costa@teste.com', null),
+('Marina Oliveira Santos', '49690081080', '1952-12-01', 'marina.oliveira.santos@teste.com', null),
+('Gustavo da Silva Santos', '58841830034', '1988-01-01', 'gustavo.da.silva.santos@teste.com', null),
+('Renata Lima da Costa', '53493792085', '1970-02-01', 'renata.lima.da.costa@teste.com', null),
+('Luciana da Silva', '87209279083', '1985-03-01', 'luciana.da.silva@teste.com', null),
+('Victor Oliveira da Costa', '54660159035', '2007-04-01', 'victor.oliveira.da.costa@teste.com', null),
+('Caroline Costa Martins', '36696253050', '1966-05-01', 'caroline.costa.martins@teste.com', null),
+('Roberto Almeida da Silva', '75853255096', '1984-06-01', 'roberto.almeida.da.silva@teste.com', null),
+('Natália da Silva Santos', '01154904008', '1976-07-01', 'natalia.da.silva.santos@teste.com', null),
+('Lucas Oliveira da Silva', '89452629037', '1987-08-01', 'lucas.oliveira.da.silva@teste.com', null),
+('Ana Clara da Costa', '76603915006', '1993-09-01', 'ana.clara.da.costa@teste.com', null),
+('Ricardo da Silva Oliveira', '51892787008', '2008-10-01', 'ricardo.da.silva.oliveira@teste.com', null),
+('Isabela da Costa Lima', '06159542001', '1978-11-01', 'isabela.da.costa.lima@teste.com', null),
+('Gabriel Alves da Silva', '94178442023', '1980-12-01', 'gabriel.alves.da.silva@teste.com', null),
+('Daniela Oliveira Costa', '54882125072', '1983-01-01', 'daniela.oliveira.costa@teste.com', null),
+('Fábio da Costa', '07546146038', '1984-02-01', 'fabio.da.costa@teste.com', null),
+('Juliana da Silva Santos', '11262988080', '1985-03-01', 'juliana.da.silva.santos@teste.com', null),
+('Anderson da Silva', '91305474074', '1986-04-01', 'anderson.da.silva@teste.com', null),
+('Mariana da Costa', '62452277045', '1987-05-01', 'mariana.da.costa@teste.com', null);
 
 ------------- INSERT DIVIDAS ---------------
 
 INSERT INTO dividas (id_cliente, valor_divida, situacao, descricao) VALUES
 
-(1, 50.00, FALSE, 'Compra Teste 1.1'),
-(1, 70.00, FALSE, 'Compra Teste 1.2'),
-(1, 30.00, FALSE, 'Compra Teste 1.3'),
+(1, 50.00, FALSE, 'Camiseta masculina azul tamanho M'),
+(1, 70.00, FALSE, 'Tênis esportivo preto número 40'),
+(1, 30.00, FALSE, 'Calça jeans feminina skinny'),
 
-(2, 40.00, FALSE, 'Compra Teste 2.1'),
-(2, 60.00, FALSE, 'Compra Teste 2.2'),
+(2, 40.00, FALSE, 'Blusa de lã branca com gola alta'),
+(2, 60.00, FALSE, 'Jaqueta corta-vento masculina'),
 
-(3, 100.00, FALSE, 'Compra Teste 3.1'),
-(3, 100.00, FALSE, 'Compra Teste 3.2'),
+(3, 100.00, FALSE, 'Bota de couro marrom estilo country'),
+(3, 100.00, FALSE, 'Vestido de festa longo azul marinho'),
 
-(4, 150.00, FALSE, 'Compra Teste 4.1'),
+(4, 150.00, FALSE, 'Mochila escolar resistente'),
 
-(5, 30.00, FALSE, 'Compra Teste 4.1'),
-(5, 20.00, FALSE, 'Compra Teste 4.2'),
-(5, 40.00, FALSE, 'Compra Teste 4.3'),
+(5, 30.00, FALSE, 'Agenda executiva 2024'),
+(5, 20.00, FALSE, 'Canetas coloridas para desenho'),
+(5, 40.00, FALSE, 'Livro de receitas culinárias'),
 
-(6, 60.00, FALSE, 'Compra Teste 5.1'),
-(6, 80.00, FALSE, 'Compra Teste 5.2'),
+(6, 60.00, FALSE, 'Kit de ferramentas básicas para casa'),
+(6, 80.00, FALSE, 'Luminária de mesa ajustável'),
 
-(7, 70.00, FALSE, 'Compra Teste 6.1'),
+(7, 70.00, FALSE, 'Monitor LED 21.5" Full HD'),
 
-(8, 20.00, FALSE, 'Compra Teste 7.1'),
-(8, 100.00, FALSE, 'Compra Teste 7.2'),
+(8, 20.00, FALSE, 'Jogo de copos de vidro temperado'),
+(8, 100.00, FALSE, 'Panela elétrica multifuncional'),
 
-(9, 50.00, FALSE, 'Compra Teste 8.1'),
-(9, 90.00, FALSE, 'Compra Teste 8.2'),
+(9, 50.00, FALSE, 'Conjunto de toalhas de banho'),
+(9, 90.00, FALSE, 'Cadeira ergonômica para escritório'),
 
-(10, 15.00, FALSE, 'Compra Teste 10.1'),
-(10, 10.00, FALSE, 'Compra Teste 10.2'),
-(10, 25.00, FALSE, 'Compra Teste 10.3'),
+(10, 15.00, FALSE, 'Fone de ouvido intra-auricular'),
+(10, 10.00, FALSE, 'Capa protetora para celular'),
+(10, 25.00, FALSE, 'Mouse sem fio'),
 
-(11, 20.00, FALSE, 'Compra Teste 11.1'),
-(11, 30.00, FALSE, 'Compra Teste 11.2'),
+(11, 20.00, FALSE, 'Lanterna recarregável de LED'),
+(11, 30.00, FALSE, 'Corda de pular profissional'),
 
-(12, 50.00, FALSE, 'Compra Teste 12.1'),
+(12, 50.00, FALSE, 'Tapete para yoga'),
 
-(13, 35.00, FALSE, 'Compra Teste 13.1'),
-(13, 45.00, FALSE, 'Compra Teste 13.2'),
+(13, 35.00, FALSE, 'Relógio de parede decorativo'),
+(13, 45.00, FALSE, 'Quadro em canvas para sala de estar'),
 
-(14, 40.00, FALSE, 'Compra Teste 14.1'),
+(14, 40.00, FALSE, 'Chapinha para cabelo'),
 
-(15, 55.00, FALSE, 'Compra Teste 15.1'),
-(15, 25.00, FALSE, 'Compra Teste 15.2'),
+(15, 55.00, FALSE, 'Frigideira antiaderente 24cm'),
+(15, 25.00, FALSE, 'Kit de talheres de aço inox'),
 
-(16, 70.00, FALSE, 'Compra Teste 16.1'),
+(16, 70.00, FALSE, 'Escova elétrica para cabelos'),
 
-(17, 65.00, FALSE, 'Compra Teste 17.1'),
-(17, 35.00, FALSE, 'Compra Teste 17.2'),
+(17, 65.00, FALSE, 'Câmera de segurança Wi-Fi'),
+(17, 35.00, FALSE, 'Conjunto de pilhas recarregáveis'),
 
-(18, 45.00, FALSE, 'Compra Teste 18.1'),
+(18, 45.00, FALSE, 'Máquina de café expresso'),
 
-(19, 50.00, FALSE, 'Compra Teste 19.1'),
+(19, 50.00, FALSE, 'Filtro de água para torneira'),
 
-(20, 75.00, FALSE, 'Compra Teste 20.1'),
+(20, 75.00, FALSE, 'Ventilador de mesa 40cm'),
 
-(21, 85.00, FALSE, 'Compra Teste 21.1'),
-(21, 55.00, FALSE, 'Compra Teste 21.2'),
+(21, 85.00, FALSE, 'Tábua de corte em bambu'),
+(21, 55.00, FALSE, 'Conjunto de potes plásticos para cozinha'),
 
-(22, 30.00, FALSE, 'Compra Teste 22.1'),
-(22, 40.00, FALSE, 'Compra Teste 22.2'),
+(22, 30.00, FALSE, 'Organizador de maquiagem acrílico'),
+(22, 40.00, FALSE, 'Espelho de aumento com ventosa'),
 
-(23, 25.00, FALSE, 'Compra Teste 23.1'),
-(23, 30.00, FALSE, 'Compra Teste 23.2'),
+(23, 25.00, FALSE, 'Kit de ferramentas para bicicleta'),
+(23, 30.00, FALSE, 'Bomba de ar portátil para pneus'),
 
-(24, 60.00, FALSE, 'Compra Teste 24.1'),
-(24, 50.00, FALSE, 'Compra Teste 24.2'),
+(24, 60.00, FALSE, 'Jogo de lençóis 400 fios'),
+(24, 50.00, FALSE, 'Edredom de casal de microfibra'),
 
-(25, 35.00, FALSE, 'Compra Teste 25.1'),
+(25, 35.00, FALSE, 'Caixa de som portátil Bluetooth'),
 
-(26, 80.00, FALSE, 'Compra Teste 26.1'),
-(26, 20.00, FALSE, 'Compra Teste 26.2'),
+(26, 80.00, FALSE, 'Aspirador de pó vertical'),
+(26, 20.00, FALSE, 'Escova dental elétrica'),
 
-(27, 45.00, FALSE, 'Compra Teste 27.1'),
-(27, 55.00, FALSE, 'Compra Teste 27.2'),
+(27, 45.00, FALSE, 'Kit de ferramentas para jardinagem'),
+(27, 55.00, FALSE, 'Aparador de grama elétrico'),
 
-(28, 65.00, FALSE, 'Compra Teste 28.1'),
-(28, 35.00, FALSE, 'Compra Teste 28.2'),
+(28, 65.00, FALSE, 'Impressora multifuncional'),
+(28, 35.00, FALSE, 'Papel fotográfico A4'),
 
-(29, 20.00, FALSE, 'Compra Teste 29.1'),
-(29, 10.00, FALSE, 'Compra Teste 29.2'),
+(29, 20.00, FALSE, 'Garrafa térmica 1 litro'),
+(29, 10.00, FALSE, 'Conjunto de facas de cozinha'),
 
-(30, 70.00, FALSE, 'Compra Teste 30.1'),
-(30, 30.00, FALSE, 'Compra Teste 30.2'),
+(30, 70.00, FALSE, 'Kit de copos para cerveja artesanal'),
+(30, 30.00, FALSE, 'Abridor de garrafas'),
 
-(31, 40.00, FALSE, 'Compra Teste 31.1'),
+(31, 40.00, FALSE, 'Churrasqueira portátil'),
 
-(32, 25.00, FALSE, 'Compra Teste 32.1'),
-(32, 35.00, FALSE, 'Compra Teste 32.2'),
+(32, 25.00, FALSE, 'Cafeteira elétrica programável'),
+(32, 35.00, FALSE, 'Balde de gelo em aço inox'),
 
-(33, 50.00, FALSE, 'Compra Teste 33.1'),
+(33, 50.00, FALSE, 'Colchonete dobrável para camping'),
 
-(34, 45.00, FALSE, 'Compra Teste 34.1'),
-(34, 30.00, FALSE, 'Compra Teste 34.2'),
+(34, 45.00, FALSE, 'Squeeze térmico para bebidas'),
+(34, 30.00, FALSE, 'Mochila térmica para piquenique'),
 
-(35, 55.00, FALSE, 'Compra Teste 35.1'),
+(35, 55.00, FALSE, 'Filtro de ar para purificador'),
 
-(36, 60.00, FALSE, 'Compra Teste 36.1'),
-(36, 50.00, FALSE, 'Compra Teste 36.2'),
+(36, 60.00, FALSE, 'Kit de ferramentas para marcenaria'),
+(36, 50.00, FALSE, 'Lixa elétrica orbital'),
 
-(37, 35.00, FALSE, 'Compra Teste 37.1'),
+(37, 35.00, FALSE, 'Escorredor de louças em aço inox'),
 
-(38, 85.00, FALSE, 'Compra Teste 38.1'),
-(38, 15.00, FALSE, 'Compra Teste 38.2'),
+(38, 85.00, FALSE, 'Kit de pinceis profissionais para maquiagem'),
+(38, 15.00, FALSE, 'Lençol avulso para cama de casal'),
 
-(39, 45.00, FALSE, 'Compra Teste 39.1'),
-(39, 30.00, FALSE, 'Compra Teste 39.2'),
+(39, 45.00, FALSE, 'Jogo de taças de cristal para vinho'),
+(39, 30.00, FALSE, 'Decanter de vidro para vinho tinto'),
 
-(40, 50.00, FALSE, 'Compra Teste 40.1'),
+(40, 50.00, FALSE, 'Aparelho elétrico para cachorro-quente'),
 
-(41, 25.00, FALSE, 'Compra Teste 41.1'),
-(41, 35.00, FALSE, 'Compra Teste 41.2'),
+(41, 25.00, FALSE, 'Capa de chuva impermeável'),
+(41, 35.00, FALSE, 'Guarda-chuva resistente ao vento'),
 
-(42, 70.00, FALSE, 'Compra Teste 42.1'),
-(42, 50.00, FALSE, 'Compra Teste 42.2'),
+(42, 70.00, FALSE, 'Massageador elétrico portátil'),
+(42, 50.00, FALSE, 'Pulseira inteligente para monitoramento'),
 
-(43, 60.00, FALSE, 'Compra Teste 43.1'),
+(43, 60.00, FALSE, 'Kit de ferramentas para eletricista'),
 
-(44, 45.00, FALSE, 'Compra Teste 44.1'),
-(44, 30.00, FALSE, 'Compra Teste 44.2'),
+(44, 45.00, FALSE, 'Bolsa térmica para transporte de alimentos'),
+(44, 30.00, FALSE, 'Cantil de aço inox para camping'),
 
-(45, 55.00, FALSE, 'Compra Teste 45.1'),
+(45, 55.00, FALSE, 'Cafeteira italiana de alumínio'),
 
-(46, 80.00, FALSE, 'Compra Teste 46.1'),
-(46, 10.00, FALSE, 'Compra Teste 46.2'),
+(46, 80.00, FALSE, 'Liquidificador potente'),
+(46, 10.00, FALSE, 'Descascador de frutas'),
 
-(47, 45.00, FALSE, 'Compra Teste 47.1'),
+(47, 45.00, FALSE, 'Cadeado para bicicleta'),
 
-(48, 75.00, FALSE, 'Compra Teste 48.1'),
-(48, 25.00, FALSE, 'Compra Teste 48.2'),
+(48, 75.00, FALSE, 'Conjunto de facas profissionais'),
+(48, 25.00, FALSE, 'Afiador de facas'),
 
-(49, 35.00, FALSE, 'Compra Teste 49.1'),
+(49, 35.00, FALSE, 'Kit de tapetes para banheiro'),
 
-(50, 45.00, FALSE, 'Compra Teste 50.1'),
-(50, 55.00, FALSE, 'Compra Teste 50.2');
+(50, 45.00, FALSE, 'Máquina de cortar cabelo profissional'),
+(50, 55.00, FALSE, 'Secador de cabelo iônico');

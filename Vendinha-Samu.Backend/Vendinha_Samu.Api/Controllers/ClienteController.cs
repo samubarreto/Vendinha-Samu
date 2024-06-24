@@ -84,7 +84,7 @@ namespace Vendinha_Samu.Api.Controllers
                 imagem.CopyTo(stream);
             }
 
-            cliente.UrlPerfil = $"http://127.0.0.1:7258/profile_pics/{nomeArquivo}";
+            cliente.UrlPerfil = $"https://127.0.0.1:7258/profile_pics/{nomeArquivo}";
             clienteService.Editar(cliente, out _);
 
             return Ok(new { cliente.UrlPerfil });

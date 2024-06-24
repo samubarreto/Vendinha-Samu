@@ -1,4 +1,4 @@
-import { URL_API } from "./generalApi";
+import { URL_API } from "./general";
 
 export function listarDividas(id_cliente_divida) {
   var response = fetch(URL_API + "/api/dividas/" + id_cliente_divida)
