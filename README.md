@@ -79,12 +79,11 @@
 * [X] Desenvolver componente de header
 * [X] Desenvolver a interface do grid de cards de clientes, componente de card de cliente
 * [X] Deixar inferface de  grid de cards de clientes responsiva
-* [X] Adicionar funcionalidade de listagem dinâmica dos clientes (paginamento)
+* [X] Adicionar funcionalidade de listagem dinâmica dos clientes (paginamento/busca)
 * [ ] Desenvolver componente de modal de confirmação de exclusão/edição/inserção/baixa
 * [ ] Desenvolver a interface da tabela de dívidas de um cliente, componente de tabela de dívidas
 * [ ] Desenvolver componente de formulário de cliente
 * [ ] Desenvolver componente de formulário de dívida
-* [ ] Desenvolver componente de paginamento
 * [ ] CRUD Clientes no front Finalizado
 * [ ] CRUD Dívidas no front Finalizado
 
