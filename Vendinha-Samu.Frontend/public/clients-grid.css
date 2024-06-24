@@ -9,15 +9,17 @@
 }
 
 input[type="search"] {
+  background-color: var(--cor-branco);
+  color: var(--cor-preto);
   text-align: center;
   border: none;
   border-radius: 30px;
   padding: 8px 15px;
-  width: 50%;
+  width: 60%;
 }
 
 input[type="search"]::placeholder {
-  color: var(--cor-cinza-transparente-claro);
+  color: var(--cor-cinza-claro);
 }
 
 input[type="search"]::-webkit-search-cancel-button {
