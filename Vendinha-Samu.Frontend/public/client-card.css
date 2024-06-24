@@ -108,3 +108,31 @@
 .debt-sum-client:active {
   transform: scale(1);
 }
+
+.no-clients-container {
+  display: flex;
+  border-radius: 30px;
+  justify-content: center;
+  align-items: center;
+  background: #a91c1c;
+  background: -webkit-linear-gradient(to right, #a91c1c, #bb0b0b, #930000, #a91c1c);
+  background: linear-gradient(to right, #a91c1c, #930000, #bb0b0b, #a91c1c);
+  animation: gradientAnimation 2.5s linear infinite;
+  background-size: 200%;
+  padding: 10px 0;
+  width: 100%;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0%;
+  }
+
+  100% {
+    background-position: 200%;
+  }
+}
+
+.no-clients-container p {
+  color: var(--cor-branco);
+}

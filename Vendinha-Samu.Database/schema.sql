@@ -218,31 +218,21 @@ INSERT INTO clientes (nome_completo, cpf, data_nascimento, email, profile_url) V
 ('Aline Oliveira Costa', '45867427048', '1990-02-01', 'aline.oliveira.costa@teste.com', null),
 ('Rodrigo da Silva', '14694191063', '1971-03-01', 'rodrigo.da.silva@teste.com', null),
 ('Bianca Costa Martins', '42716710023', '1999-04-01', 'bianca.costa.martins@teste.com', null),
-('Guilherme da Costa', '02310014010', '2003-05-01', 'guilherme.da.costa@teste.com', null),
-('Mariana Oliveira Santos', '95952082050', '1955-06-01', 'mariana.oliveira.santos@teste.com', null),
-('Felipe da Silva Oliveira', '38256267097', '1943-07-01', 'felipe.da.silva.oliveira@teste.com', null),
-('Vanessa Lima Costa', '55116715094', '1972-08-01', 'vanessa.lima.costa@teste.com', null),
-('Leonardo Oliveira Souza', '80963690086', '1965-09-01', 'leonardo.oliveira.souza@teste.com', null),
-('Gabriela Almeida Costa', '40276271050', '1991-10-01', 'gabriela.almeida.costa@teste.com', null),
-('Bruno da Silva Costa', '23739885009', '1974-11-01', 'bruno.da.silva.costa@teste.com', null),
-('Marina Oliveira Santos', '49690081080', '1952-12-01', 'marina.oliveira.santos@teste.com', null),
-('Gustavo da Silva Santos', '58841830034', '1988-01-01', 'gustavo.da.silva.santos@teste.com', null),
-('Renata Lima da Costa', '53493792085', '1970-02-01', 'renata.lima.da.costa@teste.com', null),
-('Luciana da Silva', '87209279083', '1985-03-01', 'luciana.da.silva@teste.com', null),
-('Victor Oliveira da Costa', '54660159035', '2007-04-01', 'victor.oliveira.da.costa@teste.com', null),
-('Caroline Costa Martins', '36696253050', '1966-05-01', 'caroline.costa.martins@teste.com', null),
-('Roberto Almeida da Silva', '75853255096', '1984-06-01', 'roberto.almeida.da.silva@teste.com', null),
-('Natália da Silva Santos', '01154904008', '1976-07-01', 'natalia.da.silva.santos@teste.com', null),
-('Lucas Oliveira da Silva', '89452629037', '1987-08-01', 'lucas.oliveira.da.silva@teste.com', null),
-('Ana Clara da Costa', '76603915006', '1993-09-01', 'ana.clara.da.costa@teste.com', null),
-('Ricardo da Silva Oliveira', '51892787008', '2008-10-01', 'ricardo.da.silva.oliveira@teste.com', null),
-('Isabela da Costa Lima', '06159542001', '1978-11-01', 'isabela.da.costa.lima@teste.com', null),
-('Gabriel Alves da Silva', '94178442023', '1980-12-01', 'gabriel.alves.da.silva@teste.com', null),
-('Daniela Oliveira Costa', '54882125072', '1983-01-01', 'daniela.oliveira.costa@teste.com', null),
-('Fábio da Costa', '07546146038', '1984-02-01', 'fabio.da.costa@teste.com', null),
-('Juliana da Silva Santos', '11262988080', '1985-03-01', 'juliana.da.silva.santos@teste.com', null),
-('Anderson da Silva', '91305474074', '1986-04-01', 'anderson.da.silva@teste.com', null),
-('Mariana da Costa', '62452277045', '1987-05-01', 'mariana.da.costa@teste.com', null);
+('Retorna8', '84157119053', '1999-04-01', 'a@b.com', null),
+('Retorna8', '55875225041', '1999-04-01', 'a@bc.com', null),
+('Retorna8', '39332775079', '1999-04-01', 'a@bd.com', null),
+('Retorna8', '97406539010', '1999-04-01', 'a@be.com', null),
+('Retorna8', '80354947087', '1999-04-01', 'a@bf.com', null),
+('Retorna8', '24389309005', '1999-04-01', 'a@bg.com', null),
+('Retorna8', '59481692000', '1999-04-01', 'a@bh.com', null),
+('Retorna8', '16352159001', '1999-04-01', 'a@bj.com', null),
+('Retorna4', '67705317044', '1999-04-01', 'a@bfa.com', null),
+('Retorna4', '51378882067', '1999-04-01', 'a@bga.com', null),
+('Retorna4', '87808178071', '1999-04-01', 'a@bha.com', null),
+('Retorna4', '92889612082', '1999-04-01', 'a@bja.com', null),
+('Retorna2', '00680103031', '1999-04-01', 'a@baha.com', null),
+('Retorna2', '24229766033', '1999-04-01', 'a@bjaa.com', null),
+('Retorna1', '12801264008', '1999-04-01', 'a@bjaba.com', null);
 
 ------------- INSERT DIVIDAS ---------------
 
@@ -315,70 +305,4 @@ INSERT INTO dividas (id_cliente, valor_divida, situacao, descricao) VALUES
 (24, 60.00, FALSE, 'Jogo de lençóis 400 fios'),
 (24, 50.00, FALSE, 'Edredom de casal de microfibra'),
 
-(25, 35.00, FALSE, 'Caixa de som portátil Bluetooth'),
-
-(26, 80.00, FALSE, 'Aspirador de pó vertical'),
-(26, 20.00, FALSE, 'Escova dental elétrica'),
-
-(27, 45.00, FALSE, 'Kit de ferramentas para jardinagem'),
-(27, 55.00, FALSE, 'Aparador de grama elétrico'),
-
-(28, 65.00, FALSE, 'Impressora multifuncional'),
-(28, 35.00, FALSE, 'Papel fotográfico A4'),
-
-(29, 20.00, FALSE, 'Garrafa térmica 1 litro'),
-(29, 10.00, FALSE, 'Conjunto de facas de cozinha'),
-
-(30, 70.00, FALSE, 'Kit de copos para cerveja artesanal'),
-(30, 30.00, FALSE, 'Abridor de garrafas'),
-
-(31, 40.00, FALSE, 'Churrasqueira portátil'),
-
-(32, 25.00, FALSE, 'Cafeteira elétrica programável'),
-(32, 35.00, FALSE, 'Balde de gelo em aço inox'),
-
-(33, 50.00, FALSE, 'Colchonete dobrável para camping'),
-
-(34, 45.00, FALSE, 'Squeeze térmico para bebidas'),
-(34, 30.00, FALSE, 'Mochila térmica para piquenique'),
-
-(35, 55.00, FALSE, 'Filtro de ar para purificador'),
-
-(36, 60.00, FALSE, 'Kit de ferramentas para marcenaria'),
-(36, 50.00, FALSE, 'Lixa elétrica orbital'),
-
-(37, 35.00, FALSE, 'Escorredor de louças em aço inox'),
-
-(38, 85.00, FALSE, 'Kit de pinceis profissionais para maquiagem'),
-(38, 15.00, FALSE, 'Lençol avulso para cama de casal'),
-
-(39, 45.00, FALSE, 'Jogo de taças de cristal para vinho'),
-(39, 30.00, FALSE, 'Decanter de vidro para vinho tinto'),
-
-(40, 50.00, FALSE, 'Aparelho elétrico para cachorro-quente'),
-
-(41, 25.00, FALSE, 'Capa de chuva impermeável'),
-(41, 35.00, FALSE, 'Guarda-chuva resistente ao vento'),
-
-(42, 70.00, FALSE, 'Massageador elétrico portátil'),
-(42, 50.00, FALSE, 'Pulseira inteligente para monitoramento'),
-
-(43, 60.00, FALSE, 'Kit de ferramentas para eletricista'),
-
-(44, 45.00, FALSE, 'Bolsa térmica para transporte de alimentos'),
-(44, 30.00, FALSE, 'Cantil de aço inox para camping'),
-
-(45, 55.00, FALSE, 'Cafeteira italiana de alumínio'),
-
-(46, 80.00, FALSE, 'Liquidificador potente'),
-(46, 10.00, FALSE, 'Descascador de frutas'),
-
-(47, 45.00, FALSE, 'Cadeado para bicicleta'),
-
-(48, 75.00, FALSE, 'Conjunto de facas profissionais'),
-(48, 25.00, FALSE, 'Afiador de facas'),
-
-(49, 35.00, FALSE, 'Kit de tapetes para banheiro'),
-
-(50, 45.00, FALSE, 'Máquina de cortar cabelo profissional'),
-(50, 55.00, FALSE, 'Secador de cabelo iônico');
+(25, 35.00, FALSE, 'Caixa de som portátil Bluetooth');

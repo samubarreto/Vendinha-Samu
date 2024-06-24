@@ -2,7 +2,9 @@ export default function SemClientesAqui() {
   return (
     <>
 
-      <p>Nenhum cliente encontrado 😢</p>
+      <div className="no-clients-container">
+        <p>Nenhum cliente encontrado 😢</p>
+      </div>
 
     </>
   )
