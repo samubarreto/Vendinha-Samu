@@ -118,21 +118,36 @@ $$ LANGUAGE plpgsql;
 
 /* A função abaixo é executada sempre antes da
 inserção, update ou delete de uma dívida e atualiza
-o somatório de dívidas na tabela de clientes kkkkkkkkkkkkkkkkkkk rachei */
+o somatório de dívidas na tabela de clientes kkkkk rachei */
 CREATE OR REPLACE FUNCTION atualizar_somatorio_dividas()
 RETURNS TRIGGER AS $$
 BEGIN
-    UPDATE clientes
-    SET somatorio_dividas = (
-        SELECT COALESCE(SUM(valor_divida), 0)
-        FROM dividas
-        WHERE id_cliente = NEW.id_cliente
-    )
-    WHERE id_cliente = NEW.id_cliente;
+    IF TG_OP = 'DELETE' THEN
+        -- SE FOR DELETE
+        UPDATE clientes
+        SET somatorio_dividas = (
+            SELECT COALESCE(SUM(valor_divida), 0)
+            FROM dividas
+            WHERE id_cliente = OLD.id_cliente
+            AND situacao = false
+        )
+        WHERE id_cliente = OLD.id_cliente;
+    ELSE
+        -- SE FOR UPDATE OU INSERT
+        UPDATE clientes
+        SET somatorio_dividas = (
+            SELECT COALESCE(SUM(valor_divida), 0)
+            FROM dividas
+            WHERE id_cliente = NEW.id_cliente
+            AND situacao = false
+        )
+        WHERE id_cliente = NEW.id_cliente;
+    END IF;
     
-    RETURN NEW;
+    RETURN NULL;
 END;
 $$ LANGUAGE plpgsql;
+
 
 ------------- TRIGGERS -----------------
 /* A trigger abaixo é acionada sempre ANTES
@@ -167,7 +182,7 @@ BEFORE INSERT OR UPDATE ON clientes
 FOR EACH ROW
 EXECUTE FUNCTION setar_padrao_perfil();
 
-/* A trigger abaixo é acionada sempre DEPOIS
+/* A trigger abaixo é acionada sempre ANTES
 da inserção, update ou delete de um cliente e chama
 a função atualizar_somatorio_dividas() */
 CREATE TRIGGER trigger_atualiza_somatorio_dividas_insert

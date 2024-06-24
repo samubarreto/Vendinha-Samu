@@ -7,6 +7,7 @@ namespace Vendinha_Samu.Console.Services
     public class DividaService
     {
         private readonly ISessionFactory session;
+
         public DividaService(ISessionFactory session)
         {
             this.session = session;
@@ -14,76 +15,56 @@ namespace Vendinha_Samu.Console.Services
 
         public bool Criar(Divida divida, out List<ValidationResult> erros)
         {
-            if (GeneralServices.Validacao(divida, out erros))
+            erros = new List<ValidationResult>();
+
+            if (!GeneralServices.Validacao(divida, out erros))
+                return false;
+
+            using var sessao = session.OpenSession();
+            using var transaction = sessao.BeginTransaction();
+            try
             {
-                using var sessao = session.OpenSession();
-                using var transaction = sessao.BeginTransaction();
-                try
-                {
-                    sessao.Save(divida);
-                    transaction.Commit();
-                    return true;
-                }
-                catch (Exception ex)
-                {
-                    string memberName = "";
-                    if (ex.InnerException != null)
-                    {
-                        if (ex.InnerException.Message.Contains("descricao"))
-                        {
-                            memberName = nameof(divida.Descricao);
-                        }
-                        else if (ex.InnerException.Message.Contains("Total de dívidas do cliente é maior que 200"))
-                        {
-                            memberName = nameof(divida.Valor);
-                        }
-                    }
-                    HandleException(ex, erros, memberName);
-                    return false;
-                }
+                sessao.Save(divida);
+                transaction.Commit();
+                return true;
             }
-            return false;
+            catch (Exception ex)
+            {
+                transaction.Rollback();
+                HandleException(ex, erros);
+                return false;
+            }
         }
 
         public bool Editar(Divida divida, out List<ValidationResult> erros)
         {
-            if (GeneralServices.Validacao(divida, out erros))
+            erros = new List<ValidationResult>();
+
+            if (!GeneralServices.Validacao(divida, out erros))
+                return false;
+
+            using var sessao = session.OpenSession();
+            using var transaction = sessao.BeginTransaction();
+
+            try
             {
-                using var sessao = session.OpenSession();
-                using var transaction = sessao.BeginTransaction();
-
-                try
+                var dividaExistente = sessao.Get<Divida>(divida.IdDivida);
+                if (dividaExistente == null)
                 {
-                    var dividaExistente = sessao.Get<Divida>(divida.IdDivida);
-                    if (dividaExistente == null)
-                    {
-                        erros.Add(new ValidationResult("Esta Dívida não existe!", new[] { nameof(divida.IdDivida) }));
-                        return false;
-                    }
-
-                    sessao.Merge(divida);
-                    transaction.Commit();
-                    return true;
-                }
-                catch (Exception ex)
-                {
-                    string memberName = "";
-                    if (ex.InnerException != null)
-                    {
-                        if (ex.InnerException.Message.Contains("descricao"))
-                        {
-                            memberName = nameof(divida.Descricao);
-                        }
-                        else if (ex.InnerException.Message.Contains("Total de dívidas do cliente é maior que 200"))
-                        {
-                            memberName = nameof(divida.Valor);
-                        }
-                    }
-                    HandleException(ex, erros, memberName);
+                    erros.Add(new ValidationResult("Esta Dívida não existe!", new[] { nameof(divida.IdDivida) }));
                     return false;
                 }
+
+                sessao.Merge(divida);
+                transaction.Commit();
+                return true;
             }
-            return false;
+            catch (Exception ex)
+            {
+                transaction.Rollback();
+                HandleException(ex, erros);
+                return false;
+            }
         }
 
         public bool Excluir(int id, out List<ValidationResult> erros)
@@ -93,13 +74,10 @@ namespace Vendinha_Samu.Console.Services
             using var sessao = session.OpenSession();
             using var transaction = sessao.BeginTransaction();
 
-            var divida = sessao
-                .Query<Divida>()
-                .Where(d => d.IdDivida == id)
-                .FirstOrDefault();
+            var divida = sessao.Query<Divida>().FirstOrDefault(d => d.IdDivida == id);
             if (divida == null)
             {
-                erros.Add(new ValidationResult($"Registro de dívida [{id}] não encontrado", new[] { "id" }));
+                erros.Add(new ValidationResult($"Registro de dívida [{id}] não encontrado", new[] { nameof(id) }));
                 return false;
             }
 
@@ -111,7 +89,8 @@ namespace Vendinha_Samu.Console.Services
             }
             catch (Exception ex)
             {
-                erros.Add(new ValidationResult($"Não foi possível apagar a Dívida [{divida.IdDivida}]. {ex}", new[] { "id" }));
+                transaction.Rollback();
+                erros.Add(new ValidationResult($"Não foi possível apagar a Dívida [{divida.IdDivida}]. {ex.Message}", new[] { nameof(id) }));
                 return false;
             }
         }
@@ -121,42 +100,35 @@ namespace Vendinha_Samu.Console.Services
             using var sessao = session.OpenSession();
             try
             {
-                var dividas = sessao
+                return sessao
                     .Query<Divida>()
                     .Where(d => d.IdCliente == idClienteDivida)
                     .OrderBy(d => d.Situacao)
-                    .OrderByDescending(d => d.Valor)
+                    .ThenByDescending(d => d.Valor)
                     .ToList();
-                return dividas;
             }
             catch (Exception)
             {
-                return [];
+                return new List<Divida>();
             }
         }
 
         private void HandleException(Exception ex, List<ValidationResult> erros, string memberName = "")
         {
-            if (ex.InnerException != null)
+            var message = ex.InnerException?.Message ?? ex.Message;
+
+            if (message.Contains("descricao"))
             {
-                if (ex.InnerException.Message.Contains("descricao"))
-                {
-                    erros.Add(new ValidationResult("Insira uma Descrição para a Dívida!", new[] { memberName }));
-                }
-                else if (ex.InnerException.Message.Contains("Total de dívidas do cliente é maior que 200"))
-                {
-                    erros.Add(new ValidationResult("O total da dívida não pode ser maior que 200 Reais!", new[] { memberName }));
-                }
-                else
-                {
-                    erros.Add(new ValidationResult("Erro ao processar a operação.", new[] { memberName }));
-                }
+                erros.Add(new ValidationResult("Insira uma Descrição para a Dívida!", new[] { nameof(Divida.Descricao) }));
+            }
+            else if (message.Contains("Total de dívidas do cliente é maior que 200"))
+            {
+                erros.Add(new ValidationResult("O total da dívida não pode ser maior que 200 Reais!", new[] { nameof(Divida.Valor) }));
             }
             else
             {
                 erros.Add(new ValidationResult("Erro ao processar a operação.", new[] { memberName }));
             }
         }
-
     }
 }
