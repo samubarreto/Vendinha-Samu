@@ -30,14 +30,5 @@ input[type="search"]::-webkit-search-cancel-button {
 .search-bar-container {
   border-radius: 30px;
   background-color: var(--cor-branco);
-}
-
-.search-bar-container span {
-  cursor: pointer;
-  height: 100%;
-  padding: 10px;
-  border-top-right-radius: 30px;
-  border-bottom-right-radius: 30px;
-  border-left: solid 1px var(--cor-preto);
-  background-color: var(--cor-cinza-transparente-claro);
+  padding: 0 15px 0 0;
 }

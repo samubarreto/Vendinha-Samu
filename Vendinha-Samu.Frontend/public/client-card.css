@@ -92,6 +92,7 @@
   border: none;
   border-radius: 40px;
   width: 80%;
+  max-width: 300px;
   padding: 4px 0;
   margin: 0 40px;
   font-size: 1.2rem;

@@ -12,15 +12,17 @@ export default function GridCardsClientes() {
   const [getPage, setPage] = useState(1);
   const [getTotalPaginas, setTotalPaginas] = useState();
 
-  listarClientes(getBusca)
-    .then(resposta => {
-      if (resposta.status == 200) {
-        resposta.json()
-          .then(clientes => {
-            setTotalPaginas(Math.ceil(clientes.length / 10))
-          })
-      }
-    });
+  useEffect(() => {
+    listarClientes(getBusca)
+      .then(resposta => {
+        if (resposta.status == 200) {
+          resposta.json()
+            .then(clientes => {
+              setTotalPaginas(Math.ceil(clientes.length / 10))
+            })
+        }
+      });
+  }, [getBusca]);
 
   useEffect(() => {
     listarClientes(getBusca, getPage, 10)
@@ -42,16 +44,24 @@ export default function GridCardsClientes() {
           setBusca(event.target.value);
           setPage(1);
         }} />
-        <span>
-          <svg xmlns="http://www.w3.org/2000/svg" className="base-icon black" viewBox="0 0 16 16">
-            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
-          </svg>
-        </span>
+        <svg xmlns="http://www.w3.org/2000/svg" className="base-icon black" viewBox="0 0 16 16">
+          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+        </svg>
       </div>
 
       <main className="clients-grid" style={{
-        gridTemplateColumns: getCards.length == 1 || getCards.length == 0 ? '1fr' : 'repeat(5, 1fr)',
-        gridTemplateRows: getCards.length == 1 || getCards.length == 0 ? '1fr' : 'repeat(2, 1fr)'
+        gridTemplateColumns: getCards.length === 1 || getCards.length === 0
+          ? '1fr'
+          : getCards.length === 8
+            ? 'repeat(4, 1fr)'
+            : getCards.length === 4
+              ? 'repeat(2, 1fr)'
+              : getCards.length === 2
+                ? 'repeat(2, 1fr)'
+                : 'repeat(5, 1fr)',
+        gridTemplateRows: getCards.length === 0 || getCards.length === 1 || getCards.length === 2
+          ? '1fr'
+          : 'repeat(2, 1fr)'
       }}>
         {getCards.length === 0 ? (<NenhumClienteEncontrado />) : (getCards.map(cliente => (<CardCliente key={cliente.id_cliente} cliente={cliente} />)))}
       </main>
