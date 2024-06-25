@@ -18,6 +18,11 @@ form p {
   padding: 8px 12px;
 }
 
+.exclusao-form label {
+  color: var(--cor-cinza-claro);
+  font-size: .8rem;
+}
+
 form button[type="reset"],
 form button[type="submit"] {
   cursor: pointer;

@@ -1,1 +1,40 @@
-/* 🤠 */
+.not-found-h2 {
+  color: var(--cor-cinza-bem-escuro);
+}
+
+.not-found-container {
+  text-align: center;
+  background-color: var(--cor-branco);
+  padding: 20px;
+  border-radius: 30px;
+}
+
+.not-found-url {
+  color: var(--cor-cinza-claro);
+  font-size: .8rem;
+}
+
+.not-found-button {
+  cursor: pointer;
+  color: var(--cor-branco);
+  background: #d63a3a;
+  background: -webkit-linear-gradient(to right, #d63a3a, #e11d1d, #bf1a1a, #d63a3a);
+  background: linear-gradient(to right, #d63a3a, #bf1a1a, #e11d1d, #d63a3a);
+  animation: gradientAnimation 2.5s linear infinite;
+  background-size: 200%;
+  border-radius: 30px;
+  border: none;
+  padding: 5px 8px;
+  transition: all .3s;
+}
+
+.not-found-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 2px 5px var(--cor-vermelho-transparente);
+  transition: all .15s;
+}
+
+.not-found-button:active {
+  transform: scale(.95);
+  transition: all .15s;
+}
