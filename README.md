@@ -74,7 +74,7 @@
 * [X] Refatorar banco, adicionar deleção em cascata do cliente, pra ser possível apagar mesmo que tenha dívidas
 * [X] Refatorar banco, para ter uam coluna do somatório de dívidas de um cliente 🙂
 
-###### FRONTEND HTML, CSS, JS & REACTJS
+###### FRONTEND
 
 * [X] Desenvolver componente de header
 
