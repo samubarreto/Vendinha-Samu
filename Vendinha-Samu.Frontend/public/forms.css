@@ -18,9 +18,13 @@ form p {
   padding: 8px 12px;
 }
 
-.exclusao-form label {
+label {
   color: var(--cor-cinza-claro);
   font-size: .8rem;
+}
+
+label.form-label {
+  padding: 0 0 0 12px;
 }
 
 form button[type="reset"],
@@ -51,4 +55,72 @@ form button[type="reset"]:active,
 form button[type="submit"]:active {
   transform: scale(0.95);
   transition: all 0.15s;
+}
+
+.edicao-cliente-form {
+  width: 450px;
+}
+
+.label-input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
+}
+
+.label-input-container.large {
+  width: 100%;
+}
+
+.label-input-container.small {
+  width: 50%;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="file"] {
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: 30px;
+  border: none;
+  background-color: var(--cor-cinza-claro);
+  color: var(--cor-branco);
+}
+
+input[type="date"] {
+  color: var(--cor-cinza-placeholder2)
+}
+
+input[type="file"]::-webkit-file-upload-button {
+  font-family: "Space Mono", monospace;
+  font-weight: 900;
+  padding: 8px 12px;
+  background-color: var(--cor-cinza-medio);
+  color: var(--cor-cinza-placeholder2);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+input[type="file"]::-webkit-file-upload-button:hover {
+  transform: scale(1.05);
+  transition: all .15s;
+}
+
+input[type="file"]::-webkit-file-upload-button:active {
+  transform: scale(.95);
+  transition: all .15s;
+}
+
+input[type="text"]::placeholder,
+input[type="date"]::placeholder,
+input[type="email"]::placeholder,
+input[type="file"]::placeholder {
+  color: var(--cor-cinza-placeholder2);
+}
+
+.flex-row.form-cliente {
+  margin: 8px 0 0 0;
 }
