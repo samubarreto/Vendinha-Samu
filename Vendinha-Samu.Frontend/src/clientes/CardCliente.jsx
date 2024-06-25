@@ -1,10 +1,22 @@
-import { Link } from 'react';
-import { calculaIdade } from '../services/general';
+import { useState, useEffect } from 'react';
+import { calculaIdade } from '../services/general.js';
+import { getClienteById } from '../services/clienteApi.js';
+import FormConfirmacaoExclusao from './FormConfirmacaoExclusao.jsx';
 
 export default function CardCliente(properties) {
 
   const cliente = properties.cliente;
   let idadeCliente = calculaIdade(cliente.dataNascimento);
+
+  var [getCliente, setCliente] = useState(undefined);
+
+  const getApiCliente = async (id) => {
+    var result = await getClienteById(id);
+    if (result.status == 200) {
+      var dados = await result.json();
+      setCliente(dados);
+    }
+  }
 
   return (
     <>
@@ -19,7 +31,7 @@ export default function CardCliente(properties) {
                 <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001" />
               </svg>
             </button>
-            <button className="small-button bottom">
+            <button className="small-button bottom" onClick={() => getApiCliente(cliente.id)} key={cliente.id}>
               <svg xmlns="http://www.w3.org/2000/svg" className="base-icon" viewBox="0 0 16 16">
                 <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0" />
               </svg>
@@ -40,7 +52,7 @@ export default function CardCliente(properties) {
         {/* </Link> */}
 
       </div>
-
+      {getCliente && <FormConfirmacaoExclusao cliente={cliente} onClose={() => setCliente(undefined)}></FormConfirmacaoExclusao>}
     </>
   )
 }

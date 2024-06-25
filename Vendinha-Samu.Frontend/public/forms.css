@@ -1,1 +1,49 @@
-/* 🤠 */
+form {
+  background-color: var(--cor-branco);
+  padding: 40px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form h2 {
+  color: var(--cor-cinza-bem-escuro);
+}
+
+form p {
+  color: var(--cor-branco);
+  background-color: var(--cor-vermelho);
+  border-radius: 30px;
+  padding: 8px 12px;
+}
+
+form button[type="reset"],
+form button[type="submit"] {
+  cursor: pointer;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 30px;
+  width: 100%;
+  transition: all 0.3s;
+}
+
+form button[type="reset"]:hover,
+form button[type="submit"]:hover {
+  transform: translateY(-3px);
+  color: var(--cor-branco);
+  background-color: var(--cor-vermelho);
+  box-shadow: 0 1px 0 0 var(--cor-preto);
+  transition: all 0.15s;
+}
+
+form button[type="reset"]:hover {
+  background-color: var(--cor-cinza-bem-escuro);
+  box-shadow: 0 1px 0 0 var(--cor-cinza-bem-claro);
+}
+
+form button[type="reset"]:active,
+form button[type="submit"]:active {
+  transform: scale(0.95);
+  transition: all 0.15s;
+}

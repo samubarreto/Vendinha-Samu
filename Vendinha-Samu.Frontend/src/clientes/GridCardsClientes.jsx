@@ -31,7 +31,6 @@ export default function GridCardsClientes() {
           resposta.json()
             .then(clientes => {
               setCards(clientes);
-              console.log(getCards.length)
             })
         }
       });

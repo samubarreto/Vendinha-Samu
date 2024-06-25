@@ -77,19 +77,40 @@
 ###### FRONTEND HTML, CSS, JS & REACTJS
 
 * [X] Desenvolver componente de header
-* [X] Desenvolver a interface do grid de cards de clientes, componente de card de cliente
-* [X] Deixar inferface de  grid de cards de clientes responsiva
+
+###### FRONTEND CLIENTES
+
+* [X] Desenvolver HTML e CSS da interface do grid de cards de clientes, componente de card de cliente
 * [X] Adicionar funcionalidade de listagem dinâmica dos clientes (paginamento/busca)
-* [ ] Desenvolver componente de modal de confirmação de exclusão/edição/inserção/baixa
-* [ ] Desenvolver a interface da tabela de dívidas de um cliente, componente de tabela de dívidas
-* [ ] Desenvolver componente de formulário de cliente
-* [ ] Desenvolver componente de formulário de dívida
-* [ ] CRUD Clientes no front Finalizado
-* [ ] CRUD Dívidas no front Finalizado
+* [X] Confirmação de exclusão (e recarregar página)
+* [ ] Formulário de edição de cliente
+* [ ] Confirmação de edição de cliente (e recarregar página)
+* [ ] Formulário de inserção de cliente
+* [ ] Confirmação de inserção de cliente (e recarregar página)
+* [ ] Roteamento para levar do botão de somatório de dívidas para a página de tabela de dívidas e vice-versa (ir e voltar, rotear)
+
+###### FRONTEND DÍVIDAS
+
+* [ ] Desenvolver HTML e CSS da interface da tabela de dívidas de um cliente, componente de tabela de dívidas de um cliente
+* [ ] Adicionar funcionalidade de listagem dinâmica dos clientes (paginamento)
+* [ ] Reaplicar confirmação de exclusão de cliente (e voltar para /clientes/)
+* [ ] Reaplicar formulário de edição de cliente
+* [ ] Reaplicar confirmação de edição de cliente (e recarregar página)
+* [ ] Confirmação de exclusão de dívida (e recarregar página)
+* [ ] Confirmação de baixa de dívida (e recarregar página)
+* [ ] Formulário de edição de dívida
+* [ ] Confirmação de edição de dívida (e recarregar página)
+* [ ] Formulário de inserção de dívida
+* [ ] Confirmação de inserção de dívida (e recarregar página)
+
+###### CHECKUP FRONTEND
+
+* [ ] CRUD Clientes no front finalizado e validado
+* [ ] CRUD Dívidas no front finalizado e validado
 
 ###### FINALIZAÇÃO
 
-* [ ] Identificar e Refatorar o que tiver de estranho em todo o código de front, back e banco
+* [ ] Identificar e Refatorar o que tiver de estranho em todo o código de front, back e banco (100%)
 
 ###### TESTES, DOCUMENTAÇÃO E ENTREGA
 

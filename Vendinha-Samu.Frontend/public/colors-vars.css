@@ -1,6 +1,7 @@
 :root {
   --cor-branco: #fff;
   --cor-preto: #000;
+  --cor-cinza-meio-escurao: #2f2f2f;
   --cor-cinza-bem-escuro: #222222;
   --cor-cinza-escuro: #636363;
   --cor-cinza-medio: #464646;
@@ -9,6 +10,7 @@
   --cor-cinza-transparente-bem-claro: rgba(34, 34, 34, 0.1);
   --cor-cinza-transparente-claro: rgba(34, 34, 34, 0.3);
   --cor-cinza-transparente: rgba(34, 34, 34, 0.6);
+  --cor-fundo-modal: rgba(34, 34, 34, 0.95);
   --cor-verde: rgb(24, 176, 24);
   --cor-vermelho: rgb(255, 0, 0);
   --cor-vermelho-escuro: rgb(128, 0, 0);
