@@ -3,7 +3,7 @@ import BotaoNovoCliente from "./BotaoNovoCliente"
 import Creditos from "../general/Creditos"
 import NenhumClienteEncontrado from "./NenhumClienteEncontrado.jsx"
 
-import { listarClientes, deletarCliente, postPutCliente, uparImagemPerfil } from "../services/clienteApi.js"
+import { listarClientes } from "../services/clienteApi.js"
 import { useEffect, useState } from "react"
 
 export default function GridCardsClientes() {
@@ -57,7 +57,7 @@ export default function GridCardsClientes() {
           ? '1fr'
           : 'repeat(2, 1fr)'
       }}>
-        {getCards.length === 0 ? (<NenhumClienteEncontrado />) : (getCards.map(cliente => (<CardCliente key={cliente.id_cliente} cliente={cliente} />)))}
+        {getCards.length === 0 ? (<NenhumClienteEncontrado />) : (getCards.map(cliente => (<CardCliente key={cliente.id} cliente={cliente} />)))}
       </main>
 
       <footer>

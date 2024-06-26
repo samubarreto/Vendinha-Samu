@@ -11,14 +11,16 @@ form h2 {
   color: var(--cor-cinza-bem-escuro);
 }
 
-form p {
+form .delete-nome-cliente {
   color: var(--cor-branco);
   background-color: var(--cor-vermelho);
   border-radius: 30px;
   padding: 8px 12px;
 }
 
-label {
+label,
+.api-error-message,
+.info-text {
   color: var(--cor-cinza-claro);
   font-size: .8rem;
 }
@@ -59,6 +61,7 @@ form button[type="submit"]:active {
 
 .edicao-cliente-form {
   width: 450px;
+  padding: 30px;
 }
 
 .label-input-container {
@@ -88,7 +91,7 @@ input[type="file"] {
   color: var(--cor-branco);
 }
 
-input[type="date"] {
+input[type="date"]::placeholder {
   color: var(--cor-cinza-placeholder2)
 }
 

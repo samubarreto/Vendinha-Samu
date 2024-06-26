@@ -41,3 +41,7 @@ button.credits-button .base-icon {
 .green {
   fill: var(--cor-verde);
 }
+
+.red {
+  fill: var(--cor-vermelho);
+}

@@ -52,3 +52,14 @@
   align-items: center;
   gap: 20px;
 }
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.jcc {
+  justify-content: center;
+}

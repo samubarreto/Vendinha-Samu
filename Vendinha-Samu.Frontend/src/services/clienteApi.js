@@ -19,9 +19,21 @@ export function deletarCliente(id_cliente) {
   return response;
 }
 
-export function postPutCliente(cliente) {
+export async function putCliente(cliente) {
+  const request = {
+    method: "PUT",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(cliente)
+  };
+  const response = await fetch(URL_API + "/api/clientes", request);
+  return response;
+}
+
+export function postCliente(cliente) {
   var request = {
-    method: cliente.id_cliente ? "PUT" : "POST",
+    method: "POST",
     headers: {
       "Content-Type": "application/json"
     },

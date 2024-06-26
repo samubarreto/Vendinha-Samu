@@ -31,6 +31,25 @@
   object-fit: cover;
 }
 
+.edit-img-button {
+  opacity: 0;
+  cursor: pointer;
+  z-index: 10;
+  background-color: var(--cor-cinza-transparente);
+  border: none;
+  position: absolute;
+  right: 5px;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  transition: all .3s;
+}
+
+.edit-img-button:hover {
+  opacity: 1;
+  transition: all .15s;
+}
+
 .vertical-buttons {
   display: flex;
   flex-direction: column;

@@ -17,3 +17,11 @@ export function calculaIdade(dataSemTratamento) {
 
   return idade;
 }
+
+export function formataData(dataSemTratamento) {
+  const data = new Date(dataSemTratamento);
+  const dia = String(data.getDate()).padStart(2, '0');
+  const mes = String(data.getMonth() + 1).padStart(2, '0');
+  const ano = data.getFullYear();
+  return `${ano}-${mes}-${dia}`;
+}
