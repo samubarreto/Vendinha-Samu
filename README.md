@@ -85,7 +85,7 @@
 * [X] Confirmação de exclusão (e recarregar página)
 * [X] Formulário de edição de cliente
 * [X] Formulário de edição de imagem de cliente
-* [ ] Formulário de inserção de cliente
+* [X] Formulário de inserção de cliente
 * [ ] Roteamento para levar do botão de somatório de dívidas para a página de tabela de dívidas e vice-versa (ir e voltar, rotear)
 
 ###### FRONTEND DÍVIDAS
@@ -101,7 +101,7 @@
 
 ###### CHECKUP FRONTEND
 
-* [ ] CRUD Clientes no front finalizado e validado
+* [X] CRUD Clientes no front finalizado e validado
 * [ ] CRUD Dívidas no front finalizado e validado
 
 ###### FINALIZAÇÃO

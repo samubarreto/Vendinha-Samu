@@ -106,7 +106,7 @@ namespace Vendinha_Samu.Console.Services
                 consulta = consulta.Where(c => c.NomeCompleto.ToUpper().Contains(pesquisa.ToUpper()));
             }
 
-            consulta = consulta.OrderByDescending(c => c.SomatorioDividasEmAberto);
+            consulta = consulta.OrderByDescending(c => c.SomatorioDividasEmAberto).OrderBy(c => c.NomeCompleto);
 
             if (skip > 0)
             {
