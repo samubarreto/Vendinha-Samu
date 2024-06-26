@@ -19,26 +19,16 @@ export function deletarCliente(id_cliente) {
   return response;
 }
 
-export async function putCliente(cliente) {
-  const request = {
-    method: "PUT",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify(cliente)
-  };
-  const response = await fetch(URL_API + "/api/clientes", request);
-  return response;
-}
+export function postPutCliente(cliente) {
 
-export function postCliente(cliente) {
   var request = {
-    method: "POST",
+    method: cliente.id ? "PUT" : "POST",
     headers: {
       "Content-Type": "application/json"
     },
     body: JSON.stringify(cliente)
   }
+
   var response = fetch(URL_API + "/api/clientes", request)
   return response;
 }
@@ -48,6 +38,10 @@ export function uparImagemPerfil(form, id_cliente) {
 
   var request = { method: "POST", body: formData }
 
-  var response = fetch(URL_API + "/api/clientes/UploadProfilePic/" + id_cliente, request)
-  return response;
+  try {
+    var response = fetch(URL_API + "/api/clientes/UploadProfilePic/" + id_cliente, request)
+    return response;
+  } catch (error) {
+    return null
+  }
 }

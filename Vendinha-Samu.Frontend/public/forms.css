@@ -91,10 +91,6 @@ input[type="file"] {
   color: var(--cor-branco);
 }
 
-input[type="date"]::placeholder {
-  color: var(--cor-cinza-placeholder2)
-}
-
 input[type="file"]::-webkit-file-upload-button {
   font-family: "Space Mono", monospace;
   font-weight: 900;
@@ -105,6 +101,15 @@ input[type="file"]::-webkit-file-upload-button {
   border-radius: 30px;
   cursor: pointer;
   transition: all .3s;
+}
+
+input[type="date"],
+input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
 }
 
 input[type="file"]::-webkit-file-upload-button:hover {

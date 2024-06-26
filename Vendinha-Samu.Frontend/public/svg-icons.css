@@ -19,7 +19,8 @@ h1 .base-icon {
   padding: 0 0 2px 0;
 }
 
-input[type="search"] .base-icon {
+input[type="search"] .base-icon,
+.edit-img-button .base-icon {
   width: 24px;
   height: 24px;
 }

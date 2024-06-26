@@ -1,4 +1,4 @@
-import { uparImagemPerfil, putCliente } from "../services/clienteApi.js"
+import { uparImagemPerfil, postPutCliente } from "../services/clienteApi.js"
 
 export default function FormImgPerfil({ cliente, onClose }) {
 
@@ -21,7 +21,7 @@ export default function FormImgPerfil({ cliente, onClose }) {
         somatorioDividasEmAberto: cliente.somatorioDividasEmAberto
       };
 
-      const response = await putCliente(clienteDados);
+      const response = await postPutCliente(clienteDados);
       if (response.status === 200) {
         onClose();
         window.location.reload();
