@@ -5,7 +5,7 @@ export default function NotFoundPage() {
     <>
 
       <div className="not-found-container">
-        <h2 className="not-found-h2">Página não encontrada! 🦖</h2>
+        <h1 className="not-found-h1">Página não encontrada! 🦖</h1>
         <p className="not-found-url">{window.location.protocol}//{window.location.host}{window.location.pathname}</p>
       </div>
 

@@ -1,4 +1,5 @@
-.not-found-h2 {
+.not-found-h1 {
+  font-size: 5rem;
   color: var(--cor-cinza-bem-escuro);
 }
 
@@ -11,7 +12,7 @@
 
 .not-found-url {
   color: var(--cor-cinza-claro);
-  font-size: .8rem;
+  font-size: 2rem;
 }
 
 .not-found-button {

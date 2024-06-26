@@ -52,7 +52,7 @@ export default function FormCliente({ cliente, onClose, contexto }) {
         <h2>{contexto}Cliente</h2>
 
         <div className="flex-column jcc">
-          <img src={contexto === "Editar " ? cliente.urlPerfil : "https://127.0.0.1:7258/profile_pics/profile_placeholder.png"} className="profile-img" alt="Profile"></img>
+          <img src={contexto === "Editar " ? cliente.urlPerfil : "https://127.0.0.1:7258/profile_pics/profile_placeholder.png"} className="profile-img editing" alt="Profile"></img>
           <p className="info-text">&#10090;A imagem não é editável por aqui, Pangaré 🤠&#10091;</p>
         </div>
 
@@ -79,7 +79,7 @@ export default function FormCliente({ cliente, onClose, contexto }) {
 
         <div className="flex-row form-cliente">
           <button type="reset" onClick={onClose}>Cancelar</button>
-          <button type="submit">Confirmar</button>
+          <button type="submit">{contexto === "Editar " ? "Editar" : "Inserir"}</button>
         </div>
 
         <p className="api-error-message">{getErrorMessage}</p>

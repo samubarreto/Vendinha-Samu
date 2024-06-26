@@ -9,6 +9,10 @@ footer {
   padding: 5px 12px;
 }
 
+footer.debt-footer {
+  width: 100%;
+}
+
 footer button {
   text-wrap: nowrap;
   background-color: var(--cor-cinza-escuro);

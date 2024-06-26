@@ -1,1 +1,118 @@
-/* 🤠 */
+.debt-table-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--cor-cinza-claro);
+  width: 100%;
+  padding: 15px 5%;
+}
+
+.debt-table-header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--cor-branco);
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  padding: 10px;
+}
+
+.profile-img.debt-table-img {
+  width: 50px;
+  height: 50px;
+}
+
+.debt-name-age {
+  color: var(--cor-cinza-bem-escuro);
+}
+
+.debt-cpf-email {
+  color: var(--cor-cinza-escuro);
+}
+
+.small-button.debt {
+  position: inherit;
+  padding: 5px 8px;
+  border-radius: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  background-color: var(--cor-cinza-escuro);
+  padding: 10px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  transition: all 0.3s;
+  cursor: default;
+}
+
+th {
+  text-wrap: nowrap;
+  background-color: var(--cor-cinza-escuro);
+  color: var(--cor-branco);
+  text-align: left;
+  padding: 8px;
+  border: solid 2px var(--cor-cinza-transparente);
+  min-width: 90px;
+  border-radius: 5px;
+}
+
+tbody tr {
+  background-color: var(--cor-cinza-claro);
+  transition: all 0.3s;
+  border-bottom: solid 1px var(--cor-cinza-transparente);
+  border-radius: 5px;
+}
+
+tbody tr:hover,
+tbody td:hover,
+th:hover {
+  background-color: var(--cor-cinza-transparente);
+  transition: all 0.15s;
+}
+
+tbody td:hover svg path {
+  fill: var(--cor-branco);
+}
+
+td,
+th {
+  min-width: 150px;
+  border-radius: 5px;
+  padding: 8px;
+  width: 1px;
+}
+
+.desc-column {
+  width: 600px;
+}
+
+.item {
+  background-color: var(--cor-branco);
+  text-align: center;
+  transition: all .3s;
+  font-size: 1.2rem;
+}
+
+.no-button {
+  border: none;
+  background: none;
+}
+
+.no-button .base-icon {
+  height: 24px;
+  width: 24px;
+}
+
+.nowrap-column {
+  text-wrap: nowrap;
+}

@@ -3,14 +3,23 @@ import BotaoNovoCliente from "./BotaoNovoCliente"
 import Creditos from "../general/Creditos"
 import NenhumClienteEncontrado from "./NenhumClienteEncontrado.jsx"
 
+import { useNavigation } from 'simple-react-routing';
 import { listarClientes } from "../services/clienteApi.js"
 import { useEffect, useState } from "react"
 
 export default function GridCardsClientes() {
+
+  const { navigateTo } = useNavigation();
   const [getCards, setCards] = useState([]);
   const [getBusca, setBusca] = useState("");
   const [getPage, setPage] = useState(1);
   const [getTotalPaginas, setTotalPaginas] = useState();
+
+  useEffect(() => {
+    if (window.location.pathname === '/') {
+      navigateTo(null, '/clientes');
+    }
+  }, [navigateTo]);
 
   useEffect(() => {
     listarClientes(getBusca)

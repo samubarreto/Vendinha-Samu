@@ -1,6 +1,7 @@
 ﻿using NHibernate;
 using NHibernate.Linq;
 using System.ComponentModel.DataAnnotations;
+using System.Linq;
 using Vendinha_Samu.Console.Entidades;
 
 namespace Vendinha_Samu.Console.Services
@@ -132,19 +133,19 @@ namespace Vendinha_Samu.Console.Services
 
             if (message.Contains("unique_cpf"))
             {
-                erros.Add(new ValidationResult("Este CPF já está cadastrado!", new[] { nameof(Cliente.Cpf) }));
+                erros.Add(new ValidationResult("Este CPF já está cadastrado", new[] { nameof(Cliente.Cpf) }));
             }
             else if (message.Contains("unique_email"))
             {
-                erros.Add(new ValidationResult("Este Email já está cadastrado!", new[] { nameof(Cliente.Email) }));
+                erros.Add(new ValidationResult("Este Email já está cadastrado", new[] { nameof(Cliente.Email) }));
             }
             else if (message.Contains("data de nascimento"))
             {
-                erros.Add(new ValidationResult("Insira uma Data de Nascimento válida!", new[] { nameof(Cliente.DataNascimento) }));
+                erros.Add(new ValidationResult("Insira uma Data de Nascimento válida", new[] { nameof(Cliente.DataNascimento) }));
             }
             else
             {
-                erros.Add(new ValidationResult("Erro ao processar a operação.", new[] { memberName }));
+                erros.Add(new ValidationResult("Erro ao processar a operação", new[] { memberName }));
             }
         }
     }

@@ -132,3 +132,8 @@ input[type="file"]::placeholder {
 .flex-row.form-cliente {
   margin: 8px 0 0 0;
 }
+
+.profile-img.editing {
+  width: 200px;
+  height: 200px;
+}
