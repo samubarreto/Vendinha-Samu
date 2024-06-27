@@ -127,15 +127,15 @@ namespace Vendinha_Samu.Console.Services
 
             if (message.Contains("descricao"))
             {
-                erros.Add(new ValidationResult("Insira uma Descrição para a Dívida!", new[] { nameof(Divida.Descricao) }));
+                erros.Add(new ValidationResult("Insira uma Descrição para a Dívida", new[] { nameof(Divida.Descricao) }));
             }
             else if (message.Contains("Total de dívidas do cliente é maior que 200"))
             {
-                erros.Add(new ValidationResult("O total da dívida não pode ser maior que 200 Reais!", new[] { nameof(Divida.Valor) }));
+                erros.Add(new ValidationResult("O total de dívidas em aberto não pode ser maior que 200 Reais. Inserção impedida", new[] { nameof(Divida.Valor) }));
             }
             else
             {
-                erros.Add(new ValidationResult("Erro ao processar a operação.", new[] { memberName }));
+                erros.Add(new ValidationResult("Erro ao processar a operação", new[] { memberName }));
             }
         }
     }

@@ -83,9 +83,9 @@
 * [X] Desenvolver HTML e CSS da interface do grid de cards de clientes, componente de card de cliente
 * [X] Adicionar funcionalidade de listagem dinâmica dos clientes (fetch+paginamento/busca)
 * [X] Confirmação de exclusão (e recarregar página)
-* [X] Formulário de edição de cliente
-* [X] Formulário de edição de imagem de cliente
-* [X] Formulário de inserção de cliente
+* [X] Formulário de edição de cliente (e recarregar página)
+* [X] Formulário de edição de imagem de cliente (e recarregar página)
+* [X] Formulário de inserção de cliente (e recarregar página)
 * [X] Roteamento para levar do botão de somatório de dívidas para a página de tabela de dívidas e vice-versa (ir e voltar, rotear)
 
 ###### FRONTEND DÍVIDAS
@@ -94,11 +94,11 @@
 * [X] Refatorar Backend endpoint de dívidas by idcliente, pra retornar da forma correta e com skip page size aplicados para paginação no front
 * [ ] Adicionar funcionalidade de listagem dinâmica dos clientes (fetch+paginamento)
 * [ ] Reaplicar confirmação de exclusão de cliente (e voltar para /clientes/)
-* [ ] Reaplicar formulário de edição de cliente
+* [ ] Reaplicar formulário de edição de cliente (e recarregar página)
 * [ ] Confirmação de exclusão de dívida (e recarregar página)
 * [ ] Confirmação de baixa de dívida (e recarregar página)
-* [ ] Formulário de edição de dívida
-* [ ] Formulário de inserção de dívida
+* [ ] Formulário de edição de dívida (e recarregar página)
+* [ ] Formulário de inserção de dívida (e recarregar página)
 
 ###### CHECKUP FRONTEND
 
