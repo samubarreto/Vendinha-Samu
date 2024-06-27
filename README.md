@@ -90,7 +90,8 @@
 
 ###### FRONTEND DÍVIDAS
 
-* [ ] Desenvolver HTML e CSS da interface da tabela de dívidas de um cliente, componente de tabela de dívidas de um cliente
+* [X] Desenvolver HTML e CSS da interface da tabela de dívidas de um cliente, componente de tabela de dívidas de um cliente
+* [ ] Refatorar Backend endpoint de dívidas by idcliente, pra retornar da forma correta e com skip page size aplicados para paginação no front
 * [ ] Adicionar funcionalidade de listagem dinâmica dos clientes (paginamento)
 * [ ] Reaplicar confirmação de exclusão de cliente (e voltar para /clientes/)
 * [ ] Reaplicar formulário de edição de cliente

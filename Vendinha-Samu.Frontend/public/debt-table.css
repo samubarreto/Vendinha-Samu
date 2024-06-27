@@ -17,7 +17,7 @@
   background-color: var(--cor-branco);
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
-  padding: 10px;
+  padding: 10px 30px;
 }
 
 .profile-img.debt-table-img {
@@ -31,6 +31,7 @@
 
 .debt-cpf-email {
   color: var(--cor-cinza-escuro);
+  font-size: .85rem;
 }
 
 .small-button.debt {
@@ -40,33 +41,28 @@
 }
 
 table {
-  width: 100%;
+  min-width: 100%;
   border-collapse: separate;
   background-color: var(--cor-cinza-escuro);
   padding: 10px;
-  border-bottom-left-radius: 40px;
-  border-bottom-right-radius: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   margin: 0;
   transition: all 0.3s;
   cursor: default;
 }
 
 th {
+  font-size: .85rem;
   text-wrap: nowrap;
   background-color: var(--cor-cinza-escuro);
   color: var(--cor-branco);
   text-align: left;
   padding: 8px;
   border: solid 2px var(--cor-cinza-transparente);
-  min-width: 90px;
   border-radius: 5px;
 }
 
 tbody tr {
+  font-size: .75rem;
   background-color: var(--cor-cinza-claro);
   transition: all 0.3s;
   border-bottom: solid 1px var(--cor-cinza-transparente);
@@ -86,33 +82,48 @@ tbody td:hover svg path {
 
 td,
 th {
-  min-width: 150px;
+  text-align: center;
+  min-width: 90px;
+  max-width: 90px;
   border-radius: 5px;
-  padding: 8px;
-  width: 1px;
+  padding: 4px 8px;
 }
 
-.desc-column {
-  width: 600px;
+.ti-text {
+  text-align: start;
+  width: 100%;
 }
 
-.item {
+.clickable {
+  cursor: pointer;
   background-color: var(--cor-branco);
   text-align: center;
   transition: all .3s;
   font-size: 1.2rem;
 }
 
-.no-button {
-  border: none;
-  background: none;
+.debt-resumo {
+  font-size: .8rem;
+  background: #d63a3a;
+  background: -webkit-linear-gradient(to right, #d63a3a, #e11d1d, #bf1a1a, #d63a3a);
+  background: linear-gradient(to right, #d63a3a, #bf1a1a, #e11d1d, #d63a3a);
+  animation: gradientAnimation 2.5s linear infinite;
+  background-size: 200%;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  margin: 0 0 20px 0;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 100%;
 }
 
-.no-button .base-icon {
-  height: 24px;
-  width: 24px;
-}
-
-.nowrap-column {
+.debt-resumo span {
+  color: var(--cor-cinza-medio);
+  background-color: var(--cor-branco);
+  border-radius: 30px;
+  padding: 8px 12px;
   text-wrap: nowrap;
 }

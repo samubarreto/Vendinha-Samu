@@ -63,3 +63,7 @@
 .jcc {
   justify-content: center;
 }
+
+.small-gap {
+  gap: 8px;
+}

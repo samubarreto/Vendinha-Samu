@@ -12,7 +12,7 @@ h1 .base-icon {
   width: 30px;
 }
 
-.new-client-button .base-icon {
+.insert-button .base-icon {
   width: 16px;
   height: 16px;
   margin: 0 0 0 8px;
@@ -45,4 +45,9 @@ button.credits-button .base-icon {
 
 .red {
   fill: var(--cor-vermelho);
+}
+
+.large-icon {
+  width: 35px;
+  height: 35px;
 }
