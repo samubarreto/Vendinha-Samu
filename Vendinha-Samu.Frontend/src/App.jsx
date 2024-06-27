@@ -29,10 +29,6 @@ export default function App() {
           {
             path: "dividas/cliente/:id(num)",
             component: <TabelaDividasDeUmCliente />
-          },
-          {
-            path: "teste",
-            component: <TabelaDividasDeUmCliente />
           }
         ]}>
         <Layout />

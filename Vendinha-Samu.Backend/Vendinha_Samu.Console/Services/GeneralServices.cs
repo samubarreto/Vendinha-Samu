@@ -1,6 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using CpfCnpjLibrary;
 
+#pragma warning disable CS8765, CS8604, CS8603, CS8620
+
 namespace Vendinha_Samu.Console.Services
 {
     public class GeneralServices
@@ -24,3 +26,5 @@ namespace Vendinha_Samu.Console.Services
         }
     }
 }
+
+#pragma warning restore CS8765, CS8604, CS8603, CS8620

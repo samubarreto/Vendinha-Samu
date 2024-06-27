@@ -89,7 +89,7 @@ namespace Vendinha_Samu.Console.Services
                 transaction.Commit();
                 return true;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 transaction.Rollback();
                 erros.Add(new ValidationResult($"Ocorreu um erro ao Excluir o Cliente [{cliente.Id}] {cliente.NomeCompleto} ", new[] { nameof(id) }));

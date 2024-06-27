@@ -17,6 +17,9 @@ footer button {
   text-wrap: nowrap;
   background-color: var(--cor-cinza-escuro);
   color: var(--cor-branco);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   padding: 5px 12px;
   border: none;
   border-radius: 50px;
