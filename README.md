@@ -107,6 +107,7 @@
 
 ###### FINALIZAÇÃO
 
+* [ ] Criar service separado para o controller do endpoint de uploadImagem, no momento controller possui o serviço "embutido", errado
 * [ ] Identificar e Refatorar o que tiver de estranho em todo o código de front, back e banco (100%)
 
 ###### TESTES, DOCUMENTAÇÃO E ENTREGA
