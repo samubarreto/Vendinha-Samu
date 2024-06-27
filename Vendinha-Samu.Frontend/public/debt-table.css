@@ -64,7 +64,7 @@ th {
 }
 
 tbody tr {
-  font-size: .75rem;
+  font-size: .8rem;
   background-color: var(--cor-cinza-claro);
   transition: all 0.3s;
   border-bottom: solid 1px var(--cor-cinza-transparente);
@@ -85,8 +85,8 @@ tbody td:hover svg path {
 td,
 th {
   text-align: center;
-  min-width: 90px;
-  max-width: 90px;
+  min-width: 150px;
+  max-width: 150px;
   border-radius: 5px;
   padding: 4px 8px;
 }
@@ -94,6 +94,11 @@ th {
 .ti-text {
   text-align: start;
   width: 100%;
+}
+
+.clickable-column {
+  min-width: 40px;
+  max-width: 40px;
 }
 
 .clickable {

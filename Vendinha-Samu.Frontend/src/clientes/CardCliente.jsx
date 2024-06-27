@@ -72,7 +72,8 @@ export default function CardCliente(properties) {
             backgroundColor: cliente.somatorioDividasEmAberto == 0
               ? 'var(--cor-verde)'
               : 'var(--cor-vermelho)'
-          }}>{cliente.somatorioDividasEmAberto == 0 ? "Adimplente" : `R$${(cliente.somatorioDividasEmAberto).toFixed(2)}`}
+          }}>
+            {cliente.somatorioDividasEmAberto == 0 ? "Adimplente" : `R$${(cliente.somatorioDividasEmAberto).toFixed(2)}`}
             {cliente.somatorioDividasEmAberto !== 0 && (
               <svg xmlns="http://www.w3.org/2000/svg" className="base-icon debt-svg" viewBox="0 0 16 16">
                 <path d="M1 3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zm7 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4" />
