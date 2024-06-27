@@ -15,9 +15,9 @@ namespace Vendinha_Samu.Api.Controllers
         }
 
         [HttpGet("{id_cliente_divida}")]
-        public IActionResult ListarDividasDeUmCliente(int id_cliente_divida)
+        public IActionResult ListarDividasDeUmCliente(int id_cliente_divida, int skip, int pageSize)
         {
-            return Ok(dividaService.ListarDividasDeUmCliente(id_cliente_divida));
+            return Ok(dividaService.ListarDividasDeUmCliente(id_cliente_divida, skip, pageSize));
         }
 
         [HttpPost]

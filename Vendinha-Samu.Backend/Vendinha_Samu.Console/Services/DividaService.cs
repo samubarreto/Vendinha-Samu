@@ -95,17 +95,25 @@ namespace Vendinha_Samu.Console.Services
             }
         }
 
-        public List<Divida> ListarDividasDeUmCliente(int idClienteDivida)
+        public List<Divida> ListarDividasDeUmCliente(int idClienteDivida, int skip = 0, int pageSize = 0)
         {
             using var sessao = session.OpenSession();
+            var consulta = sessao.Query<Divida>();
             try
             {
-                return sessao
-                    .Query<Divida>()
-                    .Where(d => d.IdCliente == idClienteDivida)
-                    .OrderBy(d => d.Situacao)
-                    .ThenByDescending(d => d.Valor)
-                    .ToList();
+                consulta = consulta.Where(d => d.IdCliente == idClienteDivida).OrderBy(d => d.Situacao).ThenByDescending(d => d.Valor);
+
+                if (skip > 0)
+                {
+                    consulta = consulta.Skip(skip);
+                }
+
+                if (pageSize > 0)
+                {
+                    consulta = consulta.Take(pageSize);
+                }
+
+                return consulta.ToList();
             }
             catch (Exception)
             {
