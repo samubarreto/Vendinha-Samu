@@ -1,8 +1,9 @@
 import { URL_API } from "./general";
+let skip;
 
-export function listarDividas(id_cliente_divida) {
-  var response = fetch(URL_API + "/api/dividas/" + id_cliente_divida)
-  return response;
+export function listarDividas(id_cliente_divida, page = 0, pageSize = 0) {
+  page <= 1 ? skip = 0 : skip = (page - 1) * pageSize;
+  return fetch(`${URL_API}/api/dividas/${id_cliente_divida}?skip=${skip}&pageSize=${pageSize}`);
 }
 
 export function deletarDivida(id_divida) {

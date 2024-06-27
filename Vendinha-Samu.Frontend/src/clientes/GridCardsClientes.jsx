@@ -13,7 +13,7 @@ export default function GridCardsClientes() {
   const [getCards, setCards] = useState([]);
   const [getBusca, setBusca] = useState("");
   const [getPage, setPage] = useState(1);
-  const [getTotalPaginas, setTotalPaginas] = useState();
+  const [getTotalPaginas, setTotalPaginas] = useState(undefined);
 
   useEffect(() => {
     if (window.location.pathname === '/') {

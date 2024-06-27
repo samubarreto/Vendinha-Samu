@@ -1,11 +1,41 @@
 import BotaoNovaDivida from "./BotaoNovaDivida.jsx"
 import Creditos from "../general/Creditos.jsx"
+import { useEffect, useState } from "react";
 import { Link, useRouter } from "simple-react-routing"
+import { listarDividas } from "../services/dividaApi.js";
 
 export default function TabelaDividasDeUmCliente() {
 
   const { pathParams } = useRouter();
-  // const idClientePath = pathParams["id"];
+  const [getClienteDivida, setClienteDivida] = useState(pathParams["id"]);
+
+  const [getDividas, setDividas] = useState([]);
+  const [getPage, setPage] = useState(1);
+  const [getTotalPaginas, setTotalPaginas] = useState(undefined);
+
+  useEffect(() => {
+    listarDividas(getClienteDivida)
+      .then(resposta => {
+        if (resposta.status == 200) {
+          resposta.json()
+            .then(dividas => {
+              setTotalPaginas(Math.ceil(dividas.length / 10))
+            })
+        }
+      });
+  }, [getClienteDivida]);
+
+  useEffect(() => {
+    listarDividas(getClienteDivida, getPage, 10)
+      .then(resposta => {
+        if (resposta.status == 200) {
+          resposta.json()
+            .then(dividas => {
+              setDividas(dividas);
+            })
+        }
+      });
+  }, [getClienteDivida, getPage]);
 
   return (
     <>
