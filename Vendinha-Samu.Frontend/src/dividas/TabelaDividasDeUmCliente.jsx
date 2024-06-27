@@ -1,8 +1,12 @@
 import BotaoNovaDivida from "./BotaoNovaDivida.jsx"
 import Creditos from "../general/Creditos.jsx"
-import { Link } from "simple-react-routing"
+import { Link, useRouter } from "simple-react-routing"
 
 export default function TabelaDividasDeUmCliente() {
+
+  const { pathParams } = useRouter();
+  const idClientePath = pathParams["id"];
+
   return (
     <>
 

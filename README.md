@@ -86,7 +86,7 @@
 * [X] Formulário de edição de cliente
 * [X] Formulário de edição de imagem de cliente
 * [X] Formulário de inserção de cliente
-* [ ] Roteamento para levar do botão de somatório de dívidas para a página de tabela de dívidas e vice-versa (ir e voltar, rotear)
+* [X] Roteamento para levar do botão de somatório de dívidas para a página de tabela de dívidas e vice-versa (ir e voltar, rotear)
 
 ###### FRONTEND DÍVIDAS
 

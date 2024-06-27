@@ -105,15 +105,15 @@
 }
 
 .debt-sum-client {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
   cursor: pointer;
   background-color: var(--cor-vermelho);
   color: var(--cor-branco);
-  color: var(--cor-branco);
   border: none;
   border-radius: 40px;
-  width: 80%;
-  max-width: 300px;
-  padding: 4px 0;
+  padding: 4px 50px;
   margin: 0 40px;
   font-size: 1.2rem;
   overflow: hidden;
@@ -127,4 +127,10 @@
 
 .debt-sum-client:active {
   transform: scale(1);
+}
+
+a,
+Link {
+  appearance: none;
+  text-decoration: none;
 }

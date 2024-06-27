@@ -27,10 +27,12 @@
 
 .debt-name-age {
   color: var(--cor-cinza-bem-escuro);
+  text-transform: uppercase;
 }
 
 .debt-cpf-email {
   color: var(--cor-cinza-escuro);
+  text-transform: lowercase;
   font-size: .85rem;
 }
 

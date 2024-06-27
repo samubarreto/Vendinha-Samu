@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { calculaIdade } from '../services/general.js';
 import { getClienteById, uparImagemPerfil } from '../services/clienteApi.js';
+import { Link } from 'simple-react-routing';
+
 import FormConfirmacaoExclusao from './FormConfirmacaoExclusao.jsx';
 import FormCliente from './FormCliente.jsx';
 import FormImgPerfil from './FormImgPerfil.jsx';
@@ -10,8 +12,8 @@ export default function CardCliente(properties) {
   const cliente = properties.cliente;
   let idadeCliente = calculaIdade(cliente.dataNascimento);
 
-  var [getClienteDelete, setClienteDelete] = useState(undefined);
-  var [getClienteEdit, setClienteEdit] = useState(undefined);
+  const [getClienteDelete, setClienteDelete] = useState(undefined);
+  const [getClienteEdit, setClienteEdit] = useState(undefined);
   const [getClienteImgPerfil, setClienteImgPerfil] = useState(false);
 
   const getClienteApi = async (id, contexto) => {
@@ -64,20 +66,21 @@ export default function CardCliente(properties) {
 
         <p className="client-name-age">{cliente.nomeCompleto}, {idadeCliente}</p>
         <p className="client-email">{cliente.email}</p>
-        {/* <Link to={`cliente/${cliente.id}/dividas`}> */}
-        <button className="debt-sum-client" style={{
-          backgroundColor: cliente.somatorioDividasEmAberto == 0
-            ? 'var(--cor-verde)'
-            : 'var(--cor-vermelho)'
-        }}>{cliente.somatorioDividasEmAberto == 0 ? "Adimplente" : `R$${(cliente.somatorioDividasEmAberto).toFixed(2)}`}
-          {cliente.somatorioDividasEmAberto !== 0 && (
-            <svg xmlns="http://www.w3.org/2000/svg" className="base-icon debt-svg" viewBox="0 0 16 16">
-              <path d="M1 3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zm7 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4" />
-              <path d="M0 5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V7a2 2 0 0 1-2-2z" />
-            </svg>
-          )}
-        </button>
-        {/* </Link> */}
+
+        <Link to={`/dividas/cliente/${cliente.id}`}>
+          <button className="debt-sum-client" style={{
+            backgroundColor: cliente.somatorioDividasEmAberto == 0
+              ? 'var(--cor-verde)'
+              : 'var(--cor-vermelho)'
+          }}>{cliente.somatorioDividasEmAberto == 0 ? "Adimplente" : `R$${(cliente.somatorioDividasEmAberto).toFixed(2)}`}
+            {cliente.somatorioDividasEmAberto !== 0 && (
+              <svg xmlns="http://www.w3.org/2000/svg" className="base-icon debt-svg" viewBox="0 0 16 16">
+                <path d="M1 3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zm7 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4" />
+                <path d="M0 5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V7a2 2 0 0 1-2-2z" />
+              </svg>
+            )}
+          </button>
+        </Link>
 
       </div>
       {getClienteImgPerfil && <FormImgPerfil cliente={cliente} onClose={() => setClienteImgPerfil(undefined)} />}
