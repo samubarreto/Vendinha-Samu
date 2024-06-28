@@ -21,7 +21,7 @@ export function deletarDivida(id_divida) {
 
 export function postPutDivida(divida) {
   var request = {
-    method: divida.id_divida ? "PUT" : "POST",
+    method: divida.idDivida ? "PUT" : "POST",
     headers: {
       "Content-Type": "application/json"
     },

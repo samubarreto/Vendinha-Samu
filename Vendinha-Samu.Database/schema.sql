@@ -148,6 +148,19 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 
+/* A função abaixo é executada sempre após um update numa dívida,
+e se a situação for alterada para true, ela define a data de pagamento
+para current date */
+
+CREATE OR REPLACE FUNCTION atualizar_data_pagamento()
+RETURNS TRIGGER AS $$
+BEGIN
+    IF NEW.situacao = TRUE AND OLD.situacao = FALSE THEN
+        NEW.data_pagamento = CURRENT_DATE;
+    END IF;
+    RETURN NEW;
+END;
+$$ LANGUAGE plpgsql;
 
 ------------- TRIGGERS -----------------
 /* A trigger abaixo é acionada sempre ANTES
@@ -189,6 +202,13 @@ CREATE TRIGGER trigger_atualiza_somatorio_dividas_abertas
 AFTER INSERT OR UPDATE OR DELETE ON dividas
 FOR EACH ROW
 EXECUTE FUNCTION atualizar_somatorio_dividas_abertas();
+
+/* A trigger abaixo é acionada sempre após um update numa dívida,
+chama a função atualizar_data_pagamento() */
+CREATE TRIGGER trigger_atualiza_data_pagamento
+BEFORE UPDATE ON dividas
+FOR EACH ROW
+EXECUTE FUNCTION atualizar_data_pagamento();
 
 ------------- INSERT CLIENTES ---------------
 

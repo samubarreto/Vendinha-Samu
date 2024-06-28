@@ -21,9 +21,9 @@ export default function FormConfirmacaoExclusao({ cliente, onClose, debt = false
   return (
 
     <div className="modal">
-      <form onSubmit={apagarCliente} className="exclusao-form">
+      <form onSubmit={apagarCliente} className="short-form">
         <h2>Confirme a Exclusão do Cliente:</h2>
-        <p className="delete-nome-cliente">{cliente.nomeCompleto}</p>
+        <p className="short-form-p">{cliente.nomeCompleto}</p>
         <label>⚠️Todas suas dívidas também serão apagadas</label>
         <div className="flex-row">
           <button type="reset" onClick={onClose}>Cancelar</button>

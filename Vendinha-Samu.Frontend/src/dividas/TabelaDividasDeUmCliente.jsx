@@ -4,6 +4,7 @@ import ClienteSemDividas from "./ClienteSemDividas.jsx";
 import ConfirmacaoExclusaoCliente from '../clientes/ConfirmacaoExclusaoCliente.jsx';
 import FormCliente from '../clientes/FormCliente.jsx';
 import ConfirmacaoExclusaoDivida from "./ConfirmacaoExclusaoDivida.jsx";
+import ConfirmacaoBaixaDivida from "./ConfirmacaoBaixaDivida.jsx";
 
 import { useEffect, useState } from "react";
 import { Link, useRouter } from "simple-react-routing"
@@ -24,6 +25,7 @@ export default function TabelaDividasDeUmCliente() {
 
   const [getDividas, setDividas] = useState([]);
   const [getDeleteDivida, setDeleteDivida] = useState();
+  const [getBaixaDivida, setBaixaDivida] = useState();
 
   const [getPage, setPage] = useState(1);
   const [getTotalPaginas, setTotalPaginas] = useState(undefined);
@@ -34,9 +36,9 @@ export default function TabelaDividasDeUmCliente() {
       var dados = await result.json();
 
       switch (contexto) {
-        // case "EDIT":
-        //   setDividaEdit(dados);
-        //   break;
+        case "BAIXA":
+          setBaixaDivida(dados);
+          break;
         case "DELETE":
           setDeleteDivida(dados);
           break
@@ -149,7 +151,7 @@ export default function TabelaDividasDeUmCliente() {
                 <td>{formataData(divida.dataCriacao, false)}</td>
                 <td>{divida.dataPagamento == null ? "--/--/----" : formataData(divida.dataPagamento, false)}</td>
                 <td>{divida.situacao ? "Quitada" : "Em aberto"}</td>
-                <td className={"clickable clickable-column " + ((!divida.situacao) ? "" : "debt-paid")}>
+                <td className={"clickable clickable-column " + ((!divida.situacao) ? "" : "debt-paid")} onClick={() => getDividaApi(divida.idDivida, "BAIXA")} key={`baixa-${divida.idDivida}`}>
                   <svg xmlns="http://www.w3.org/2000/svg" className="base-icon black" viewBox="0 0 16 16">
                     <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1m-1 4v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 11.293V7.5a.5.5 0 0 1 1 0" />
                   </svg>
@@ -191,6 +193,7 @@ export default function TabelaDividasDeUmCliente() {
       {getDeleteCliente && <ConfirmacaoExclusaoCliente cliente={getCliente} onClose={() => setDeleteCliente(undefined)} debt={true} />}
       {getEditCliente && <FormCliente cliente={getCliente} onClose={() => setEditCliente(undefined)} contexto={"Editar "} />}
       {getDeleteDivida && <ConfirmacaoExclusaoDivida divida={getDeleteDivida} onClose={() => setDeleteDivida(undefined)} />}
+      {getBaixaDivida && <ConfirmacaoBaixaDivida divida={getBaixaDivida} onClose={() => setBaixaDivida(undefined)} />}
     </>
   )
 }

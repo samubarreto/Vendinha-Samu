@@ -96,7 +96,7 @@
 * [X] Reaplicar confirmação de exclusão de cliente (e voltar para /clientes/)
 * [X] Reaplicar formulário de edição de cliente (e recarregar página)
 * [X] Confirmação de exclusão de dívida (e recarregar página)
-* [ ] Confirmação de baixa de dívida (e recarregar página)
+* [X] Confirmação de baixa de dívida (e recarregar página)
 * [ ] Formulário de edição de dívida (e recarregar página)
 * [ ] Formulário de inserção de dívida (e recarregar página)
 
