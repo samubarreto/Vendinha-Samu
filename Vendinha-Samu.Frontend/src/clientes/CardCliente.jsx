@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { calculaIdade } from '../services/general.js';
-import { getClienteById, uparImagemPerfil } from '../services/clienteApi.js';
+import { getClienteById } from '../services/clienteApi.js';
 import { Link } from 'simple-react-routing';
 
 import FormConfirmacaoExclusao from './FormConfirmacaoExclusao.jsx';

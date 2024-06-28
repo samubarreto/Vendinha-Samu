@@ -93,8 +93,8 @@
 * [X] Desenvolver HTML e CSS da interface da tabela de dívidas de um cliente, componente de tabela de dívidas de um cliente
 * [X] Refatorar Backend endpoint de dívidas by idcliente, pra retornar da forma correta e com skip page size aplicados para paginação no front
 * [X] Adicionar funcionalidade de listagem dinâmica dos clientes (fetch+paginamento)
-* [ ] Reaplicar confirmação de exclusão de cliente (e voltar para /clientes/)
-* [ ] Reaplicar formulário de edição de cliente (e recarregar página)
+* [X] Reaplicar confirmação de exclusão de cliente (e voltar para /clientes/)
+* [X] Reaplicar formulário de edição de cliente (e recarregar página)
 * [ ] Confirmação de exclusão de dívida (e recarregar página)
 * [ ] Confirmação de baixa de dívida (e recarregar página)
 * [ ] Formulário de edição de dívida (e recarregar página)
@@ -230,7 +230,6 @@ Cpf.Validar("08597471077"); // True
 
 <div align="center">
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-255E63?style=for-the-badge&logo=About.me&logoColor=white)](https://samubarreto.github.io/Portfolio/)
 [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/samubrreto/)
 
 </div>

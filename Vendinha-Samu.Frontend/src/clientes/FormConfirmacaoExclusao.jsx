@@ -1,12 +1,18 @@
 import { deletarCliente } from "../services/clienteApi.js"
+import { useNavigation } from 'simple-react-routing';
 
-export default function FormConfirmacaoExclusao({ cliente, onClose }) {
+export default function FormConfirmacaoExclusao({ cliente, onClose, debt = false }) {
+
+  const { navigateTo } = useNavigation();
 
   const apagarCliente = async (evento) => {
     evento.preventDefault();
 
     var result = await deletarCliente(cliente.id);
-    if (result.status == 200) {
+    if (result.status == 200 && debt) {
+      onClose();
+      navigateTo(null, '/clientes');
+    } else {
       onClose();
       window.location.reload();
     }
