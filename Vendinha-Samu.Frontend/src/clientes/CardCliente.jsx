@@ -3,7 +3,7 @@ import { calculaIdade } from '../services/general.js';
 import { getClienteById } from '../services/clienteApi.js';
 import { Link } from 'simple-react-routing';
 
-import FormConfirmacaoExclusao from './FormConfirmacaoExclusao.jsx';
+import ConfirmacaoExclusaoCliente from './ConfirmacaoExclusaoCliente.jsx';
 import FormCliente from './FormCliente.jsx';
 import FormImgPerfil from './FormImgPerfil.jsx';
 
@@ -84,7 +84,7 @@ export default function CardCliente(properties) {
 
       </div>
       {getClienteImgPerfil && <FormImgPerfil cliente={cliente} onClose={() => setClienteImgPerfil(undefined)} />}
-      {getClienteDelete && <FormConfirmacaoExclusao cliente={cliente} onClose={() => setClienteDelete(undefined)} />}
+      {getClienteDelete && <ConfirmacaoExclusaoCliente cliente={cliente} onClose={() => setClienteDelete(undefined)} />}
       {getClienteEdit && <FormCliente cliente={cliente} onClose={() => setClienteEdit(undefined)} contexto={"Editar "} />}
     </>
   )

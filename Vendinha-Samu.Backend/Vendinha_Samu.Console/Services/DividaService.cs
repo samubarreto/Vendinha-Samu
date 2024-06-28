@@ -121,6 +121,11 @@ namespace Vendinha_Samu.Console.Services
             }
         }
 
+        public Divida RetornaPeloId(int id_divida)
+        {
+            return session.OpenSession().Get<Divida>(id_divida);
+        }
+
         private void HandleException(Exception ex, List<ValidationResult> erros, string memberName = "")
         {
             var message = ex.InnerException?.Message ?? ex.Message;

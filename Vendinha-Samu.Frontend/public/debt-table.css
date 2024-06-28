@@ -161,6 +161,8 @@ th {
 }
 
 .no-clients-container.no-debts-container {
+  background: none;
+  background-color: var(--cor-branco);
   color: var(--cor-cinza-medio);
   border-top-left-radius: 0;
   border-top-right-radius: 0;

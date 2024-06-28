@@ -95,7 +95,7 @@
 * [X] Adicionar funcionalidade de listagem dinâmica dos clientes (fetch+paginamento)
 * [X] Reaplicar confirmação de exclusão de cliente (e voltar para /clientes/)
 * [X] Reaplicar formulário de edição de cliente (e recarregar página)
-* [ ] Confirmação de exclusão de dívida (e recarregar página)
+* [X] Confirmação de exclusão de dívida (e recarregar página)
 * [ ] Confirmação de baixa de dívida (e recarregar página)
 * [ ] Formulário de edição de dívida (e recarregar página)
 * [ ] Formulário de inserção de dívida (e recarregar página)
@@ -230,6 +230,7 @@ Cpf.Validar("08597471077"); // True
 
 <div align="center">
 
+[@samubarreto](https://linktr.ee/samubarreto) <br>
 [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/samubrreto/)
 
 </div>

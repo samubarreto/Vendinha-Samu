@@ -6,6 +6,11 @@ export function listarDividas(id_cliente_divida, page = 0, pageSize = 0) {
   return fetch(`${URL_API}/api/dividas/${id_cliente_divida}?skip=${skip}&pageSize=${pageSize}`);
 }
 
+export function getDividaById(id_divida) {
+  var response = fetch(URL_API + "/api/dividas/byid/" + id_divida);
+  return response;
+}
+
 export function deletarDivida(id_divida) {
   var request = {
     method: "DELETE"

@@ -20,6 +20,12 @@ namespace Vendinha_Samu.Api.Controllers
             return Ok(dividaService.ListarDividasDeUmCliente(id_cliente_divida, skip, pageSize));
         }
 
+        [HttpGet("byid/{id_divida}")]
+        public IActionResult RetornaPeloId(int id_divida)
+        {
+            return Ok(dividaService.RetornaPeloId(id_divida));
+        }
+
         [HttpPost]
         public IActionResult Criar([FromBody] Divida divida)
         {

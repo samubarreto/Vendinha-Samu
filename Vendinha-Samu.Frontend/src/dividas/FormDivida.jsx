@@ -1,9 +1,9 @@
 export default function FormDivida() {
   return (
     <>
-
-      fazer formdívida
-
+      <div className="modal">
+        fazer formdívida
+      </div>
     </>
   )
 }
