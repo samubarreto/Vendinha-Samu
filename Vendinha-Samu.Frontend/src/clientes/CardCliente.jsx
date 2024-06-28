@@ -10,7 +10,6 @@ import FormImgPerfil from './FormImgPerfil.jsx';
 export default function CardCliente(properties) {
 
   const cliente = properties.cliente;
-  let idadeCliente = calculaIdade(cliente.dataNascimento);
 
   const [getClienteDelete, setClienteDelete] = useState(undefined);
   const [getClienteEdit, setClienteEdit] = useState(undefined);
@@ -64,8 +63,8 @@ export default function CardCliente(properties) {
 
         </div>
 
-        <p className="client-name-age">{cliente.nomeCompleto}, {idadeCliente}</p>
-        <p className="client-email">{cliente.email}</p>
+        <p className="client-name-age">{cliente.nomeCompleto}, {calculaIdade(cliente.dataNascimento)}</p>
+        <p className="client-email">{cliente.email ? cliente.email : "Sem email cadastrado"}</p>
 
         <Link to={`/dividas/cliente/${cliente.id}`}>
           <button className="debt-sum-client" style={{

@@ -20,6 +20,21 @@
   padding: 10px 30px;
 }
 
+.back-clients-link,
+.back-clients-link path {
+  transition: all .3s;
+}
+
+.back-clients-link:hover {
+  transform: scale(1.25);
+  transition: all .15s;
+}
+
+.back-clients-link:hover path {
+  transition: all .15s;
+  fill: var(--cor-vermelho);
+}
+
 .profile-img.debt-table-img {
   width: 50px;
   height: 50px;
@@ -109,6 +124,15 @@ th {
   font-size: 1.2rem;
 }
 
+.debt-paid {
+  opacity: .1;
+  cursor: not-allowed;
+}
+
+.debt-paid svg path {
+  fill: var(--cor-cinza-claro);
+}
+
 .debt-resumo {
   font-size: .8rem;
   background: #d63a3a;
@@ -116,6 +140,7 @@ th {
   background: linear-gradient(to right, #d63a3a, #bf1a1a, #e11d1d, #d63a3a);
   animation: gradientAnimation 2.5s linear infinite;
   background-size: 200%;
+  color: var(--cor-cinza-medio);
   border-bottom-left-radius: 40px;
   border-bottom-right-radius: 40px;
   margin: 0 0 20px 0;
@@ -133,4 +158,11 @@ th {
   border-radius: 30px;
   padding: 8px 12px;
   text-wrap: nowrap;
+}
+
+.no-clients-container.no-debts-container {
+  color: var(--cor-cinza-medio);
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  margin: 0 0 15px 0;
 }

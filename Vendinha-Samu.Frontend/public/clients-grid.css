@@ -43,11 +43,7 @@ input[type="search"]::-webkit-search-cancel-button {
   border-radius: 30px;
   justify-content: center;
   align-items: center;
-  background: #d63a3a;
-  background: -webkit-linear-gradient(to right, #d63a3a, #e11d1d, #bf1a1a, #d63a3a);
-  background: linear-gradient(to right, #d63a3a, #bf1a1a, #e11d1d, #d63a3a);
-  animation: gradientAnimation 2.5s linear infinite;
-  background-size: 200%;
+  background-color: var(--cor-branco);
   padding: 10px 0;
   width: 100%;
 }
