@@ -11,7 +11,7 @@ export default function ConfirmacaoBaixaDivida({ divida, onClose }) {
       valor: divida.valor,
       dataCriacao: divida.dataCriacao,
       situacao: true,
-      dataPagamento: null,
+      dataPagamento: divida.dataPagamento,
       descricao: divida.descricao
     };
 

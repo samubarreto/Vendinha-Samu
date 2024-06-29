@@ -25,7 +25,7 @@ export default function FormCliente({ cliente, onClose, contexto }) {
         nomeCompleto: dados.get("nomeCompleto"),
         cpf: ((dados.get("cpf")).replaceAll(".", "")).replaceAll("-", ""),
         dataNascimento: dados.get("dataNascimento"),
-        email: dados.get("email"),
+        email: dados.get("email") === "" ? null : dados.get("email"),
         urlPerfil: "https://127.0.0.1:7258/profile_pics/profile_placeholder.png",
         somatorioDividasEmAberto: 0
       };
@@ -53,7 +53,7 @@ export default function FormCliente({ cliente, onClose, contexto }) {
 
         <div className="flex-column jcc">
           <img src={contexto === "Editar " ? cliente.urlPerfil : "https://127.0.0.1:7258/profile_pics/profile_placeholder.png"} className="profile-img editing" alt="Profile"></img>
-          <p className="info-text">&#10090;A imagem não é editável por aqui, Pangaré 🤠&#10091;</p>
+          <p className="info-text">&#10090;A imagem não é editável por aqui, Colega 🤠&#10091;</p>
         </div>
 
         <div className="label-input-container large">

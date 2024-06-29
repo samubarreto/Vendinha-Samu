@@ -97,22 +97,17 @@
 * [X] Reaplicar formulário de edição de cliente (e recarregar página)
 * [X] Confirmação de exclusão de dívida (e recarregar página)
 * [X] Confirmação de baixa de dívida (e recarregar página)
-* [ ] Formulário de edição de dívida (e recarregar página)
-* [ ] Formulário de inserção de dívida (e recarregar página)
+* [X] Formulário de edição de dívida (e recarregar página)
+* [X] Formulário de inserção de dívida (e recarregar página)
 
 ###### CHECKUP FRONTEND
 
 * [X] CRUD Clientes no front finalizado e validado
-* [ ] CRUD Dívidas no front finalizado e validado
+* [X] CRUD Dívidas no front finalizado e validado
 
-###### FINALIZAÇÃO
+###### DOCUMENTAÇÃO E ENTREGA
 
-* [ ] Criar service separado para o controller do endpoint de uploadImagem, no momento controller possui o serviço "embutido", errado
-* [ ] Identificar e Refatorar o que tiver de estranho em todo o código de front, back e banco (100%)
-
-###### TESTES, DOCUMENTAÇÃO E ENTREGA
-
-* [ ] Testar a aplicação baseado nos casos préviamente estabelecidos
+* [ ] Testar casos de teste manualmente
 * [ ] Exportar Collection do Postman
 * [X] Documentar o motivo de uso das Libs
 * [X] Documentar as instruções de uso da aplicação Vendinha Fullstack Interfocus 😎

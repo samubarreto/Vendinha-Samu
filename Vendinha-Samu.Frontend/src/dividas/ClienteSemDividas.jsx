@@ -3,7 +3,7 @@ export default function ClienteSemDividas() {
     <>
 
       <div className="no-clients-container no-debts-container">
-        Este cliente não possui nenhuma dívida! 🤠
+        Este cliente não possui nenhuma dívida em aberto! 🤠
       </div>
 
     </>

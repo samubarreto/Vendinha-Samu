@@ -20,6 +20,7 @@ export function deletarDivida(id_divida) {
 }
 
 export function postPutDivida(divida) {
+  console.log(JSON.stringify(divida))
   var request = {
     method: divida.idDivida ? "PUT" : "POST",
     headers: {

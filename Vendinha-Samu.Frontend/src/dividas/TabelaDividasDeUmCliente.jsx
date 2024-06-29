@@ -5,6 +5,7 @@ import ConfirmacaoExclusaoCliente from '../clientes/ConfirmacaoExclusaoCliente.j
 import FormCliente from '../clientes/FormCliente.jsx';
 import ConfirmacaoExclusaoDivida from "./ConfirmacaoExclusaoDivida.jsx";
 import ConfirmacaoBaixaDivida from "./ConfirmacaoBaixaDivida.jsx";
+import FormDivida from "./FormDivida.jsx";
 
 import { useEffect, useState } from "react";
 import { Link, useRouter } from "simple-react-routing"
@@ -26,6 +27,8 @@ export default function TabelaDividasDeUmCliente() {
   const [getDividas, setDividas] = useState([]);
   const [getDeleteDivida, setDeleteDivida] = useState();
   const [getBaixaDivida, setBaixaDivida] = useState();
+  const [getEditDivida, setEditDivida] = useState();
+  const [getCreateDivida, setCreateDivida] = useState();
 
   const [getPage, setPage] = useState(1);
   const [getTotalPaginas, setTotalPaginas] = useState(undefined);
@@ -38,6 +41,9 @@ export default function TabelaDividasDeUmCliente() {
       switch (contexto) {
         case "BAIXA":
           setBaixaDivida(dados);
+          break;
+        case "EDIT":
+          setEditDivida(dados);
           break;
         case "DELETE":
           setDeleteDivida(dados);
@@ -146,17 +152,18 @@ export default function TabelaDividasDeUmCliente() {
           <tbody>
             {getDividas.map(divida =>
               <tr key={divida.idDivida}>
-                <td className="ti-text">{divida.descricao}</td>
+                <td className="ti-text">{divida.descricao.length > 80 ? `${(divida.descricao).substring(0, 80)}[...]` : divida.descricao}</td>
                 <td>R${(divida.valor).toFixed(2)}</td>
                 <td>{formataData(divida.dataCriacao, false)}</td>
                 <td>{divida.dataPagamento == null ? "--/--/----" : formataData(divida.dataPagamento, false)}</td>
                 <td>{divida.situacao ? "Quitada" : "Em aberto"}</td>
-                <td className={"clickable clickable-column " + ((!divida.situacao) ? "" : "debt-paid")} onClick={() => getDividaApi(divida.idDivida, "BAIXA")} key={`baixa-${divida.idDivida}`}>
+                <td className={"clickable clickable-column " + (!divida.situacao ? "" : "debt-paid")} onClick={divida.situacao ? undefined : () => getDividaApi(divida.idDivida, "BAIXA")} key={`baixa-${divida.idDivida}`}
+                >
                   <svg xmlns="http://www.w3.org/2000/svg" className="base-icon black" viewBox="0 0 16 16">
                     <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1m-1 4v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 11.293V7.5a.5.5 0 0 1 1 0" />
                   </svg>
                 </td>
-                <td className={"clickable clickable-column " + ((!divida.situacao) ? "" : "debt-paid")}>
+                <td className={"clickable clickable-column " + ((!divida.situacao) ? "" : "debt-paid")} onClick={divida.situacao ? undefined : () => getDividaApi(divida.idDivida, "EDIT")} key={`edit-${divida.idDivida}`}>
                   <svg xmlns="http://www.w3.org/2000/svg" className="base-icon black" viewBox="0 0 16 16">
                     <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001" />
                   </svg>
@@ -171,10 +178,10 @@ export default function TabelaDividasDeUmCliente() {
           </tbody>
         </table>
 
-        {getDividas.length == 0
+        {getDividas.filter(divida => !divida.situacao).length === 0
           ? <ClienteSemDividas />
           : <div className="flex-row debt-resumo">
-            <span>Valor total de dívidas em aberto: R${(getCliente.somatorioDividasEmAberto).toFixed(2)}</span>
+            <span>Valor total de dívidas em aberto: R${(getCliente.somatorioDividasEmAberto)}</span>
           </div>}
 
         <footer className="debt-footer">
@@ -194,6 +201,7 @@ export default function TabelaDividasDeUmCliente() {
       {getEditCliente && <FormCliente cliente={getCliente} onClose={() => setEditCliente(undefined)} contexto={"Editar "} />}
       {getDeleteDivida && <ConfirmacaoExclusaoDivida divida={getDeleteDivida} onClose={() => setDeleteDivida(undefined)} />}
       {getBaixaDivida && <ConfirmacaoBaixaDivida divida={getBaixaDivida} onClose={() => setBaixaDivida(undefined)} />}
+      {getEditDivida && <FormDivida divida={getEditDivida} onClose={() => setEditDivida(undefined)} contexto={"Editar "} />}
     </>
   )
 }

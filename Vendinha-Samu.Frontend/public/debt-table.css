@@ -126,7 +126,7 @@ th {
 
 .debt-paid {
   opacity: .1;
-  cursor: not-allowed;
+  cursor: default;
 }
 
 .debt-paid svg path {

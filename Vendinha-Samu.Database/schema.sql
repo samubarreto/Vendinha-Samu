@@ -155,8 +155,12 @@ para current date */
 CREATE OR REPLACE FUNCTION atualizar_data_pagamento()
 RETURNS TRIGGER AS $$
 BEGIN
+    -- Se a situação for alterada para true e anteriormente era false, define a data de pagamento para a data atual
     IF NEW.situacao = TRUE AND OLD.situacao = FALSE THEN
         NEW.data_pagamento = CURRENT_DATE;
+    -- Se tentar alterar a situação de true para false, lança uma exceção
+    ELSIF NEW.situacao = FALSE AND OLD.situacao = TRUE THEN
+        RAISE EXCEPTION 'Não é permitido alterar a situação de uma dívida paga para não paga.';
     END IF;
     RETURN NEW;
 END;

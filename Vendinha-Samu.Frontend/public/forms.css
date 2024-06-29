@@ -59,7 +59,8 @@ form button[type="submit"]:active {
   transition: all 0.15s;
 }
 
-.edicao-cliente-form {
+.edicao-cliente-form,
+.edicao-divida-form {
   width: 450px;
   padding: 30px;
 }
@@ -82,13 +83,20 @@ form button[type="submit"]:active {
 input[type="text"],
 input[type="date"],
 input[type="email"],
-input[type="file"] {
+input[type="file"],
+input[type="number"],
+input[type="decimal"],
+textarea {
   width: 100%;
   padding: 8px 12px;
   border-radius: 30px;
   border: none;
   background-color: var(--cor-cinza-claro);
   color: var(--cor-branco);
+}
+
+textarea {
+  resize: none;
 }
 
 input[type="file"]::-webkit-file-upload-button {
@@ -125,7 +133,10 @@ input[type="file"]::-webkit-file-upload-button:active {
 input[type="text"]::placeholder,
 input[type="date"]::placeholder,
 input[type="email"]::placeholder,
-input[type="file"]::placeholder {
+input[type="file"]::placeholder,
+input[type="number"]::placeholder,
+input[type="decimal"]::placeholder,
+textarea::placeholder {
   color: var(--cor-cinza-placeholder2);
 }
 
