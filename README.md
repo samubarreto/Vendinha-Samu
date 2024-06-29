@@ -3,6 +3,7 @@
 ### ·Sumário
 
 * [Resumo do Projeto](#resumo-do-projeto)
+* [Features](#features)
 * [TO-DO LIST](#to-do-list)
 * [Instruções de Uso/Execução](#instruções-de-usoexecução)
 * [Motivo de uso das bibliotecas](#justificativa-de-uso-das-bibliotecaspacotesetc)
@@ -15,6 +16,19 @@
 * Uma WEB API REST, feita com ASP.NET em C#
 * Um banco de dados PostgreSQL para permanencia de dados via ORM NHibernate
 * Organiza e administra Dívidas de Clientes
+
+---
+
+### ·Features: 
+* Paginação de 10 em 10 clientes
+* Busca de Clientes
+* Ordenação de Cliente com maior somatório de dívidas para menor
+* Exibição dinâmica para buscas/páginas com 8, 4, 2, 1 e 0 clientes (Busque por: "Retorna8", "Retorna4", "Retorna2", "Retorna1", "Retorna0" Para ver)
+* Fácil Cadastro, Cdição e Remoção de Clientes
+* Adição, alteração e remoção de imagem de perfil de Cliente
+* Paginação de 10 em 10 dívidas de clientes
+* Fácil Cadastro, Edição, Baixa e Remoção de Dívidas de um Cliente
+* Limitação automática de 200 reais de somatório de dívidas de um Cliente
 
 ---
 
@@ -141,7 +155,6 @@ https://www.pgadmin.org/download/pgadmin-4-windows/
 ```
 
 5) Caso tenha acabado de instalar algum dos itens acima, reinicie seu computador
-
 6) Abra um terminal e clone o repositório:
 
 ```bash
