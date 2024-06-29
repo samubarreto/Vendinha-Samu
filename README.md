@@ -140,39 +140,41 @@ https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
 https://www.pgadmin.org/download/pgadmin-4-windows/
 ```
 
-5) Abra um terminal e clone o repositório:
+5) Caso tenha acabado de instalar algum dos itens acima, reinicie seu computador
+
+6) Abra um terminal e clone o repositório:
 
 ```bash
 git clone https://github.com/samubarreto/Vendinha-Fullstack-Interfocus.git
 ```
 
-6) Acesse o diretório do repositório clonado:
+7) Acesse o diretório do repositório clonado:
 
 ```bash
 cd .\Vendinha-Fullstack-Interfocus\
 ```
 
-7) Abra o diretório atual no Explorador de Arquivos pra facilitar a explicação:
+8) Abra o diretório atual no Explorador de Arquivos pra facilitar a explicação:
 
 ```bash
 explorer .
 ```
 
-8) Abra o arquivo schema.sql com qualquer editor de texto/código (Bloco de notas)
-9) Abra sua IDE do Postgresql (pgAdmin)
-10) Registre um novo servidor com as seguintes informações:
+9) Abra o arquivo schema.sql com qualquer editor de texto/código (Bloco de notas)
+10) Abra sua IDE do Postgresql (pgAdmin)
+11) Registre um novo servidor com as seguintes informações:
 
 - Nome: localhost(qualquer nome)
 - Host: 127.0.0.1
 - Porta: 5432
 - Senha: samu123
 
-11) Conecte-se ao servidor registrado crie um banco de dados com nome = vendinha_samu
-12) Abra uma nova Querry para o banco vendinha_samu:
+12) Conecte-se ao servidor registrado crie um banco de dados com nome = vendinha_samu
+13) Abra uma nova Querry para o banco vendinha_samu:
 
 - Cole o conteúdo do schema.sql e execute
 
-13) Volte para o explorador de arquivos, no diretório root (Vendinha-Fullstack-Interfocus), abra o terminal e siga os comandos:
+14) Volte para o explorador de arquivos, no diretório root (Vendinha-Fullstack-Interfocus), abra o terminal e siga os comandos:
 
 ```bash
 cd .\Vendinha-Samu.Backend\
@@ -180,8 +182,8 @@ cd .\Vendinha_Samu.Api\
 dotnet watch run
 ```
 
-14) Se estiver tudo certo, a API deve estar rodando agora.. Perfeito
-15) Volte para o explorador de arquivos, no diretório root (Vendinha-Fullstack-Interfocus), abra outro terminal e siga os comandos:
+15) Se estiver tudo certo, a API deve estar rodando agora.. Perfeito
+16) Volte para o explorador de arquivos, no diretório root (Vendinha-Fullstack-Interfocus), abra outro terminal e siga os comandos:
 
 ```bash
 cd .\Vendinha-Samu.Frontend\
@@ -189,8 +191,8 @@ npm i vite
 npm run dev
 ```
 
-16) Se estiver tudo certo, tanto o banco, quanto a API Backend e o Frontend devem estar rodando perfeitamente agora, pronto pra gerenciar dívidas de clientes no seu navegador 🤠
-17) Sinta-se livre para usar a Collection do [Postman](https://www.postman.com/downloads/), disponível em /Vendinha-Samu.Collection/ para testar os endpoints
+17) Se estiver tudo certo, tanto o banco, quanto a API Backend e o Frontend devem estar rodando perfeitamente agora, pronto pra gerenciar dívidas de clientes no seu navegador 🤠
+18) Sinta-se livre para usar a Collection do [Postman](https://www.postman.com/downloads/), disponível em /Vendinha-Samu.Collection/ para testar os endpoints
 
 ---
 
