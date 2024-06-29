@@ -155,10 +155,10 @@ para current date */
 CREATE OR REPLACE FUNCTION atualizar_data_pagamento()
 RETURNS TRIGGER AS $$
 BEGIN
-    -- Se a situação for alterada para true e anteriormente era false, define a data de pagamento para a data atual
+    -- de false para true, define a data de pagamento para current date
     IF NEW.situacao = TRUE AND OLD.situacao = FALSE THEN
         NEW.data_pagamento = CURRENT_DATE;
-    -- Se tentar alterar a situação de true para false, lança uma exceção
+    -- de true para false, estora exception
     ELSIF NEW.situacao = FALSE AND OLD.situacao = TRUE THEN
         RAISE EXCEPTION 'Não é permitido alterar a situação de uma dívida paga para não paga.';
     END IF;
@@ -207,8 +207,8 @@ AFTER INSERT OR UPDATE OR DELETE ON dividas
 FOR EACH ROW
 EXECUTE FUNCTION atualizar_somatorio_dividas_abertas();
 
-/* A trigger abaixo é acionada sempre após um update numa dívida,
-chama a função atualizar_data_pagamento() */
+/* A trigger abaixo é acionada sempre antes dum update
+numa dívida, chama a função atualizar_data_pagamento() */
 CREATE TRIGGER trigger_atualiza_data_pagamento
 BEFORE UPDATE ON dividas
 FOR EACH ROW
