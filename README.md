@@ -108,7 +108,7 @@
 ###### DOCUMENTAÇÃO E ENTREGA
 
 * [ ] Testar casos de teste manualmente
-* [ ] Exportar Collection do Postman
+* [X] Exportar Collection do Postman
 * [X] Documentar o motivo de uso das Libs
 * [X] Documentar as instruções de uso da aplicação Vendinha Fullstack Interfocus 😎
 * [ ] Entregar repositório
@@ -192,6 +192,7 @@ npm run dev
 ```
 
 17) Se estiver tudo certo, tanto o banco, quanto a API Backend e o Frontend devem estar rodando perfeitamente agora, pronto pra gerenciar dívidas de clientes no seu navegador 🤠
+18) Sinta-se livre para usar a Collection do [Postman](https://www.postman.com/downloads/), disponível em /Vendinha-Samu.Collection/ para testar os endpoints
 
 ---
 
@@ -225,7 +226,7 @@ Cpf.Validar("08597471077"); // True
 
 <div align="center">
 
-[@samubarreto](https://linktr.ee/samubarreto) <br>
+[@samubarreto](https://linktr.ee/samubarreto) `<br>`
 [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/samubrreto/)
 
 </div>

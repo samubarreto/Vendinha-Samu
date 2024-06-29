@@ -1,0 +1,235 @@
+{
+	"info": {
+		"_postman_id": "6ea063d8-b4ac-4c1c-beda-74f20af16f70",
+		"name": "Vendinha-Samu",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "33153549"
+	},
+	"item": [
+		{
+			"name": "Clientes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{baseUrl}}:{{porta}}/api/clientes"
+			},
+			"response": [
+				{
+					"name": "Busca",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}:{{porta}}/api/clientes?pesquisa=&skip=10&pageSize=10",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"port": "{{porta}}",
+							"path": [
+								"api",
+								"clientes"
+							],
+							"query": [
+								{
+									"key": "pesquisa",
+									"value": ""
+								},
+								{
+									"key": "skip",
+									"value": "10"
+								},
+								{
+									"key": "pageSize",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": "Text",
+					"header": [],
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "ClienteById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{baseUrl}}:{{porta}}/api/clientes/23"
+			},
+			"response": []
+		},
+		{
+			"name": "Criar Cliente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nomeCompleto\": \"Cliente lç~~jhç03\",\r\n  \"cpf\": \"50228930022\",\r\n  \"dataNascimento\": \"2004-05-25\",\r\n  \"email\": \"clientew5dss3@steste.com\",\r\n  \"urlPerfil\": null,\r\n  \"somatorioDividasEmAberto\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{baseUrl}}:{{porta}}/api/clientes"
+			},
+			"response": []
+		},
+		{
+			"name": "Editar Cliente",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 20,\r\n  \"nomeCompleto\": \"Diego Oliveira Santos\",\r\n  \"cpf\": \"61221479075\",\r\n  \"dataNascimento\": \"1954-11-01T00:00:00\",\r\n  \"email\": \"diego.oliveira.santos@teste.com\",\r\n  \"urlPerfil\": \"https://127.0.0.1:7258/profile_pics/profile_placeholder.png\",\r\n  \"somatorioDividasEmAberto\": 75\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{baseUrl}}:{{porta}}/api/clientes"
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar Cliente",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "{{baseUrl}}:{{porta}}/api/clientes/28"
+			},
+			"response": []
+		},
+		{
+			"name": "Upload Imagem Perfil Cliente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "teste",
+							"type": "file",
+							"src": "postman-cloud:///1ef31661-2493-4eb0-87dd-3ed9cef14359"
+						}
+					]
+				},
+				"url": "{{baseUrl}}:{{porta}}/api/clientes/UploadProfilePic/3"
+			},
+			"response": []
+		},
+		{
+			"name": "Dívidas/Cliente",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}:{{porta}}/api/dividas/3?skip=0&pageSize=10",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"port": "{{porta}}",
+					"path": [
+						"api",
+						"dividas",
+						"3"
+					],
+					"query": [
+						{
+							"key": "skip",
+							"value": "0"
+						},
+						{
+							"key": "pageSize",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DividaById",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{baseUrl}}:{{porta}}/api/dividas/byid/292"
+			},
+			"response": []
+		},
+		{
+			"name": "Criar Dívida",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"idCliente\": 3,\r\n  \"valor\": 10030,\r\n  \"situacao\": true,\r\n  \"descricao\": \"teste\",\r\n  \"dataPagamento\": \"2024-05-27\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{baseUrl}}:{{porta}}/api/dividas"
+			},
+			"response": []
+		},
+		{
+			"name": "Editar Dívida",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"idDivida\": 6,\r\n  \"idCliente\": 2,\r\n  \"valor\": 15000,\r\n  \"situacao\": false,\r\n  \"descricao\": \"2 latas de leite condensado\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{baseUrl}}:{{porta}}/api/dividas"
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar Dívida",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "{{baseUrl}}:{{porta}}/api/dividas/100"
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://localhost"
+		},
+		{
+			"key": "porta",
+			"value": "7258"
+		}
+	]
+}
