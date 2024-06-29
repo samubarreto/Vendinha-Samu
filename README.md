@@ -107,7 +107,6 @@
 
 ###### DOCUMENTAÇÃO E ENTREGA
 
-* [ ] Testar casos de teste manualmente
 * [X] Exportar Collection do Postman
 * [X] Documentar o motivo de uso das Libs
 * [X] Documentar as instruções de uso da aplicação Vendinha Fullstack Interfocus 😎
