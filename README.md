@@ -124,7 +124,7 @@
 * [X] Exportar Collection do Postman
 * [X] Documentar o motivo de uso das Libs
 * [X] Documentar as instruções de uso da aplicação Vendinha Fullstack Interfocus 😎
-* [ ] Entregar repositório
+* [X] Entregar repositório
 
 ---
 
