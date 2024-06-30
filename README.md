@@ -206,7 +206,7 @@ npm run dev
 ```
 
 17) Se estiver tudo certo, tanto o banco, quanto a API Backend e o Frontend devem estar rodando perfeitamente agora, pronto pra gerenciar dívidas de clientes no seu navegador 🤠
-18) Sinta-se livre para usar a Collection do [Postman](https://www.postman.com/downloads/), disponível em /Vendinha-Samu.Collection/ para testar os endpoints
+18) Sinta-se livre para importar a Collection do [Postman](https://www.postman.com/downloads/), disponível em /Vendinha-Samu.postman_collection.json para testar os endpoints
 
 ---
 
