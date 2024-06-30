@@ -19,11 +19,12 @@
 
 ---
 
-### ·Features: 
+### ·Features:
+
 * Paginação de 10 em 10 clientes
 * Busca de Clientes
 * Ordenação de Cliente com maior somatório de dívidas para menor
-* Exibição dinâmica para buscas/páginas com 8, 4, 2, 1 e 0 clientes (Busque por: "Retorna8", "Retorna4", "Retorna2", "Retorna1", "Retorna0" Para ver)
+* Exibição dinâmica para buscas/páginas com 8, 6, 4, 2, 1 e 0 clientes (Busque por: "Retorna8", "Retorna6", "Retorna4", "Retorna2", "Retorna1", "Retorna0" Para ver)
 * Fácil Cadastro, Cdição e Remoção de Clientes
 * Adição, alteração e remoção de imagem de perfil de Cliente
 * Paginação de 10 em 10 dívidas de clientes

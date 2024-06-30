@@ -57,11 +57,13 @@ export default function GridCardsClientes() {
           ? '1fr'
           : getCards.length === 8
             ? 'repeat(4, 1fr)'
-            : getCards.length === 4
-              ? 'repeat(2, 1fr)'
-              : getCards.length === 2
+            : getCards.length === 6
+              ? 'repeat(3, 1fr)'
+              : getCards.length === 4
                 ? 'repeat(2, 1fr)'
-                : 'repeat(5, 1fr)',
+                : getCards.length === 2
+                  ? 'repeat(2, 1fr)'
+                  : 'repeat(5, 1fr)',
         gridTemplateRows: getCards.length === 0 || getCards.length === 1 || getCards.length === 2
           ? '1fr'
           : 'repeat(2, 1fr)'
