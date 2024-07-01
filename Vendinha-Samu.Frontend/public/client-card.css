@@ -29,6 +29,7 @@
   border-radius: 50%;
   box-shadow: 0 4px 5px 0 var(--cor-cinza-transparente-bem-claro);
   object-fit: cover;
+  background-color: var(--cor-branco);
 }
 
 .edit-img-button {
