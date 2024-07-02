@@ -12,22 +12,86 @@
 ---
 
 ### ·Prints:
+
+<div align="center">
+
+###### Interface principal
 ![image](https://github.com/samubarreto/Vendinha-Samu/assets/70921394/afbd5486-2a4a-423e-aaf7-b6102d08dd5d)
+
+---
+
+###### Paginamento com grid dinâmico de acordo com a quantidade de clientes na tela
 ![image](https://github.com/samubarreto/Vendinha-Samu/assets/70921394/d92af3e3-1219-467e-b768-3a25db8603ac)
+
+---
+
+###### Pesquisa com grid dinâmico de acordo com a quantidade de clientes retornados
 ![image](https://github.com/samubarreto/Vendinha-Samu/assets/70921394/76f3160b-80ca-4ab9-babf-41f06d40eed1)
+
+---
+
+###### Pesquisa com grid dinâmico de acordo com a quantidade de clientes retornados
 ![image](https://github.com/samubarreto/Vendinha-Samu/assets/70921394/32632af7-0043-47c1-a4c8-741698dea37c)
+
+###### Inserção de Cliente
 ![image](https://github.com/samubarreto/Vendinha-Samu/assets/70921394/5c124032-420d-4390-a7d1-9100e59fe30c)
+
+---
+
+###### Clicar na foto de perfil do cliente para editar ou remover 
 ![image](https://github.com/samubarreto/Vendinha-Samu/assets/70921394/d77f8972-3a8d-4de7-8f10-8c830b4076d4)
+
+---
+
+###### Upload da imagem
 ![image](https://github.com/samubarreto/Vendinha-Samu/assets/70921394/dffec412-21a2-4b14-aca2-270a95917ed6)
+
+---
+
+###### Imagem de perfil alterada
 ![image](https://github.com/samubarreto/Vendinha-Samu/assets/70921394/e1072e68-ab43-452c-9d73-6ddfa6c91604)
+
+---
+
+###### Edição de Cliente
 ![image](https://github.com/samubarreto/Vendinha-Samu/assets/70921394/0645d4e3-99f3-42b2-aed9-e665a6e0624f)
+
+---
+
+###### Exclusão de Cliente
 ![image](https://github.com/samubarreto/Vendinha-Samu/assets/70921394/7e5ed415-4c0d-4080-b59a-7ba74328ef48)
+
+---
+
+###### Tabela de Dívidas de um cliente inadimplente
 ![image](https://github.com/samubarreto/Vendinha-Samu/assets/70921394/a960e902-c5f3-4342-a70e-66cc960b3eb6)
+
+---
+
+###### Confirmação de Baixa de Dívida em Aberto
 ![image](https://github.com/samubarreto/Vendinha-Samu/assets/70921394/0996b14a-493e-4ee6-bce5-0bae0a1f4f24)
+
+---
+
+###### Edição de Dívida
 ![image](https://github.com/samubarreto/Vendinha-Samu/assets/70921394/906a7593-225c-42d6-8056-f88a1adf459c)
+
+---
+
+###### Inserção de Dívida
 ![image](https://github.com/samubarreto/Vendinha-Samu/assets/70921394/f7388556-aaf0-4968-a60b-794c9c78712e)
+
+---
+
+###### Tabela de Dívidas de um cliente adimplente
 ![image](https://github.com/samubarreto/Vendinha-Samu/assets/70921394/48677198-cf36-42eb-a205-ec1ed60019a8)
+
+---
+
+###### Interface de Página não encontrada
 ![image](https://github.com/samubarreto/Vendinha-Samu/assets/70921394/ff35ca1b-555e-478a-9cb4-d2145f31c09f)
+
+</div>
 
 ### ·Resumo do Projeto:
 
