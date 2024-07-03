@@ -17,6 +17,7 @@ export default function FormCliente({ cliente, onClose, contexto }) {
         cpf: ((dados.get("cpf")).replaceAll(".", "")).replaceAll("-", ""),
         dataNascimento: dados.get("dataNascimento"),
         email: dados.get("email"),
+        numeroCelular: dados.get("numero-celular"),
         urlPerfil: cliente.urlPerfil,
         somatorioDividasEmAberto: cliente.somatorioDividasEmAberto
       };
@@ -26,6 +27,7 @@ export default function FormCliente({ cliente, onClose, contexto }) {
         cpf: ((dados.get("cpf")).replaceAll(".", "")).replaceAll("-", ""),
         dataNascimento: dados.get("dataNascimento"),
         email: dados.get("email") === "" ? null : dados.get("email"),
+        numeroCelular: dados.get("numero-celular"),
         urlPerfil: "https://127.0.0.1:7258/profile_pics/profile_placeholder.png",
         somatorioDividasEmAberto: 0
       };
@@ -70,6 +72,11 @@ export default function FormCliente({ cliente, onClose, contexto }) {
             <label htmlFor="dataNascimento" className="form-label">*Data de Nascimento</label>
             <input type="date" name="dataNascimento" id="dataNascimento" defaultValue={contexto === "Editar " ? formataData(cliente.dataNascimento) : ""} required />
           </div>
+        </div>
+
+        <div className="label-input-container large">
+          <label htmlFor="numero-celular" className="form-label">*Número &#10090;DDD + Dígitos&#10091;</label>
+          <input type="text" name="numero-celular" id="numero-celular" placeholder="12345678901" defaultValue={contexto === "Editar " ? cliente.numeroCelular : ""} required />
         </div>
 
         <div className="label-input-container large">

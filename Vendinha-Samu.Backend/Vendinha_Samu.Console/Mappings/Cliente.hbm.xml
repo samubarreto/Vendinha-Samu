@@ -13,6 +13,7 @@
 		<property name="Cpf" column="cpf" type="string" length="11"/>
 		<property name="DataNascimento" column="data_nascimento" type="date"/>
 		<property name="Email" column="email" type="string" length="50"/>
+		<property name="NumeroCelular" column="numero_celular" type="string" length="11"/>
 		<property name="UrlPerfil" column="profile_url" type="string" length="5000"/>
 		<property name="SomatorioDividasEmAberto" column="somatorio_dividas_abertas" type="decimal"/>
 	</class>

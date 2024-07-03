@@ -12,6 +12,7 @@ CREATE TABLE clientes (
     cpf CHAR(11) NOT NULL,
     data_nascimento DATE NOT NULL,
     email VARCHAR(50) NULL,
+    numero_celular VARCHAR(11) NOT NULL,
 	profile_url TEXT,
     somatorio_dividas_abertas DECIMAL(8,2) NOT NULL DEFAULT 0,
     CONSTRAINT pk_cliente PRIMARY KEY (id_cliente),
@@ -83,22 +84,26 @@ $$ LANGUAGE plpgsql;
 
 /* A função abaixo é executada sempre antes da
 inserção ou update dum cliente e impede que o
-cpf seja inválido */
-CREATE OR REPLACE FUNCTION validar_cpf()
+cpf e número de celular tenham lenght diferente
+de 11 */
+CREATE OR REPLACE FUNCTION validar_cpf_celular()
 RETURNS TRIGGER AS $$
 DECLARE
     cpf_text VARCHAR(11);
+    numero_celular_text VARCHAR(11);
 BEGIN
-    -- bota o novo cpf no cpftext declarado acima
     cpf_text := NEW.cpf;
+    numero_celular_text = NEW.numero_celular;
 
     -- se tem 11 dígitos
     IF LENGTH(cpf_text) <> 11 OR NOT (cpf_text ~ '^[0-9]+$') THEN
         RAISE EXCEPTION 'CPF inválido. O CPF deve conter exatamente 11 dígitos numéricos.';
-    
     END IF;
 
-    -- se n caiu no if retorna o cpf
+    IF LENGTH(numero_celular_text) <> 11 THEN
+        RAISE EXCEPTION 'Número de Celular inválido. O número deve conter 11 dígitos numéricos (sem máscara)';
+    END IF;
+
     RETURN NEW;
 END;
 $$ LANGUAGE plpgsql;
@@ -185,11 +190,11 @@ EXECUTE FUNCTION validar_data_nascimento();
 
 /* A trigger abaixo é acionada sempre ANTES
 da inserção ou update de um cliente e chama
-a função validar_cpf() */
-CREATE TRIGGER trigger_verifica_cpf
+a função validar_cpf_celular() */
+CREATE TRIGGER trigger_verifica_cpf_celular
 BEFORE INSERT OR UPDATE ON clientes
 FOR EACH ROW
-EXECUTE FUNCTION validar_cpf();
+EXECUTE FUNCTION validar_cpf_celular();
 
 /* A trigger abaixo é acionada sempre ANTES
 da inserção ou update de um cliente e chama
@@ -216,53 +221,53 @@ EXECUTE FUNCTION atualizar_data_pagamento();
 
 ------------- INSERT CLIENTES ---------------
 
-INSERT INTO clientes (nome_completo, cpf, data_nascimento, email, profile_url) VALUES
-('Ana Carolina Silva', '77120005065', '2008-06-01', 'ana.carolina.silva@teste.com', null),
-('João da Silva Oliveira', '48350876077', '1959-07-01', 'joao.silva.oliveira@teste.com', null),
-('Maria de Fátima Santos', '10068351054', '1935-08-01', 'maria.fatima.santos@teste.com', null),
-('Pedro Henrique Souza', '14462563085', '2002-12-25', 'pedro.henrique.souza@teste.com', null),
-('Carla Cristina Pereira', '11265316007', '1957-10-01', 'carla.cristina.pereira@teste.com', null),
-('Antônio José Santos', '68436606060', '1944-11-01', 'antonio.jose.santos@teste.com', null),
-('Luiza da Silva Martins', '32676983083', '2006-12-01', 'luiza.silva.martins@teste.com', null),
-('Rafael da Costa', '41087006007', '1995-01-01', 'rafael.da.costa@teste.com', null),
-('Amanda de Oliveira Ferreira', '03249721050', '2003-02-01', 'amanda.oliveira.ferreira@teste.com', null),
-('Marcos Vinícius Silva', '47811148064', '1966-01-01', 'marcos.vinicius.silva@teste.com', null),
-('Juliana Aparecida Oliveira', '61637755031', '1949-02-01', 'juliana.aparecida.oliveira@teste.com', null),
-('Fernando Almeida Santos', '62139599047', '1962-03-01', 'fernando.almeida.santos@teste.com', null),
-('Carolina da Costa Santos', '57559315003', '1979-04-01', 'carolina.da.costa.santos@teste.com', null),
-('Paulo Roberto Lima', '78456336076', '1986-05-01', 'paulo.roberto.lima@teste.com', null),
-('Camila Oliveira Santos', '79372405043', '1998-06-01', 'camila.oliveira.santos@teste.com', null),
-('Márcio Luiz Pereira', '30250729032', '2001-07-01', 'marcio.luiz.pereira@teste.com', null),
-('Ana Paula Alves Costa', '93076257005', '1968-08-01', 'ana.paula.alves.costa@teste.com', null),
-('Lucas da Silva Souza', '40932903002', '1956-09-01', 'lucas.da.silva.souza@teste.com', null),
-('Tatiana Costa Martins', '63594256022', '2000-10-01', 'tatiana.costa.martins@teste.com', null),
-('Diego Oliveira Santos', '61221479075', '1954-11-01', 'diego.oliveira.santos@teste.com', null),
-('Patrícia Lima Costa', '13103426011', '1977-12-01', 'patricia.lima.costa@teste.com', null),
-('Marcelo Almeida Pereira', '04503698036', '1981-01-01', 'marcelo.almeida.pereira@teste.com', null),
-('Aline Oliveira Costa', '45867427048', '1990-02-01', 'aline.oliveira.costa@teste.com', null),
-('Rodrigo da Silva', '14694191063', '1971-03-01', 'rodrigo.da.silva@teste.com', null),
-('Bianca Costa Martins', '42716710023', '1999-04-01', 'bianca.costa.martins@teste.com', null),
-('Retorna8', '84157119053', '1999-04-01', 'a@b.com', null),
-('Retorna8', '55875225041', '1999-04-01', 'a@bc.com', null),
-('Retorna8', '39332775079', '1999-04-01', 'a@bd.com', null),
-('Retorna8', '97406539010', '1999-04-01', 'a@be.com', null),
-('Retorna8', '80354947087', '1999-04-01', 'a@bf.com', null),
-('Retorna8', '24389309005', '1999-04-01', 'a@bg.com', null),
-('Retorna8', '59481692000', '1999-04-01', 'a@bh.com', null),
-('Retorna8', '16352159001', '1999-04-01', 'a@bj.com', null),
-('Retorna6', '61763933024', '1999-04-01', 'a@6bfa.com', null),
-('Retorna6', '71079046046', '1999-04-01', 'a@6bga.com', null),
-('Retorna6', '00850016002', '1999-04-01', 'a@6bha.com', null),
-('Retorna6', '13572139058', '1999-04-01', 'a@6bja.com', null),
-('Retorna6', '12477948067', '1999-04-01', 'a@6bsja.com', null),
-('Retorna6', '33415105083', '1999-04-01', 'a@6basja.com', null),
-('Retorna4', '67705317044', '1999-04-01', 'a@bfa.com', null),
-('Retorna4', '51378882067', '1999-04-01', 'a@bga.com', null),
-('Retorna4', '87808178071', '1999-04-01', 'a@bha.com', null),
-('Retorna4', '92889612082', '1999-04-01', 'a@bja.com', null),
-('Retorna2', '00680103031', '1999-04-01', 'a@baha.com', null),
-('Retorna2', '24229766033', '1999-04-01', 'a@bjaa.com', null),
-('Retorna1', '12801264008', '1999-04-01', 'a@bjaba.com', null);
+INSERT INTO clientes (nome_completo, cpf, data_nascimento, email, numero_celular, profile_url) VALUES
+('Ana Carolina Silva', '77120005065', '2008-06-01', 'ana.carolina.silva@teste.com', '11234567890', null),
+('João da Silva Oliveira', '48350876077', '1959-07-01', 'joao.silva.oliveira@teste.com', '11987654321', null),
+('Maria de Fátima Santos', '10068351054', '1935-08-01', 'maria.fatima.santos@teste.com', '11923456789', null),
+('Pedro Henrique Souza', '14462563085', '2002-12-25', 'pedro.henrique.souza@teste.com', '11998765432', null),
+('Carla Cristina Pereira', '11265316007', '1957-10-01', 'carla.cristina.pereira@teste.com', '11912345678', null),
+('Antônio José Santos', '68436606060', '1944-11-01', 'antonio.jose.santos@teste.com', '11987651234', null),
+('Luiza da Silva Martins', '32676983083', '2006-12-01', 'luiza.silva.martins@teste.com', '11923451234', null),
+('Rafael da Costa', '41087006007', '1995-01-01', 'rafael.da.costa@teste.com', '11998761234', null),
+('Amanda de Oliveira Ferreira', '03249721050', '2003-02-01', 'amanda.oliveira.ferreira@teste.com', '11912347654', null),
+('Marcos Vinícius Silva', '47811148064', '1966-01-01', 'marcos.vinicius.silva@teste.com', '11987659876', null),
+('Juliana Aparecida Oliveira', '61637755031', '1949-02-01', 'juliana.aparecida.oliveira@teste.com', '11923452345', null),
+('Fernando Almeida Santos', '62139599047', '1962-03-01', 'fernando.almeida.santos@teste.com', '11998762345', null),
+('Carolina da Costa Santos', '57559315003', '1979-04-01', 'carolina.da.costa.santos@teste.com', '11912348765', null),
+('Paulo Roberto Lima', '78456336076', '1986-05-01', 'paulo.roberto.lima@teste.com', '11987653456', null),
+('Camila Oliveira Santos', '79372405043', '1998-06-01', 'camila.oliveira.santos@teste.com', '11923453456', null),
+('Márcio Luiz Pereira', '30250729032', '2001-07-01', 'marcio.luiz.pereira@teste.com', '11998764567', null),
+('Ana Paula Alves Costa', '93076257005', '1968-08-01', 'ana.paula.alves.costa@teste.com', '11912349876', null),
+('Lucas da Silva Souza', '40932903002', '1956-09-01', 'lucas.da.silva.souza@teste.com', '11987654567', null),
+('Tatiana Costa Martins', '63594256022', '2000-10-01', 'tatiana.costa.martins@teste.com', '11923454567', null),
+('Diego Oliveira Santos', '61221479075', '1954-11-01', 'diego.oliveira.santos@teste.com', '11998765678', null),
+('Patrícia Lima Costa', '13103426011', '1977-12-01', 'patricia.lima.costa@teste.com', '11912340987', null),
+('Marcelo Almeida Pereira', '04503698036', '1981-01-01', 'marcelo.almeida.pereira@teste.com', '11987655678', null),
+('Aline Oliveira Costa', '45867427048', '1990-02-01', 'aline.oliveira.costa@teste.com', '11923455678', null),
+('Rodrigo da Silva', '14694191063', '1971-03-01', 'rodrigo.da.silva@teste.com', '11998766789', null),
+('Bianca Costa Martins', '42716710023', '1999-04-01', 'bianca.costa.martins@teste.com', '11912341234', null),
+('Retorna8', '84157119053', '1999-04-01', 'a@b.com', '11987656789', null),
+('Retorna8', '55875225041', '1999-04-01', 'a@bc.com', '11923456780', null),
+('Retorna8', '39332775079', '1999-04-01', 'a@bd.com', '11998767890', null),
+('Retorna8', '97406539010', '1999-04-01', 'a@be.com', '11912342345', null),
+('Retorna8', '80354947087', '1999-04-01', 'a@bf.com', '11987657890', null),
+('Retorna8', '24389309005', '1999-04-01', 'a@bg.com', '11923457890', null),
+('Retorna8', '59481692000', '1999-04-01', 'a@bh.com', '11998768901', null),
+('Retorna8', '16352159001', '1999-04-01', 'a@bj.com', '11912343456', null),
+('Retorna6', '61763933024', '1999-04-01', 'a@6bfa.com', '11987658901', null),
+('Retorna6', '71079046046', '1999-04-01', 'a@6bga.com', '11923458901', null),
+('Retorna6', '00850016002', '1999-04-01', 'a@6bha.com', '11998769012', null),
+('Retorna6', '13572139058', '1999-04-01', 'a@6bja.com', '11912344567', null),
+('Retorna6', '12477948067', '1999-04-01', 'a@6bsja.com', '11987660123', null),
+('Retorna6', '33415105083', '1999-04-01', 'a@6basja.com', '11923460123', null),
+('Retorna4', '67705317044', '1999-04-01', 'a@bfa.com', '11998771234', null),
+('Retorna4', '51378882067', '1999-04-01', 'a@bga.com', '11912345601', null),
+('Retorna4', '87808178071', '1999-04-01', 'a@bha.com', '11987652345', null),
+('Retorna4', '92889612082', '1999-04-01', 'a@bja.com', '11923456701', null),
+('Retorna2', '00680103031', '1999-04-01', 'a@baha.com', '11998763456', null),
+('Retorna2', '24229766033', '1999-04-01', 'a@bjaa.com', '11912346789', null),
+('Retorna1', '12801264008', '1999-04-01', 'a@bjaba.com', '11987651230', null);
 
 ------------- INSERT DIVIDAS ---------------
 

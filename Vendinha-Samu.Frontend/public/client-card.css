@@ -97,7 +97,8 @@
   padding: 0 5px;
 }
 
-.client-email {
+.client-email,
+.client-cellphone {
   text-align: center;
   text-wrap: nowrap;
   text-transform: lowercase;

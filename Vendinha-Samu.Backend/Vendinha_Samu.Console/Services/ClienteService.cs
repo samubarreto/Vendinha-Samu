@@ -143,6 +143,10 @@ namespace Vendinha_Samu.Console.Services
             {
                 erros.Add(new ValidationResult("Insira uma Data de Nascimento válida", new[] { nameof(Cliente.DataNascimento) }));
             }
+            else if (message.Contains("Número de Celular inválido"))
+            {
+                erros.Add(new ValidationResult("Número de Celular inválido. O número deve conter 11 dígitos numéricos (sem máscara)", new[] { nameof(Cliente.NumeroCelular) }));
+            }
             else
             {
                 erros.Add(new ValidationResult("Erro ao processar a operação", new[] { memberName }));

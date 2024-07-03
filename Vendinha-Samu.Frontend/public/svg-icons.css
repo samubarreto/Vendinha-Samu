@@ -18,6 +18,12 @@ h1 .base-icon {
   margin: 0 0 0 8px;
 }
 
+.client-cellphone .base-icon {
+  width: 12px;
+  height: 12px;
+  margin: 0 5px 2px 0;
+}
+
 input[type="search"] .base-icon,
 .edit-img-button .base-icon {
   width: 24px;
@@ -46,7 +52,15 @@ button.credits-button .base-icon {
   fill: var(--cor-vermelho);
 }
 
+.gray {
+  fill: var(--cor-cinza-claro);
+}
+
 .large-icon {
   width: 35px;
   height: 35px;
+}
+
+.debt-icon {
+  margin: 0 5px 2px 5px;
 }
