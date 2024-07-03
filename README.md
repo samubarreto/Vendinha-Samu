@@ -16,65 +16,53 @@
 <div align="center">
 
 ###### Interface principal
-![image](https://github.com/samubarreto/Vendinha-Samu/assets/70921394/afbd5486-2a4a-423e-aaf7-b6102d08dd5d)
+![image](https://github.com/samubarreto/Vendinha-Samu/assets/70921394/43d11ee2-5e93-46d5-9d01-a5c4f2b74eba)
 
 ---
 
-###### Paginamento com grid dinâmico de acordo com a quantidade de clientes na tela
-![image](https://github.com/samubarreto/Vendinha-Samu/assets/70921394/d92af3e3-1219-467e-b768-3a25db8603ac)
+###### Paginamento/Pesquisa com grid dinâmico de acordo com a quantidade de clientes na tela
+![image](https://github.com/samubarreto/Vendinha-Samu/assets/70921394/dbc5689b-a472-4372-8b27-1302cb7783b5)
+![image](https://github.com/samubarreto/Vendinha-Samu/assets/70921394/d1345031-5989-4214-a94c-0d65d2731503)
+![image](https://github.com/samubarreto/Vendinha-Samu/assets/70921394/a2355ff7-caa6-4a91-bba2-a136d7b8a93b)
+![image](https://github.com/samubarreto/Vendinha-Samu/assets/70921394/152b06f5-cf08-4b82-94a1-c2fae87e157b)
+![image](https://github.com/samubarreto/Vendinha-Samu/assets/70921394/a5a7d91e-0f06-40ed-a783-b063ad222293)
 
 ---
-
-###### Pesquisa com grid dinâmico de acordo com a quantidade de clientes retornados
-![image](https://github.com/samubarreto/Vendinha-Samu/assets/70921394/76f3160b-80ca-4ab9-babf-41f06d40eed1)
-
----
-
-###### Pesquisa com grid dinâmico de acordo com a quantidade de clientes retornados
-![image](https://github.com/samubarreto/Vendinha-Samu/assets/70921394/32632af7-0043-47c1-a4c8-741698dea37c)
 
 ###### Inserção de Cliente
-![image](https://github.com/samubarreto/Vendinha-Samu/assets/70921394/5c124032-420d-4390-a7d1-9100e59fe30c)
-
----
-
-###### Clicar na foto de perfil do cliente para editar ou remover 
-![image](https://github.com/samubarreto/Vendinha-Samu/assets/70921394/d77f8972-3a8d-4de7-8f10-8c830b4076d4)
-
----
-
-###### Upload da imagem
-![image](https://github.com/samubarreto/Vendinha-Samu/assets/70921394/dffec412-21a2-4b14-aca2-270a95917ed6)
-
----
-
-###### Imagem de perfil alterada
-![image](https://github.com/samubarreto/Vendinha-Samu/assets/70921394/e1072e68-ab43-452c-9d73-6ddfa6c91604)
+![image](https://github.com/samubarreto/Vendinha-Samu/assets/70921394/690546d0-7bf3-44bd-a5d2-12ace86687f1)
 
 ---
 
 ###### Edição de Cliente
-![image](https://github.com/samubarreto/Vendinha-Samu/assets/70921394/0645d4e3-99f3-42b2-aed9-e665a6e0624f)
+![image](https://github.com/samubarreto/Vendinha-Samu/assets/70921394/93aaaa3e-9d48-4189-9e26-220939339e5c)
 
 ---
 
 ###### Exclusão de Cliente
-![image](https://github.com/samubarreto/Vendinha-Samu/assets/70921394/7e5ed415-4c0d-4080-b59a-7ba74328ef48)
+![image](https://github.com/samubarreto/Vendinha-Samu/assets/70921394/f856f6e3-946e-403e-87de-fe8ae82993b7)
+
+---
+
+###### Edição/Remoção/Inserção de Imagem de Perfil de Cliente
+![image](https://github.com/samubarreto/Vendinha-Samu/assets/70921394/32430ca4-3105-468e-9d7a-3ad06251c05e)
+![image](https://github.com/samubarreto/Vendinha-Samu/assets/70921394/814c72d1-4518-473f-9ab3-9ff40c76588d)
+![image](https://github.com/samubarreto/Vendinha-Samu/assets/70921394/77eff917-3b91-487a-8d98-106e96890bee)
 
 ---
 
 ###### Tabela de Dívidas de um cliente inadimplente
-![image](https://github.com/samubarreto/Vendinha-Samu/assets/70921394/a960e902-c5f3-4342-a70e-66cc960b3eb6)
+![image](https://github.com/samubarreto/Vendinha-Samu/assets/70921394/48487853-5e1c-474c-b372-f3c221458257)
+
+---
+
+###### Tabela de Dívidas de um cliente adimplente
+![image](https://github.com/samubarreto/Vendinha-Samu/assets/70921394/16bbe878-9400-42d2-a1e9-520b91259451)
 
 ---
 
 ###### Confirmação de Baixa de Dívida em Aberto
-![image](https://github.com/samubarreto/Vendinha-Samu/assets/70921394/0996b14a-493e-4ee6-bce5-0bae0a1f4f24)
-
----
-
-###### Edição de Dívida
-![image](https://github.com/samubarreto/Vendinha-Samu/assets/70921394/906a7593-225c-42d6-8056-f88a1adf459c)
+![image](https://github.com/samubarreto/Vendinha-Samu/assets/70921394/fc59bc4b-6913-4d3c-ac3b-91259f6e1efe)
 
 ---
 
@@ -83,8 +71,13 @@
 
 ---
 
-###### Tabela de Dívidas de um cliente adimplente
-![image](https://github.com/samubarreto/Vendinha-Samu/assets/70921394/48677198-cf36-42eb-a205-ec1ed60019a8)
+###### Edição de Dívida
+![image](https://github.com/samubarreto/Vendinha-Samu/assets/70921394/be65333d-07e7-48c4-966c-76086b03d446)
+
+---
+
+###### Exclusão de Dívida
+![image](https://github.com/samubarreto/Vendinha-Samu/assets/70921394/c8d01633-ca7f-4bf0-b07f-b2207bd29f56)
 
 ---
 
