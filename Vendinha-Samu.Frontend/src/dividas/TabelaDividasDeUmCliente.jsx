@@ -106,9 +106,6 @@ export default function TabelaDividasDeUmCliente() {
             <div className="debt-etc-container">
               <p className="debt-name-age">DÍVIDAS: {getCliente.nomeCompleto}, {calculaIdade(getCliente.dataNascimento)}</p>
               <p className="debt-cpf-email-numero">
-                {/* <svg xmlns="http://www.w3.org/2000/svg" className="base-icon gray debt-icon" viewBox="0 0 16 16">
-                  <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
-                </svg> */}
                 <span>CPF: </span>
                 {getCliente.cpf} ·
                 <svg xmlns="http://www.w3.org/2000/svg" className="base-icon gray debt-icon" viewBox="0 0 16 16">

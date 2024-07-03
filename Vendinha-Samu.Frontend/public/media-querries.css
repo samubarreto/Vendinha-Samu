@@ -31,11 +31,13 @@
     padding: 4px 15px;
   }
 
-  .small-button {
+  .small-button.top,
+  .small-button.bottom {
     padding: 1px 5px 1px 13px;
   }
 
-  .small-button:hover {
+  .small-button.top:hover,
+  .small-button.bottom:hover {
     padding: 1px 5px 1px 20px;
   }
 
