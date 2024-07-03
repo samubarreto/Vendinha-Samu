@@ -17,6 +17,7 @@ export default function FormImgPerfil({ cliente, onClose }) {
         cpf: cliente.cpf,
         dataNascimento: cliente.dataNascimento,
         email: cliente.email,
+        numeroCelular: cliente.numeroCelular,
         urlPerfil: "https://127.0.0.1:7258/profile_pics/profile_placeholder.png",
         somatorioDividasEmAberto: cliente.somatorioDividasEmAberto
       };
