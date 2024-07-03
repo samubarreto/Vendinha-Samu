@@ -152,19 +152,23 @@ th {
   width: 100%;
 }
 
-.debt-resumo span {
+.no-clients-container.no-debts-container {
+  background: #4caf50;
+  background: -webkit-linear-gradient(to right, #4caf50, #388e3c, #2e7d32, #4caf50);
+  background: linear-gradient(to right, #4caf50, #388e3c, #2e7d32, #4caf50);
+  animation: gradientAnimation 2.5s linear infinite;
+  background-size: 200%;
+  color: var(--cor-cinza-medio);
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  margin: 0 0 15px 0;
+}
+
+.debt-resumo span,
+.no-clients-container.no-debts-container span {
   color: var(--cor-cinza-medio);
   background-color: var(--cor-branco);
   border-radius: 30px;
   padding: 8px 12px;
   text-wrap: nowrap;
-}
-
-.no-clients-container.no-debts-container {
-  background: none;
-  background-color: var(--cor-branco);
-  color: var(--cor-cinza-medio);
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-  margin: 0 0 15px 0;
 }
