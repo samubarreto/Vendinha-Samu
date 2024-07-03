@@ -242,13 +242,13 @@ https://www.pgadmin.org/download/pgadmin-4-windows/
 6) Abra um terminal e clone o repositório:
 
 ```bash
-git clone https://github.com/samubarreto/Vendinha-Fullstack-Interfocus.git
+git clone https://github.com/samubarreto/Vendinha-Samu.git
 ```
 
 7) Acesse o diretório do repositório clonado:
 
 ```bash
-cd .\Vendinha-Fullstack-Interfocus\
+cd .\Vendinha-Samu\
 ```
 
 8) Abra o diretório atual no Explorador de Arquivos pra facilitar a explicação:
