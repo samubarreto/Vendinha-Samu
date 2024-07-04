@@ -313,7 +313,7 @@ npm i vite
 npm run dev
 ```
 
-16) Provavelmente as imagens de perfil não deverão carregar, depende do seu navegador só, pra resolver copie e cole o link abaixo noutra guia e aceite o acesso:
+16) Provavelmente as imagens de perfil não deverão carregar, depende apenas do seu navegador, pra resolver copie e cole o link abaixo noutra guia, aceite os acessos, volte para a guia da Vendinha e recarregue a página:
 
 ```bash
 https://127.0.0.1:7258/profile_pics/profile_placeholder.png
