@@ -1,19 +1,11 @@
 <div align="center">
 
 # Vendinha Fullstack Interfocus do Samu 😎
-Aplicação Web para administração de clientes e dívidas
+###### ·Aplicação Web para administração de Clientes e suas Dívidas💵
 
 </div>
 
-<details>
-
-<summary align="center">
-<h6>
-Prints
-</h6>
-</summary>
-
-<div align="center">
+<details><summary align="center">Prints</summary><div align="center">
 
 ###### Interface principal
 ![image](https://github.com/samubarreto/Vendinha-Samu/assets/70921394/43d11ee2-5e93-46d5-9d01-a5c4f2b74eba)
@@ -92,11 +84,7 @@ Prints
 
 <details>
 
-<summary align="center">
-<h6>
-Resumo do Projeto
-</h6>
-</summary>
+<summary align="center">Resumo do Projeto</summary>
 
 * Interface web com HTML, CSS, JS e REACT.JS
 * Uma WEB API REST, feita com ASP.NET em C#
@@ -107,13 +95,7 @@ Resumo do Projeto
 
 ---
 
-<details>
-
-<summary align="center">
-<h6>
-Features
-</h6>
-</summary>
+<details><summary align="center">Features</summary>
 
 * Paginação de 10 em 10 clientes
 * Busca de Clientes
@@ -131,11 +113,7 @@ Features
 
 <details>
 
-<summary align="center">
-<h6>
-To do List
-</h6>
-</summary>
+<summary align="center">To do List</summary>
 
 ###### PLANEJAMENTO INICIAL
 
@@ -232,13 +210,7 @@ To do List
 
 ---
 
-<details>
-
-<summary align="center">
-<h6>
-Instruções de Uso/Execução
-</h6>
-</summary>
+<details><summary align="center">Instruções de Uso/Execução</summary>
 
 1) Tenha o GIT instalado:
 
@@ -327,13 +299,7 @@ https://127.0.0.1:7258/profile_pics/profile_placeholder.png
 
 ---
 
-<details>
-
-<summary align="center">
-<h6>
-Justificativa de uso das Bibliotecas/Pacotes/Etc...
-</h6>
-</summary>
+<details><summary align="center">Justificativa de uso das Bibliotecas/Pacotes/Etc...</summary>
 
 * [CPF.CNPJ](https://github.com/RBonaldi/CPF.CNPJ)
   * Usei ela no dotnet pra validar o cpf muito facilmente, documentação brasileira, criei um novo DataValidation dentro do GeneralServieces using a lib, mole demais:
