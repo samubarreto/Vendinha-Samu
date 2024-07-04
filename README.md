@@ -1,17 +1,14 @@
+<div align="center">
+
 # Vendinha Fullstack Interfocus do Samu 😎
 
-### ·Sumário
+</div>
 
-* [Prints](#prints)
-* [Resumo do Projeto](#resumo-do-projeto)
-* [Features](#features)
-* [TO-DO LIST](#to-do-list)
-* [Instruções de Uso/Execução](#instruções-de-usoexecução)
-* [Motivo de uso das bibliotecas](#justificativa-de-uso-das-bibliotecaspacotesetc)
+<details>
 
----
-
-### ·Prints:
+<summary>
+Prints
+</summary>
 
 <div align="center">
 
@@ -86,16 +83,30 @@
 
 </div>
 
-### ·Resumo do Projeto:
+</details>
+
+---
+
+<details>
+
+<summary>
+Resumo do Projeto
+</summary>
 
 * Interface web com HTML, CSS, JS e REACT.JS
 * Uma WEB API REST, feita com ASP.NET em C#
 * Um banco de dados PostgreSQL para permanencia de dados via ORM NHibernate
 * Organiza e administra Dívidas de Clientes
 
+</details>
+
 ---
 
-### ·Features:
+<details>
+
+<summary>
+Features
+</summary>
 
 * Paginação de 10 em 10 clientes
 * Busca de Clientes
@@ -107,21 +118,26 @@
 * Fácil Cadastro, Edição, Baixa e Remoção de Dívidas de um Cliente
 * Limitação automática de 200 reais de somatório de dívidas de um Cliente
 
+</details>
+
 ---
 
-### ·TO-DO LIST
+<details>
+
+<summary>
+To Do List
+</summary>
 
 ###### PLANEJAMENTO INICIAL
 
 * [X] Organizar o ínicio do README.md, com as regras e requisitos já préviamente analisados
-* [X] Montar casos de teste baseados nos requisitos apresentados
-* [X] Montar o diagrama geral da aplicação no [MIRO](https://miro.com/pt/mapeamento-processos/)
-* [X] Aprender melhor o pgAdmin ([Tutorial](https://www.youtube.com/watch?v=WFT5MaZN6g4&ab_channel=DatabaseStar))
+* [X] Montar diagrama geral da aplicação
 
-###### DATABASE
+###### BANCO
 
-* [X] Desenvolver schema.sql das Tabelas Clientes e Dívidas, inserts de exemplo para clientes e dívidas e dqls úteis
-* [X] Aplicar o schema num Postgres em localhost no pgAdmin pra ver no que dá
+* [X] Desenvolver schema.sql das Tabelas Clientes e Dívidas
+* [X] Gerar Inserts de Mockup para clientes e dívidas
+* [X] Desenvolver triggers e funções para validações à nível de banco e auxiliares
 
 ###### BACKEND BASE
 
@@ -203,9 +219,15 @@
 * [X] Documentar as instruções de uso da aplicação Vendinha Fullstack Interfocus 😎
 * [X] Entregar repositório
 
+</details>
+
 ---
 
-### ·Instruções de Uso/Execução
+<details>
+
+<summary>
+Instruções de Uso/Execução
+</summary>
 
 1) Tenha o GIT instalado:
 
@@ -290,9 +312,15 @@ https://127.0.0.1:7258/profile_pics/profile_placeholder.png
 17) Se estiver tudo certo, tanto o banco, quanto a API Backend e o Frontend devem estar rodando perfeitamente agora, pronto pra gerenciar dívidas de clientes no seu navegador 🤠
 18) Sinta-se livre para importar a Collection do [Postman](https://www.postman.com/downloads/), disponível em /Vendinha-Samu.postman_collection.json para testar os endpoints
 
+</details>
+
 ---
 
-### ·Justificativa de uso das Bibliotecas/Pacotes/Etc...
+<details>
+
+<summary>
+Justificativa de uso das Bibliotecas/Pacotes/Etc...
+</summary>
 
 * [CPF.CNPJ](https://github.com/RBonaldi/CPF.CNPJ)
   * Usei ela no dotnet pra validar o cpf muito facilmente, documentação brasileira, criei um novo DataValidation dentro do GeneralServieces using a lib, mole demais:
@@ -317,6 +345,8 @@ Cpf.Validar("08597471077"); // True
 * [simple-react-routing](https://github.com/rodrigo-web-developer/simple-react-router)
 
   * Biblioteca do React usada no lugar do react-router-dom para definição simplificada das rotas.
+
+</details>
 
 ---
 
