@@ -1,6 +1,7 @@
 <div align="center">
 
 # Vendinha Fullstack Interfocus do Samu 😎
+Aplicação Web para administração de clientes e dívidas
 
 </div>
 
