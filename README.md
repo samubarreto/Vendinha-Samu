@@ -277,8 +277,19 @@ cd .\Vendinha_Samu.Api\
 dotnet watch run
 ```
 
-15) Se estiver tudo certo, a API deve estar rodando agora.. Perfeito
-16) Volte para o explorador de arquivos, no diretório root (Vendinha-Fullstack-Interfocus), abra outro terminal e siga os comandos:
+15) Veja quais são os 4 números de porta da URL da api iniciada:
+
+```bash
+https://localhost:7258/api/clientes
+```
+
+16) Caso os 4 números após o : sejam "7258", como a url acima, pule para o passo 18
+
+17) Caso contrário, copie esses 4 números e substitua a porta da URL na primeira linha do arquivo "\Vendinha-Samu\Vendinha-Samu.Frontend\src\services\general.js" pela porta copiada.
+
+18) Se estiver tudo certo, a API deve estar rodando agora.. Perfeito
+
+19) Volte para o explorador de arquivos, no diretório root (Vendinha-Fullstack-Interfocus), abra outro terminal e siga os comandos:
 
 ```bash
 cd .\Vendinha-Samu.Frontend\
@@ -286,14 +297,14 @@ npm i vite
 npm run dev
 ```
 
-16) Provavelmente as imagens de perfil não deverão carregar, depende apenas do seu navegador, pra resolver copie e cole o link abaixo noutra guia, aceite os acessos, volte para a guia da Vendinha e recarregue a página:
+20) Provavelmente as imagens de perfil não deverão carregar, depende apenas do seu navegador, pra resolver copie e cole o link abaixo noutra guia, aceite os acessos, volte para a guia da Vendinha e recarregue a página:
 
 ```bash
 https://127.0.0.1:7258/profile_pics/profile_placeholder.png
 ```
     
-17) Se estiver tudo certo, tanto o banco, quanto a API Backend e o Frontend devem estar rodando perfeitamente agora, pronto pra gerenciar dívidas de clientes no seu navegador 🤠
-18) Sinta-se livre para importar a Collection do [Postman](https://www.postman.com/downloads/), disponível em /Vendinha-Samu.postman_collection.json para testar os endpoints
+21) Se estiver tudo certo, tanto o banco, quanto a API Backend e o Frontend devem estar rodando perfeitamente agora, pronto pra gerenciar dívidas de clientes no seu navegador 🤠
+22) Sinta-se livre para importar a Collection do [Postman](https://www.postman.com/downloads/), disponível em /Vendinha-Samu.postman_collection.json para testar os endpoints
 
 </details>
 

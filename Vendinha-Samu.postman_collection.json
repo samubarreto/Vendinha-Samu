@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "6ea063d8-b4ac-4c1c-beda-74f20af16f70",
+		"_postman_id": "97f281e8-3e91-4332-b838-686a64431e80",
 		"name": "Vendinha-Samu",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
 		"_exporter_id": "33153549"
@@ -68,7 +68,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"nomeCompleto\": \"Cliente lç~~jhç03\",\r\n  \"cpf\": \"50228930022\",\r\n  \"dataNascimento\": \"2004-05-25\",\r\n  \"email\": \"clientew5dss3@steste.com\",\r\n  \"urlPerfil\": null,\r\n  \"somatorioDividasEmAberto\": 0\r\n}",
+					"raw": "{\r\n  \"nomeCompleto\": \"Cliente lç~~jhç03\",\r\n  \"cpf\": \"50228930022\",\r\n  \"dataNascimento\": \"2004-05-25\",\r\n  \"email\": \"clientew5dss3@steste.com\",\r\n  \"numeroCelular\": \"12345678901\",\r\n  \"urlPerfil\": null,\r\n  \"somatorioDividasEmAberto\": 0\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -86,7 +86,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"id\": 20,\r\n  \"nomeCompleto\": \"Diego Oliveira Santos\",\r\n  \"cpf\": \"61221479075\",\r\n  \"dataNascimento\": \"1954-11-01T00:00:00\",\r\n  \"email\": \"diego.oliveira.santos@teste.com\",\r\n  \"urlPerfil\": \"https://127.0.0.1:7258/profile_pics/profile_placeholder.png\",\r\n  \"somatorioDividasEmAberto\": 75\r\n}",
+					"raw": "{\r\n  \"id\": 20,\r\n  \"nomeCompleto\": \"Diego Oliveira Santos\",\r\n  \"cpf\": \"61221479075\",\r\n  \"dataNascimento\": \"1954-11-01T00:00:00\",\r\n  \"email\": \"diego.oliveira.santos@teste.com\",\r\n  \"numeroCelular\": \"11923456789\",\r\n  \"urlPerfil\": null,\r\n  \"somatorioDividasEmAberto\": 75\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
