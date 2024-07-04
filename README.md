@@ -6,8 +6,10 @@
 
 <details>
 
-<summary>
+<summary align="center">
+<h6>
 Prints
+</h6>
 </summary>
 
 <div align="center">
@@ -89,8 +91,10 @@ Prints
 
 <details>
 
-<summary>
+<summary align="center">
+<h6>
 Resumo do Projeto
+</h6>
 </summary>
 
 * Interface web com HTML, CSS, JS e REACT.JS
@@ -104,8 +108,10 @@ Resumo do Projeto
 
 <details>
 
-<summary>
+<summary align="center">
+<h6>
 Features
+</h6>
 </summary>
 
 * Paginação de 10 em 10 clientes
@@ -124,8 +130,10 @@ Features
 
 <details>
 
-<summary>
-To Do List
+<summary align="center">
+<h6>
+To do List
+</h6>
 </summary>
 
 ###### PLANEJAMENTO INICIAL
@@ -225,8 +233,10 @@ To Do List
 
 <details>
 
-<summary>
+<summary align="center">
+<h6>
 Instruções de Uso/Execução
+</h6>
 </summary>
 
 1) Tenha o GIT instalado:
@@ -318,8 +328,10 @@ https://127.0.0.1:7258/profile_pics/profile_placeholder.png
 
 <details>
 
-<summary>
+<summary align="center">
+<h6>
 Justificativa de uso das Bibliotecas/Pacotes/Etc...
+</h6>
 </summary>
 
 * [CPF.CNPJ](https://github.com/RBonaldi/CPF.CNPJ)
