@@ -281,6 +281,12 @@ npm i vite
 npm run dev
 ```
 
+16) Provavelmente as imagens de perfil não deverão carregar, depende do seu navegador só, pra resolver copie e cole o link abaixo noutra guia e aceite o acesso:
+
+```bash
+https://127.0.0.1:7258/profile_pics/profile_placeholder.png
+```
+    
 17) Se estiver tudo certo, tanto o banco, quanto a API Backend e o Frontend devem estar rodando perfeitamente agora, pronto pra gerenciar dívidas de clientes no seu navegador 🤠
 18) Sinta-se livre para importar a Collection do [Postman](https://www.postman.com/downloads/), disponível em /Vendinha-Samu.postman_collection.json para testar os endpoints
 
