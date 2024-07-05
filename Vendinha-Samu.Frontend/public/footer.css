@@ -56,3 +56,9 @@ footer button:active {
   color: var(--cor-branco);
   cursor: default;
 }
+
+.footer-advice {
+  margin: 20px 0 0 0;
+  color: var(--cor-cinza-escuro);
+  font-size: .7rem;
+}

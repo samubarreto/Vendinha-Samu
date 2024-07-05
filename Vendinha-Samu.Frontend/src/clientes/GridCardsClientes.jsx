@@ -82,6 +82,7 @@ export default function GridCardsClientes() {
           </div>
         </div>
       </footer>
+      <p className="footer-advice">Dê um git pull -ff sempre que possível para usar a versão mais atualizada da aplicação 🔄</p>
     </>
   )
 }
