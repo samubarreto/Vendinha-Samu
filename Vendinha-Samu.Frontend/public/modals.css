@@ -10,4 +10,5 @@
   align-items: center;
   text-align: center;
   background-color: var(--cor-fundo-modal);
+  animation: fadeUpDown .15s ease-out;
 }
