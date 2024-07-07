@@ -4,3 +4,7 @@
 
 # Ignore a pasta .vs na raiz do repositório
 **/.vs/
+
+# Ignorar todos os arquivos de imagem de perfil, menos o placeholder
+Vendinha-Samu.Backend/Vendinha_Samu.Api/wwwroot/profile_pics/*
+!Vendinha-Samu.Backend/Vendinha_Samu.Api/wwwroot/profile_pics/profile_placeholder.png
