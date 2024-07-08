@@ -1,6 +1,9 @@
 import { uparImagemPerfil, postPutCliente } from "../services/clienteApi.js"
+import { useState } from "react";
 
 export default function FormImgPerfil({ cliente, onClose }) {
+
+  const [closing, setClosing] = useState(false);
 
   const uparImagem = async (evento) => {
     evento.preventDefault();
@@ -30,9 +33,16 @@ export default function FormImgPerfil({ cliente, onClose }) {
     }
   };
 
+  const handleClose = () => {
+    setClosing(true);
+    setTimeout(() => {
+      onClose();
+    }, 150);
+  };
+
   return (
 
-    <div className="modal">
+    <div className={`modal ${closing ? 'close' : ''}`}>
       <form onSubmit={uparImagem} className="img-form">
 
         <h2>Selecione a Nova Imagem:</h2>
@@ -40,7 +50,7 @@ export default function FormImgPerfil({ cliente, onClose }) {
         <input type="file" name="imgPerfil" id="imgPerfil" placeholder="Escolher arquivo" accept="image/*" />
 
         <div className="flex-row">
-          <button type="reset" onClick={onClose}>Cancelar</button>
+          <button type="reset" onClick={handleClose}>Cancelar</button>
           <button type="submit">Confirmar</button>
         </div>
 

@@ -7,6 +7,7 @@ export default function FormDivida({ divida, onClose, contexto }) {
   const { pathParams } = useRouter();
   const idClientePath = pathParams["id"];
   const [getErrorMessage, setErrorMessage] = useState("");
+  const [closing, setClosing] = useState(false);
 
   const editarCriarDivida = async (evento) => {
     evento.preventDefault();
@@ -44,11 +45,18 @@ export default function FormDivida({ divida, onClose, contexto }) {
     } catch (error) {
       setErrorMessage(`⚠️ Ocorreu um erro ao ${(contexto === "Inserir " ? "inserir" : "editar ")} a dívida.`);
     }
-  }
+  };
+
+  const handleClose = () => {
+    setClosing(true);
+    setTimeout(() => {
+      onClose();
+    }, 150);
+  };
 
   return (
     <>
-      <div className="modal">
+      <div className={`modal ${closing ? 'close' : ''}`}>
         <form className="edicao-divida-form" onSubmit={editarCriarDivida}>
           <h2>{contexto}Dívida</h2>
 
@@ -63,7 +71,7 @@ export default function FormDivida({ divida, onClose, contexto }) {
           </div>
 
           <div className="flex-row form-cliente">
-            <button type="reset" onClick={onClose}>Cancelar</button>
+            <button type="reset" onClick={handleClose}>Cancelar</button>
             <button type="submit">{contexto === "Editar " ? "Editar" : "Inserir"}</button>
           </div>
 
