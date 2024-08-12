@@ -1,7 +1,7 @@
 <div align="center">
     
 ###### Aplicação Web para administração de Clientes e suas Dívidas💵
-# Vendinha Fullstack Interfocus do Samu 😎
+# Vendinha Fullstack do Samu 😎
 
 </div>
 
