@@ -1,7 +1,7 @@
 export default function Header1() {
   return (
     <>
-      <h1>Vendinha Interfocus Samu🌹🤠</h1>
+      <h1>Vendinha do Samu🌹🤠</h1>
     </>
   )
 }
