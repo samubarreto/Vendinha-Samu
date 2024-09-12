@@ -230,46 +230,52 @@ https://dotnet.microsoft.com/pt-br/download
 https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
 ```
 
-4) Tenha uma IDE para Postgresql instalada, recomendo o pgAdmin:
+4) Tenha o driver do Postgresql instalado:
+
+```
+https://www.enterprisedb.com/downloads/postgres-postgresql-downloads
+```
+
+5) Tenha uma IDE para Postgresql instalada, recomendo o pgAdmin:
 
 ```
 https://www.pgadmin.org/download/pgadmin-4-windows/
 ```
 
-5) Caso tenha acabado de instalar algum dos itens acima, reinicie seu computador
-6) Abra um terminal e clone o repositório:
+6) Caso tenha acabado de instalar algum dos itens acima, reinicie seu computador
+7) Abra um terminal e clone o repositório:
 
 ```bash
 git clone https://github.com/samubarreto/Vendinha-Samu.git
 ```
 
-7) Acesse o diretório do repositório clonado:
+8) Acesse o diretório do repositório clonado:
 
 ```bash
 cd .\Vendinha-Samu\
 ```
 
-8) Abra o diretório atual no Explorador de Arquivos pra facilitar a explicação:
+9) Abra o diretório atual no Explorador de Arquivos pra facilitar a explicação:
 
 ```bash
 explorer .
 ```
 
-9) Abra o arquivo schema.sql com qualquer editor de texto/código (Bloco de notas)
-10) Abra sua IDE do Postgresql (pgAdmin)
-11) Registre um novo servidor com as seguintes informações:
+10) Abra o arquivo schema.sql com qualquer editor de texto/código (Bloco de notas)
+11) Abra sua IDE do Postgresql (pgAdmin)
+12) Registre um novo servidor com as seguintes informações:
 
 - Nome: localhost(qualquer nome)
 - Host: 127.0.0.1
 - Porta: 5432
 - Senha: samu123
 
-12) Conecte-se ao servidor registrado crie um banco de dados com nome = vendinha_samu
-13) Abra uma nova Querry para o banco vendinha_samu:
+13) Conecte-se ao servidor registrado crie um banco de dados com nome = vendinha_samu
+14) Abra uma nova Querry para o banco vendinha_samu:
 
 - Cole o conteúdo do schema.sql e execute
 
-14) Volte para o explorador de arquivos, no diretório root (Vendinha-Fullstack-Interfocus), abra o terminal e siga os comandos:
+15) Volte para o explorador de arquivos, no diretório root (Vendinha-Fullstack-Interfocus), abra o terminal e siga os comandos:
 
 ```bash
 cd .\Vendinha-Samu.Backend\
@@ -277,19 +283,19 @@ cd .\Vendinha_Samu.Api\
 dotnet watch run
 ```
 
-15) Veja quais são os 4 números de porta da URL da api iniciada:
+16) Veja quais são os 4 números de porta da URL da api iniciada:
 
 ```bash
 https://localhost:7258/api/clientes
 ```
 
-16) Caso os 4 números após o : sejam "7258", como a url acima, pule para o passo 18
+17) Caso os 4 números após o : sejam "7258", como a url acima, pule para o passo 18
 
-17) Caso contrário, copie esses 4 números e substitua a porta da URL na primeira linha do arquivo "\Vendinha-Samu\Vendinha-Samu.Frontend\src\services\general.js" pela porta copiada.
+18) Caso contrário, copie esses 4 números e substitua a porta da URL na primeira linha do arquivo "\Vendinha-Samu\Vendinha-Samu.Frontend\src\services\general.js" pela porta copiada.
 
-18) Se estiver tudo certo, a API deve estar rodando agora.. Perfeito
+19) Se estiver tudo certo, a API deve estar rodando agora.. Perfeito
 
-19) Volte para o explorador de arquivos, no diretório root (Vendinha-Fullstack-Interfocus), abra outro terminal e siga os comandos:
+20) Volte para o explorador de arquivos, no diretório root (Vendinha-Fullstack-Interfocus), abra outro terminal e siga os comandos:
 
 ```bash
 cd .\Vendinha-Samu.Frontend\
@@ -297,14 +303,14 @@ npm i vite
 npm run dev
 ```
 
-20) Provavelmente as imagens de perfil não deverão carregar, depende apenas do seu navegador, pra resolver copie e cole o link abaixo noutra guia, aceite os acessos, volte para a guia da Vendinha e recarregue a página:
+21) Provavelmente as imagens de perfil não deverão carregar, depende apenas do seu navegador, pra resolver copie e cole o link abaixo noutra guia, aceite os acessos, volte para a guia da Vendinha e recarregue a página:
 
 ```bash
 https://127.0.0.1:7258/profile_pics/profile_placeholder.png
 ```
     
-21) Se estiver tudo certo, tanto o banco, quanto a API Backend e o Frontend devem estar rodando perfeitamente agora, pronto pra gerenciar dívidas de clientes no seu navegador 🤠
-22) Sinta-se livre para importar a Collection do [Postman](https://www.postman.com/downloads/), disponível em /Vendinha-Samu.postman_collection.json para testar os endpoints
+22) Se estiver tudo certo, tanto o banco, quanto a API Backend e o Frontend devem estar rodando perfeitamente agora, pronto pra gerenciar dívidas de clientes no seu navegador 🤠
+23) Sinta-se livre para importar a Collection do [Postman](https://www.postman.com/downloads/), disponível em /Vendinha-Samu.postman_collection.json para testar os endpoints
 
 </details>
 
