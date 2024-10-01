@@ -29,7 +29,7 @@
   <ItemGroup>
     <PackageReference Include="Cpf.Cnpj" Version="1.0.2" />
     <PackageReference Include="Microsoft.NETCore.App" Version="2.2.8" />
-    <PackageReference Include="NHibernate" Version="5.5.1" />
+    <PackageReference Include="NHibernate" Version="5.5.2" />
     <PackageReference Include="Npgsql" Version="8.0.3" />
   </ItemGroup>
 
